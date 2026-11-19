@@ -13362,70 +13362,6 @@ end)
             _G.LloydArsenal.ExecuteBrutal(selectedExec, {}, LocalPlayer.Character)
         end
     end)
-    local killVfxBox = Window_main:CreateGroupBox("⚔️ ท่าประหาร VFX Open-Source (Kill Effects)")
-    local selectedKillVfx = "hollow_purple"
-    local killVfxTargetName = ""
-    local killVfxItems = {
-        { Value = "hollow_purple", Label = "🌌 Yuruzuu บอลม่วงมุราซากิ Hollow Purple" },
-        { Value = "judgement_cut_end", Label = "⚔️ Vergil มิติดาบฟันรอบทิศ Judgement Cut" },
-        { Value = "thunder_spear", Label = "⚡ Yuruzuu หอกอสุนีบาต Thunder Spear" },
-        { Value = "pyronado_inferno", Label = "🌪️ Yuruzuu พายุเพลิงพญายม Pyronado" },
-        { Value = "cursed_chains_guillotine", Label = "⛓️ KitsBlox โซ่ตรึงกิโยตินตัดหัว Guillotine" },
-        { Value = "cosmic_supernova", Label = "💥 ParticleFX ระเบิดซูเปอร์โนวา 8x8" },
-        { Value = "blood_demon_scythe", Label = "🩸 KitsBlox เคียวโลหิตจันทร์เสี้ยว Blood Scythe" },
-        { Value = "holy_rapture_beam", Label = "🕊️ Yuruzuu เสาแสงสวรรค์ชำระบาป Holy Beam" },
-        { Value = "butterfly_miasma", Label = "🦋 CIX ผีเสื้อพิษกลืนกินวิญญาณ Butterfly" },
-        { Value = "cursed_skull_implosion", Label = "💀 KitsBlox กะโหลกอสูรเขมือบร่าง Skull Crush" },
-        { Value = "shadow_monarch_extract", Label = "👥 Yuruzuu จักรพรรดิเงา Shadow Arise" },
-        { Value = "lightning_dragon_strike", Label = "🐉 ParticleFX มังกรสายฟ้าฟาด Thunder Dragon" },
-        { Value = "dimensional_blackhole", Label = "🕳️ KitsBlox หลุมดำขอบฟ้าเหตุการณ์ Singularity" },
-        { Value = "blazing_phoenix_rebirth", Label = "🦅 Yuruzuu วิหคเพลิงดิ่งถล่ม Phoenix Dive" },
-        { Value = "arrow_rain_barrage", Label = "🏹 Yuruzuu ห่าฝนธนูแสงสวรรค์ Arrow Rain" },
-        { Value = "ice_coffin_shatter", Label = "🧊 KitsBlox โลงน้ำแข็งสัมบูรณ์แตกกระจาย Ice Coffin" },
-        { Value = "solar_flare_annihilation", Label = "☀️ ParticleFX เปลวสุริยะ Solar Flare" },
-        { Value = "bat_swarm_vampiric", Label = "🦇 CIX สุริยคราสฝูงค้างคาวผี Bat Eclipse" },
-        { Value = "demonic_portal_drag", Label = "🩸 KitsBlox ประตูนรกลากสู่ปรโลก Nether Drag" },
-        { Value = "toxic_spore_nova", Label = "☣️ ParticleFX สปอร์กรดพิษกัดกร่อน Toxic Nova" },
-        { Value = "celestial_starlight_bomb", Label = "🌠 Yuruzuu สะเก็ดดาวตกทำลายล้าง Starlight Bomb" },
-        { Value = "spectral_reaper_cleave", Label = "👤 KitsBlox ยมทูตฟันสะบั้นวิญญาณ Reaper Cleave" },
-        { Value = "cybernetic_laser_grid", Label = "⚡ ParticleFX ตาข่ายเลเซอร์หั่นเนื้อ Laser Grid" },
-        { Value = "final_oblivion_nuke", Label = "☢️ CIX หัวรบนิวเคลียร์เห็ดมรณะ Ground Zero" }
-    }
-    killVfxBox:AddInput("ชื่อเป้าหมาย", "เว้นว่าง = คนใกล้สุด", "", function(val) killVfxTargetName = val end)
-    killVfxBox:AddDropdown("เลือกท่าสังหาร Open-Source", killVfxItems, "hollow_purple", function(v) selectedKillVfx = v end)
-    killVfxBox:AddButton("⚡ สั่งประหารด้วย Open-Source VFX (Guaranteed Kill)", function()
-        local targetChar = nil
-        if killVfxTargetName and killVfxTargetName ~= "" then
-            local p = Players:FindFirstChild(killVfxTargetName)
-            if p then targetChar = p.Character end
-        end
-        if not targetChar then
-            local myHrp = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-            if myHrp then
-                local cl, clD = nil, 99999
-                for _, p in ipairs(Players:GetPlayers()) do
-                    if p ~= LocalPlayer and p.Character and p.Character:FindFirstChild("HumanoidRootPart") then
-                        local d = (p.Character.HumanoidRootPart.Position - myHrp.Position).Magnitude
-                        if d < clD then clD = d; cl = p.Character end
-                    end
-                end
-                targetChar = cl
-            end
-        end
-        if _G.LloydArsenal and _G.LloydArsenal.Trolls[selectedKillVfx] then
-            _G.LloydArsenal.Trolls[selectedKillVfx]({}, targetChar or LocalPlayer.Character)
-        end
-    end)
-    killVfxBox:AddButton("💥 สังหารตัวเอง (Self Showoff / Test)", function()
-        if _G.LloydArsenal and _G.LloydArsenal.Trolls[selectedKillVfx] then
-            _G.LloydArsenal.Trolls[selectedKillVfx]({}, LocalPlayer.Character)
-        end
-    end)
-    killVfxBox:AddButton("✨ ล้างเอฟเฟกต์ตกค้างทั้งหมด (Cleanse All VFX)", function()
-        if _G.LloydArsenal and _G.LloydArsenal.Trolls.cleanse_fx then
-            _G.LloydArsenal.Trolls.cleanse_fx()
-        end
-    end)
 LloydUI.CleanupMain = function()
     if noclipConn then noclipConn:Disconnect(); noclipConn = nil end
     if sprintConn then sprintConn:Disconnect(); sprintConn = nil end
@@ -14367,13 +14303,13 @@ local function extractIdFromQueryString(qStr, allowFuzzy, isRbxAssetIdScheme)
         qStr = qStr:sub(1, hashPos - 1)
         if qStr == "" then return nil, nil end
     end
-    local exactClean, exactBait = nil, nil
-    local verClean, verBait = nil, nil
+    local exactClean, exactStd, exactBait = nil, nil, nil
+    local verClean, verStd, verBait = nil, nil, nil
     local fuzzyCandidates = nil
     for kv in qStr:gmatch("[^&]+") do
         local eqPos = kv:find("=", 1, true)
         if eqPos and eqPos > 1 and eqPos <= 160 then
-            local rawK = kv:sub(1, eqPos - 1)
+            local rawK = kv:sub(1, eqPos - 1):gsub("^%%00", "")
             if not rawK:find("[%z\1-\31\127-\255]") then
                 local collapsedK = rawK:gsub(" ", "")
                 if #collapsedK >= 2 and #collapsedK <= 32 then
@@ -14388,6 +14324,9 @@ local function extractIdFromQueryString(qStr, allowFuzzy, isRbxAssetIdScheme)
                                 if parsedV and #parsedV >= 4 and #parsedV <= 18 then
                                     if not isBaitOrSfxAudioId(parsedV) then
                                         exactClean = parsedV
+                                        if #parsedV >= 9 and #parsedV <= 15 then
+                                            exactStd = parsedV
+                                        end
                                     else
                                         exactBait = parsedV
                                     end
@@ -14400,6 +14339,9 @@ local function extractIdFromQueryString(qStr, allowFuzzy, isRbxAssetIdScheme)
                                 if parsedV and #parsedV >= 4 and #parsedV <= 18 then
                                     if not isBaitOrSfxAudioId(parsedV) then
                                         verClean = parsedV
+                                        if #parsedV >= 9 and #parsedV <= 15 then
+                                            verStd = parsedV
+                                        end
                                     else
                                         verBait = parsedV
                                     end
@@ -14421,7 +14363,9 @@ local function extractIdFromQueryString(qStr, allowFuzzy, isRbxAssetIdScheme)
             end
         end
     end
+    if exactStd then return exactStd, "exact" end
     if exactClean then return exactClean, "exact" end
+    if verStd then return verStd, "version" end
     if verClean then return verClean, "version" end
     if allowFuzzy and fuzzyCandidates then
         for i = #fuzzyCandidates, 1, -1 do
@@ -14622,6 +14566,103 @@ decodeAudioId = function(rawSoundId, _isScanningOtherPlayer)
     return resId, resProt
 end
 _G.decodeAudioId = decodeAudioId
+local _AUDIO_PRODUCT_META_CACHE = {}
+local function isBaitAudioProductName(nameStr)
+    if type(nameStr) ~= "string" or nameStr == "" then return false end
+    local low = nameStr:lower()
+    if low:find("กันดัก", 1, true)
+        or low:find("bait", 1, true)
+        or low:find("decoy", 1, true)
+        or low:find("anti%-steal")
+        or low:find("antisteal", 1, true)
+        or low:find("anti steal", 1, true)
+        or low:find("1688", 1, true)
+        or low:find("trap", 1, true) then
+        return true
+    end
+    return false
+end
+local function extractAudioCandidatesFromRaw(rawSoundId)
+    local out, seen = {}, {}
+    local function pushId(idStr)
+        if not idStr or idStr == "" then return end
+        local clean = tostring(idStr):match("^0*(%d+)") or tostring(idStr)
+        if #clean >= 5 and #clean <= 15 and not seen[clean] and not isBaitOrSfxAudioId(clean) then
+            seen[clean] = true
+            table.insert(out, clean)
+        end
+    end
+    if type(rawSoundId) ~= "string" or rawSoundId == "" then return out end
+    local decSlice = (#rawSoundId <= 32768) and rawSoundId or rawSoundId:sub(1, 32768)
+    for kv in decSlice:gmatch("[^&]+") do
+        local eqPos = kv:find("=", 1, true)
+        if eqPos and eqPos > 1 and eqPos <= 160 then
+            local rawK = kv:sub(1, eqPos - 1):gsub("^%%00", "")
+            if not rawK:find("[%z\1-\31\127-\255]") then
+                local strictK = urlDecode(rawK:gsub(" ", ""), 3):lower()
+                if strictK == "id" or strictK == "assetid" or strictK == "asset_id" then
+                    local rawV = kv:sub(eqPos + 1)
+                    local parsedV = extractCleanDigits(rawV, false) or extractCleanDigits(rawV, true)
+                    if parsedV then pushId(parsedV) end
+                end
+            end
+        end
+    end
+    local rev = {}
+    for i = #out, 1, -1 do
+        table.insert(rev, out[i])
+    end
+    local headId = rawSoundId:sub(1, 128):match("rbxassetid://0*(%d+)")
+    if headId and not seen[headId] and not isBaitOrSfxAudioId(headId) then
+        table.insert(rev, headId)
+    end
+    return rev
+end
+local function resolveVerifiedAudioIdAsync(rawSoundId, currentIdStr, onResolved)
+    if type(rawSoundId) ~= "string" or rawSoundId == "" then return end
+    task.spawn(function()
+        local function checkId(idStr)
+            if not idStr or idStr == "" then return false, nil end
+            local cached = _AUDIO_PRODUCT_META_CACHE[idStr]
+            if cached == nil then
+                local ok, info = pcall(function()
+                    return MarketplaceService:GetProductInfo(tonumber(idStr))
+                end)
+                if ok and type(info) == "table" then
+                    cached = { typeId = info.AssetTypeId, name = tostring(info.Name or "") }
+                else
+                    cached = { typeId = -1, name = "" }
+                end
+                _AUDIO_PRODUCT_META_CACHE[idStr] = cached
+            end
+            local validAudio = (cached.typeId == 3) and not isBaitAudioProductName(cached.name)
+            return validAudio, cached
+        end
+        local okCur, curMeta = checkId(currentIdStr)
+        if okCur then
+            return
+        end
+        local candidates = extractAudioCandidatesFromRaw(rawSoundId)
+        local checked = 0
+        for _, cid in ipairs(candidates) do
+            if cid ~= currentIdStr then
+                checked = checked + 1
+                local okCand, candMeta = checkId(cid)
+                if okCand then
+                    if #rawSoundId <= 250000 then
+                        _DECODED_AUDIO_CACHE[rawSoundId] = { id = cid, prot = true }
+                    end
+                    if onResolved then
+                        onResolved(cid, candMeta and candMeta.name or nil)
+                    end
+                    return
+                end
+                if checked >= 14 then break end
+                task.wait(0.05)
+            end
+        end
+    end)
+end
 local function buildAntiStealPayload(rawId)
     return buildUriDifferentialPayload(rawId)
 end
@@ -16832,6 +16873,25 @@ updateStealerDetailCard = function()
         or (AppState.LangMode == "en" and "Standard Audio ID" or "รหัสเพลงมาตรฐาน")
     local idPrefix = AppState.LangMode == "en" and "Audio ID: %s  •  %s" or "รหัสเพลง: %s  •  %s"
     scLine3.Text = string.format(idPrefix, tostring(targetItem.realId), badge)
+    if targetItem.wasProtected and targetItem.rawSoundId then
+        resolveVerifiedAudioIdAsync(targetItem.rawSoundId, tostring(targetItem.realId), function(verifiedId, verifiedTitle)
+            targetItem.realId = verifiedId
+            if verifiedTitle and verifiedTitle ~= "" then
+                targetItem.songTitle = verifiedTitle
+            end
+            if currentCardTarget == targetItem then
+                if scLine3 and scLine3.Parent then
+                    scLine3.Text = string.format(idPrefix, tostring(verifiedId), badge)
+                end
+                if verifiedTitle and verifiedTitle ~= "" and scLine2 and scLine2.Parent then
+                    scLine2.Text = verifiedTitle
+                end
+                if _G.LloydSyncAloggerSelection then
+                    pcall(function() _G.LloydSyncAloggerSelection(targetItem) end)
+                end
+            end
+        end)
+    end
 end
 table.insert(LloydUI.LangCallbacks, function()
     pcall(function()
