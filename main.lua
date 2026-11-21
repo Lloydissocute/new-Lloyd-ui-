@@ -1730,7 +1730,7 @@ function Motion.Burst(container, clickPos, sparkColor, isScreenSpace)
         relX = math.clamp(relX, 4, math.max(5, container.AbsoluteSize.X - 4))
         relY = math.clamp(relY, 4, math.max(5, container.AbsoluteSize.Y - 4))
         local baseCol = sparkColor or Color3.fromRGB(120, 210, 255)
-        local count = 7
+        local count = isMobile and 4 or 5
         for i = 1, count do
             local angle = ((i - 1) / count) * math.pi * 2 + (math.random() - 0.5) * 0.45
             local dist = math.random(22, 46)
@@ -2152,16 +2152,36 @@ if _G.LloydRotatingBorderConn then
     pcall(function() _G.LloydRotatingBorderConn:Disconnect() end)
     _G.LloydRotatingBorderConn = nil
 end
+local function isGradVisibleOnScreen(grad)
+    local stroke = grad.Parent
+    if not stroke then return false end
+    local cur = stroke.Parent
+    local depth = 0
+    while cur and depth < 8 do
+        if cur:IsA("GuiObject") and not cur.Visible then
+            return false
+        end
+        if cur:IsA("ScreenGui") then
+            return cur.Enabled
+        end
+        cur = cur.Parent
+        depth = depth + 1
+    end
+    return true
+end
 _G.LloydRotatingBorderConn = RunService.RenderStepped:Connect(function(dt)
     if not AppState.RotatingBorders or AppState.ReduceMotion then return end
     borderAccum = borderAccum + dt
-    if borderAccum < 0.05 then return end
-    borderAngle = (borderAngle + borderAccum * 60) % 360
+    local stepRate = isMobile and 0.12 or 0.066
+    if borderAccum < stepRate then return end
+    borderAngle = (borderAngle + borderAccum * 58) % 360
     borderAccum = 0
     for i = #LloydUI.RotatingBorderGradients, 1, -1 do
         local grad = LloydUI.RotatingBorderGradients[i]
         if grad and grad.Parent then
-            grad.Rotation = borderAngle
+            if isGradVisibleOnScreen(grad) then
+                grad.Rotation = borderAngle
+            end
         else
             table.remove(LloydUI.RotatingBorderGradients, i)
         end
@@ -3327,7 +3347,7 @@ function LloydUI:CreateWindow(config)
     AuroraOrbA.Name = "AuroraOrbA"
     AuroraOrbA.AnchorPoint = Vector2.new(0.5, 0.5)
     AuroraOrbA.Position = UDim2.new(0.22, 0, 0.18, 0)
-    AuroraOrbA.Size = UDim2.fromOffset(isMobile and 240 or 310, isMobile and 240 or 310)
+    AuroraOrbA.Size = UDim2.fromOffset(isMobile and 170 or 260, isMobile and 170 or 260)
     AuroraOrbA.BackgroundTransparency = 1
     AuroraOrbA.Image = "rbxassetid://8992230677"
     AuroraOrbA.ImageColor3 = Theme.AccentCyan
@@ -3339,7 +3359,7 @@ function LloydUI:CreateWindow(config)
     AuroraOrbB.Name = "AuroraOrbB"
     AuroraOrbB.AnchorPoint = Vector2.new(0.5, 0.5)
     AuroraOrbB.Position = UDim2.new(0.80, 0, 0.82, 0)
-    AuroraOrbB.Size = UDim2.fromOffset(isMobile and 220 or 290, isMobile and 220 or 290)
+    AuroraOrbB.Size = UDim2.fromOffset(isMobile and 155 or 240, isMobile and 155 or 240)
     AuroraOrbB.BackgroundTransparency = 1
     AuroraOrbB.Image = "rbxassetid://8992230677"
     AuroraOrbB.ImageColor3 = Color3.fromRGB(130, 92, 255)
@@ -3399,25 +3419,25 @@ function LloydUI:CreateWindow(config)
     end
     LloydUI._AuroraWindows = LloydUI._AuroraWindows or {}
     table.insert(LloydUI._AuroraWindows, Window)
-    if not LloydUI._AuroraLoopStarted then
+    if not LloydUI._AuroraLoopStarted and not isMobile then
         LloydUI._AuroraLoopStarted = true
         local lastStep = 0
         RunService.RenderStepped:Connect(function()
             if Motion.IsReduced() then return end
             local now = os.clock()
-            if (now - lastStep) < 0.033 then return end
+            if (now - lastStep) < 0.066 then return end
             lastStep = now
             for _, w in ipairs(LloydUI._AuroraWindows) do
                 if w.IsOpen and w._AuroraOrbA and w._AuroraOrbA.Parent then
-                    local t = now * 0.55 + (w._AuroraPhase or 0)
-                    local mx = (w._MouseNX or 0) * 0.09
-                    local my = (w._MouseNY or 0) * 0.07
-                    w._AuroraOrbA.Position = UDim2.new(0.24 + math.sin(t) * 0.14 + mx, 0, 0.20 + math.cos(t * 0.78) * 0.12 + my, 0)
+                    local t = now * 0.50 + (w._AuroraPhase or 0)
+                    local mx = (w._MouseNX or 0) * 0.08
+                    local my = (w._MouseNY or 0) * 0.06
+                    w._AuroraOrbA.Position = UDim2.new(0.24 + math.sin(t) * 0.13 + mx, 0, 0.20 + math.cos(t * 0.78) * 0.11 + my, 0)
                     if w._AuroraOrbB and w._AuroraOrbB.Parent then
-                        w._AuroraOrbB.Position = UDim2.new(0.78 + math.cos(t * 0.72) * 0.13 - mx * 1.2, 0, 0.80 + math.sin(t * 0.92) * 0.11 - my * 1.2, 0)
+                        w._AuroraOrbB.Position = UDim2.new(0.78 + math.cos(t * 0.72) * 0.12 - mx * 1.1, 0, 0.80 + math.sin(t * 0.92) * 0.10 - my * 1.1, 0)
                     end
                     if w._HeaderBeam and w._HeaderBeam.Parent then
-                        local bx = ((now * 0.36 + (w._AuroraPhase or 0) * 0.1) % 1.45) - 0.22
+                        local bx = ((now * 0.34 + (w._AuroraPhase or 0) * 0.1) % 1.45) - 0.22
                         w._HeaderBeam.Position = UDim2.new(bx, 0, 0, 0)
                     end
                 end
@@ -4710,19 +4730,22 @@ function LloydUI:CreateWindow(config)
             tileSlot.BorderSizePixel = 0
             tileSlot.ClipsDescendants = false
             tileSlot.Parent = innerGrid
-            local depthShadow = Instance.new("ImageLabel")
-            depthShadow.Name = "TileShadow"
-            depthShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-            depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
-            depthShadow.Size = UDim2.new(1, 14, 1, 12)
-            depthShadow.BackgroundTransparency = 1
-            depthShadow.Image = "rbxassetid://8992230677"
-            depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-            depthShadow.ImageTransparency = 0.64
-            depthShadow.ScaleType = Enum.ScaleType.Slice
-            depthShadow.SliceCenter = Rect.new(99, 99, 99, 99)
-            depthShadow.ZIndex = 1
-            depthShadow.Parent = tileSlot
+            local depthShadow = nil
+            if not isMobile then
+                depthShadow = Instance.new("ImageLabel")
+                depthShadow.Name = "TileShadow"
+                depthShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+                depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
+                depthShadow.Size = UDim2.new(1, 14, 1, 12)
+                depthShadow.BackgroundTransparency = 1
+                depthShadow.Image = "rbxassetid://8992230677"
+                depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+                depthShadow.ImageTransparency = 0.64
+                depthShadow.ScaleType = Enum.ScaleType.Slice
+                depthShadow.SliceCenter = Rect.new(99, 99, 99, 99)
+                depthShadow.ZIndex = 1
+                depthShadow.Parent = tileSlot
+            end
             local depthBase = Instance.new("Frame")
             depthBase.Name = "DepthBase3D"
             depthBase.Size = UDim2.new(1, 0, 1, -5)
@@ -4928,9 +4951,11 @@ function LloydUI:CreateWindow(config)
                     bottomGlow.BackgroundTransparency = 0.72
                     depthBase.BackgroundColor3 = baseCol
                     depthBase.BackgroundTransparency = baseTr
-                    depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-                    depthShadow.ImageTransparency = 0.64
-                    depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
+                    if depthShadow then
+                        depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+                        depthShadow.ImageTransparency = 0.64
+                        depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
+                    end
                 else
                     Motion.Tween(btn, 0.18, { BackgroundColor3 = bg, BackgroundTransparency = tr, Position = UDim2.fromOffset(0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                     Motion.Tween(btnStroke, 0.18, { Color = brd, Transparency = brdTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
@@ -4942,7 +4967,9 @@ function LloydUI:CreateWindow(config)
                     Motion.Tween(orbScale, 0.20, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                     Motion.Tween(bottomGlow, 0.18, { BackgroundColor3 = orbTint, BackgroundTransparency = 0.72 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                     Motion.Tween(depthBase, 0.18, { BackgroundColor3 = baseCol, BackgroundTransparency = baseTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                    Motion.Tween(depthShadow, 0.18, { ImageColor3 = Color3.fromRGB(0, 0, 0), ImageTransparency = 0.64, Position = UDim2.new(0.5, 0, 0.5, 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    if depthShadow then
+                        Motion.Tween(depthShadow, 0.18, { ImageColor3 = Color3.fromRGB(0, 0, 0), ImageTransparency = 0.64, Position = UDim2.new(0.5, 0, 0.5, 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    end
                 end
             end
             applyTileRest(true)
@@ -4963,7 +4990,9 @@ function LloydUI:CreateWindow(config)
                 if not btn or not btn.Parent then return end
                 local restY = (isHovered and not isMobile) and -3 or 0
                 Motion.Tween(btn, 0.20, { Position = UDim2.fromOffset(0, restY) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
-                Motion.Tween(depthShadow, 0.18, { ImageTransparency = (isHovered and not isMobile) and 0.46 or 0.64, Position = UDim2.new(0.5, 0, 0.5, (isHovered and not isMobile) and 7 or 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                if depthShadow then
+                    Motion.Tween(depthShadow, 0.18, { ImageTransparency = (isHovered and not isMobile) and 0.46 or 0.64, Position = UDim2.new(0.5, 0, 0.5, (isHovered and not isMobile) and 7 or 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                end
             end
             if not isMobile then
                 btn.MouseEnter:Connect(function()
@@ -4980,7 +5009,9 @@ function LloydUI:CreateWindow(config)
                     Motion.Tween(orbScale, 0.20, { Scale = 1.14 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
                     Motion.Tween(bottomGlow, 0.16, { BackgroundColor3 = glowCol, BackgroundTransparency = 0.12 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                     Motion.Tween(depthBase, 0.16, { BackgroundColor3 = baseCol, BackgroundTransparency = baseTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                    Motion.Tween(depthShadow, 0.18, { ImageColor3 = (variant == "standard") and Color3.fromRGB(0, 0, 0) or glowCol, ImageTransparency = 0.46, Position = UDim2.new(0.5, 0, 0.5, 7) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    if depthShadow then
+                        Motion.Tween(depthShadow, 0.18, { ImageColor3 = (variant == "standard") and Color3.fromRGB(0, 0, 0) or glowCol, ImageTransparency = 0.46, Position = UDim2.new(0.5, 0, 0.5, 7) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    end
                     if not Motion.IsReduced() and sweepBar and sweepBar.Parent then
                         sweepBar.Visible = true
                         sweepBar.Position = UDim2.new(-0.50, 0, -0.7, 0)
@@ -5004,7 +5035,9 @@ function LloydUI:CreateWindow(config)
                     lastTapPos = input.Position
                     activePress = input
                     Motion.Tween(btn, 0.06, { Position = UDim2.fromOffset(0, 4) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-                    Motion.Tween(depthShadow, 0.06, { ImageTransparency = 0.86, Position = UDim2.new(0.5, 0, 0.5, 1) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    if depthShadow then
+                        Motion.Tween(depthShadow, 0.06, { ImageTransparency = 0.86, Position = UDim2.new(0.5, 0, 0.5, 1) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    end
                     Motion.Tween(orbScale, 0.06, { Scale = 0.90 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
                     if endPressConn then endPressConn:Disconnect() end
                     endPressConn = UserInputService.InputEnded:Connect(function(endInp)
@@ -8784,23 +8817,28 @@ function LloydUI:CreateNowPlayingWidget()
         end
         if updateConn then updateConn:Disconnect() end
         local lastEqUpdate = 0
+        local eqFrameParity = 0
         local lastElapsedSec = -1
         local lastTotalSec = -2
         local lastTimeTextReset = false
         local lastIdleBarsSet = false
         local lastSndPoll = 0
         local lastSndRef = nil
+        local eqStepRate = isMobile and 0.085 or 0.055
         updateConn = RunService.RenderStepped:Connect(function()
             local now = os.clock()
-            if not (lastSndRef and lastSndRef.Parent) or (now - lastSndPoll) >= 0.35 then
+            local showExpanded = (isDetached and DetachedContainer.Visible and ExpandedCard.Visible) or (not isDetached and LloydUI.IslandMode == "MusicExpanded")
+            local showCompact = (not isDetached and LloydUI.IslandMode == "MusicCompact")
+            if not showExpanded and not showCompact then return end
+            if not (lastSndRef and lastSndRef.Parent) or (now - lastSndPoll) >= 0.40 then
                 lastSndPoll = now
                 lastSndRef = getActiveCharSound()
             end
             local snd = lastSndRef
             local isActivelyPlaying = (snd and (snd.Playing or snd.IsPlaying)) or (currentState == STATE_PLAYING and isPlaying and not isPaused)
-            local showExpanded = (isDetached and DetachedContainer.Visible and ExpandedCard.Visible) or (not isDetached and LloydUI.IslandMode == "MusicExpanded")
-            if (now - lastEqUpdate) >= 0.032 then
+            if (now - lastEqUpdate) >= eqStepRate then
                 lastEqUpdate = now
+                eqFrameParity = 1 - eqFrameParity
                 if isActivelyPlaying then
                     lastIdleBarsSet = false
                     local beatPulse = 0.5 + 0.5 * math.sin(now * 5.2)
@@ -8809,37 +8847,41 @@ function LloydUI:CreateNowPlayingWidget()
                             local waveH = 3.5 + math.abs(math.sin(now * (7.5 + idx * 1.1) + idx * 0.95)) * 11
                             b.Size = UDim2.new(0, 2.4, 0, waveH)
                         end
-                        if LloydUI._CompactAlbumGlow and LloydUI._CompactAlbumGlow.Parent then
-                            LloydUI._CompactAlbumGlow.ImageTransparency = 0.48 + (1 - beatPulse) * 0.24
-                        end
-                        if LloydUI._CompactAlbumIcon and LloydUI._CompactAlbumIcon.Parent and not Motion.IsReduced() then
-                            LloydUI._CompactAlbumIcon.Rotation = math.sin(now * 3.2) * 5
+                        if not isMobile and not Motion.IsReduced() then
+                            if LloydUI._CompactAlbumGlow and LloydUI._CompactAlbumGlow.Parent then
+                                LloydUI._CompactAlbumGlow.ImageTransparency = 0.48 + (1 - beatPulse) * 0.24
+                            end
+                            if LloydUI._CompactAlbumIcon and LloydUI._CompactAlbumIcon.Parent then
+                                LloydUI._CompactAlbumIcon.Rotation = math.sin(now * 3.2) * 5
+                            end
                         end
                     else
                         for idx, wb in ipairs(expandedEqBars) do
-                            local baseH = waveProfile[idx] or 14
-                            local waveFactor = 0.45 + 0.55 * math.abs(math.sin(now * (5.5 + (idx % 6) * 0.8) + idx * 0.38))
-                            local harmonic = math.sin(now * 7.2 - idx * 0.6) * 3
-                            local waveH = math.clamp(baseH * waveFactor + harmonic, 3.5, 50)
-                            wb.Size = UDim2.new(0, 3.0, 0, waveH)
+                            if (not isMobile) or ((idx % 2) == eqFrameParity) then
+                                local baseH = waveProfile[idx] or 14
+                                local waveFactor = 0.45 + 0.55 * math.abs(math.sin(now * (5.5 + (idx % 6) * 0.8) + idx * 0.38))
+                                local harmonic = math.sin(now * 7.2 - idx * 0.6) * 3
+                                local waveH = math.clamp(baseH * waveFactor + harmonic, 3.5, 50)
+                                wb.Size = UDim2.new(0, 3.0, 0, waveH)
+                            end
                         end
-                        if not Motion.IsReduced() then
+                        if not isMobile and not Motion.IsReduced() then
                             if LloydUI._NPAuraA and LloydUI._NPAuraA.Parent then
-                                LloydUI._NPAuraA.Position = UDim2.new(0.20 + math.sin(now * 0.85) * 0.14, 0, 0.24 + math.cos(now * 0.65) * 0.10, 0)
-                                LloydUI._NPAuraA.ImageTransparency = 0.72 + (1 - beatPulse) * 0.12
+                                LloydUI._NPAuraA.Position = UDim2.new(0.20 + math.sin(now * 0.85) * 0.12, 0, 0.24 + math.cos(now * 0.65) * 0.09, 0)
+                                LloydUI._NPAuraA.ImageTransparency = 0.74 + (1 - beatPulse) * 0.10
                             end
                             if LloydUI._NPAuraB and LloydUI._NPAuraB.Parent then
-                                LloydUI._NPAuraB.Position = UDim2.new(0.82 + math.cos(now * 0.75) * 0.12, 0, 0.76 + math.sin(now * 0.95) * 0.10, 0)
-                                LloydUI._NPAuraB.ImageTransparency = 0.76 + beatPulse * 0.12
+                                LloydUI._NPAuraB.Position = UDim2.new(0.82 + math.cos(now * 0.75) * 0.11, 0, 0.76 + math.sin(now * 0.95) * 0.09, 0)
+                                LloydUI._NPAuraB.ImageTransparency = 0.78 + beatPulse * 0.10
                             end
                             if LloydUI._NPWaveGlow and LloydUI._NPWaveGlow.Parent then
-                                LloydUI._NPWaveGlow.ImageTransparency = 0.68 + (1 - beatPulse) * 0.18
+                                LloydUI._NPWaveGlow.ImageTransparency = 0.68 + (1 - beatPulse) * 0.16
                             end
                             if LloydUI._NPAlbumHalo and LloydUI._NPAlbumHalo.Parent then
-                                LloydUI._NPAlbumHalo.ImageTransparency = 0.44 + (1 - beatPulse) * 0.22
+                                LloydUI._NPAlbumHalo.ImageTransparency = 0.46 + (1 - beatPulse) * 0.20
                             end
                             if LloydUI._NPHeroHalo and LloydUI._NPHeroHalo.Parent then
-                                LloydUI._NPHeroHalo.ImageTransparency = 0.44 + (1 - beatPulse) * 0.24
+                                LloydUI._NPHeroHalo.ImageTransparency = 0.46 + (1 - beatPulse) * 0.22
                             end
                         end
                     end
@@ -30447,20 +30489,66 @@ animBox:AddToggle("tog_invert_slide", nil, AppState.InvertSlideDirection or fals
 end)
 local perfBox = Window_setting:CreateGroupBox("sec_setting_perf")
 local fpsOptions = {
-    { Value = 60, Label = "60 FPS (Default)" },
+    { Value = 0, Label = "∞ Unlimited (inf / Default)" },
+    { Value = 60, Label = "60 FPS (Standard)" },
     { Value = 120, Label = "120 FPS (Smooth)" },
     { Value = 144, Label = "144 FPS (High Hz)" },
     { Value = 240, Label = "240 FPS (Ultra)" },
-    { Value = 0, Label = "Unlimited (Max)" },
 }
-perfBox:AddDropdown("drop_fps_cap", fpsOptions, 60, function(v)
+local function applyRealFpsCap(targetVal, silent)
+    local v = tonumber(targetVal)
+    if v == nil then v = 0 end
     AppState.FpsCap = v
+    local applied = false
     pcall(function()
-        if setfpscap then
-            setfpscap(v == 0 and 999 or v)
-            LloydUI:Notify({ Title = AppState.LangMode == "en" and "FPS Cap" or "จำกัดเฟรมเรต", Content = (AppState.LangMode == "en" and "FPS Cap set to: " or "ตั้งค่าเฟรมเรตสูงสุด: ") .. (v == 0 and "Unlimited" or tostring(v)), Icon = Icons.Zap })
+        local genv = (getgenv and getgenv()) or _G
+        local fpsFn = setfpscap or set_fps_cap or (genv and (genv.setfpscap or genv.set_fps_cap))
+        local getFpsFn = getfpscap or get_fps_cap or (genv and (genv.getfpscap or genv.get_fps_cap))
+        if type(fpsFn) == "function" then
+            if v <= 0 then
+                local ok0 = pcall(fpsFn, 0)
+                applied = ok0
+                local curCap = nil
+                if type(getFpsFn) == "function" then
+                    local okG, res = pcall(getFpsFn)
+                    if okG and type(res) == "number" then curCap = res end
+                end
+                if (not ok0) or (curCap and curCap > 0 and curCap <= 65) then
+                    local okMax = pcall(fpsFn, 9999)
+                    if not okMax then okMax = pcall(fpsFn, 1000) end
+                    applied = applied or okMax
+                end
+            else
+                applied = pcall(fpsFn, v)
+            end
+        end
+        if v <= 0 then
+            pcall(function()
+                if settings then
+                    local rend = settings():FindFirstChild("Rendering") or settings().Rendering
+                    if rend and rend.FrameRateManager ~= nil then
+                        rend.FrameRateManager = Enum.FramerateManagerMode.Off
+                    end
+                end
+            end)
         end
     end)
+    if not silent then
+        local labelTxt = (v <= 0) and "∞ Unlimited (inf)" or (tostring(v) .. " FPS")
+        LloydUI:Notify({
+            Title = AppState.LangMode == "en" and "FPS Cap" or "จำกัดเฟรมเรต",
+            Content = (AppState.LangMode == "en" and "FPS Cap set to: " or "ตั้งค่าเฟรมเรตสูงสุด: ") .. labelTxt .. (applied and "" or " (Executor N/A)"),
+            Icon = Icons.Zap
+        })
+    end
+end
+local initialFpsCap = (AppState.FpsCap ~= nil) and AppState.FpsCap or 0
+perfBox:AddDropdown("drop_fps_cap", fpsOptions, initialFpsCap, function(v)
+    applyRealFpsCap(v, false)
+    SaveConfig()
+end)
+task.defer(function()
+    applyRealFpsCap(initialFpsCap, true)
 end)
 local lowGfxActive = false
 perfBox:AddToggle("tog_low_gfx", "desc_low_gfx", false, function(v)
