@@ -109,106 +109,106 @@ pcall(function()
 end)
 local ThemePalettes = {
     Dark = {
-        GlassBaseColor       = Color3.fromRGB(12, 14, 20),
-        GlassTransparency   = isMobile and 0.18 or 0.22,
-        GlassGradientTop    = Color3.fromRGB(255, 255, 255),
-        GlassGradientBot    = Color3.fromRGB(16, 20, 28),
-        GlassRimColor       = Color3.fromRGB(255, 255, 255),
-        GlassRimTrans       = 0.18,
-        FrostSubstrateColor = Color3.fromRGB(6, 8, 12),
-        FrostSubstrateTrans = 0.28,
-        CardBg              = Color3.fromRGB(22, 26, 36),
-        CardTrans           = isMobile and 0.26 or 0.30,
-        CardHover           = Color3.fromRGB(36, 42, 58),
-        CardBorder          = Color3.fromRGB(255, 255, 255),
-        CardBorderTrans     = 0.48,
-        HairlineColor       = Color3.fromRGB(255, 255, 255),
-        HairlineTrans       = 0.84,
-        SectionHeaderColor  = Color3.fromRGB(165, 178, 202),
-        DockBg              = Color3.fromRGB(6, 7, 10),
-        DockTrans           = 0.06,
-        DockBorder          = Color3.fromRGB(255, 255, 255),
-        DockBorderTrans     = 0.28,
-        ButtonBg            = Color3.fromRGB(30, 36, 50),
-        ButtonTrans         = 0.28,
-        ButtonHover         = Color3.fromRGB(46, 54, 74),
-        ButtonActive        = Color3.fromRGB(58, 68, 92),
-        ButtonBorder        = Color3.fromRGB(255, 255, 255),
-        ButtonBorderTrans   = 0.52,
-        ToggleOff           = Color3.fromRGB(44, 50, 64),
-        ToggleOffTrans      = 0.24,
-        ToggleOffBorder     = Color3.fromRGB(255, 255, 255),
-        ToggleOffBorderTrans= 0.65,
-        ToggleKnob          = Color3.fromRGB(255, 255, 255),
-        SliderTrack         = Color3.fromRGB(42, 48, 64),
-        SliderTrackTrans    = 0.24,
-        TextWhite           = Color3.fromRGB(255, 255, 255),
-        TextPrimary         = Color3.fromRGB(255, 255, 255),
-        TextSecondary       = Color3.fromRGB(200, 210, 228),
-        TextTertiary        = Color3.fromRGB(142, 154, 176),
-        TextMuted           = Color3.fromRGB(142, 154, 176),
-        TextOnAccent        = Color3.fromRGB(255, 255, 255),
-        IconPrimary         = Color3.fromRGB(255, 255, 255),
-        IconSecondary       = Color3.fromRGB(198, 210, 230),
-        EditorBg            = Color3.fromRGB(10, 12, 18),
-        EditorGutter        = Color3.fromRGB(8, 10, 15),
-        LineDivider         = Color3.fromRGB(255, 255, 255),
-        LineDividerTrans    = 0.86,
-        FloatingToolbar     = Color3.fromRGB(14, 18, 26),
-        ActiveLineBar       = Color3.fromRGB(28, 36, 52),
-        ShadowColor         = Color3.fromRGB(0, 0, 0),
-        ShadowTrans         = 0.40,
-    },
-    Light = {
-        GlassBaseColor       = Color3.fromRGB(238, 242, 248),
+        GlassBaseColor       = Color3.fromRGB(18, 18, 22),
         GlassTransparency   = isMobile and 0.14 or 0.18,
         GlassGradientTop    = Color3.fromRGB(255, 255, 255),
-        GlassGradientBot    = Color3.fromRGB(218, 224, 236),
+        GlassGradientBot    = Color3.fromRGB(22, 22, 28),
         GlassRimColor       = Color3.fromRGB(255, 255, 255),
-        GlassRimTrans       = 0.12,
-        FrostSubstrateColor = Color3.fromRGB(228, 233, 242),
+        GlassRimTrans       = 0.62,
+        FrostSubstrateColor = Color3.fromRGB(10, 10, 14),
         FrostSubstrateTrans = 0.22,
-        CardBg              = Color3.fromRGB(255, 255, 255),
+        CardBg              = Color3.fromRGB(28, 28, 32),
         CardTrans           = isMobile and 0.14 or 0.18,
-        CardHover           = Color3.fromRGB(230, 236, 246),
-        CardBorder          = Color3.fromRGB(150, 162, 182),
-        CardBorderTrans     = 0.32,
-        HairlineColor       = Color3.fromRGB(60, 64, 76),
-        HairlineTrans       = 0.82,
-        SectionHeaderColor  = Color3.fromRGB(78, 86, 104),
-        DockBg              = Color3.fromRGB(8, 9, 13),
-        DockTrans           = 0.05,
+        CardHover           = Color3.fromRGB(44, 44, 48),
+        CardBorder          = Color3.fromRGB(255, 255, 255),
+        CardBorderTrans     = 0.78,
+        HairlineColor       = Color3.fromRGB(255, 255, 255),
+        HairlineTrans       = 0.88,
+        SectionHeaderColor  = Color3.fromRGB(142, 142, 147),
+        DockBg              = Color3.fromRGB(0, 0, 0),
+        DockTrans           = 0.04,
         DockBorder          = Color3.fromRGB(255, 255, 255),
-        DockBorderTrans     = 0.30,
-        ButtonBg            = Color3.fromRGB(228, 234, 244),
-        ButtonTrans         = 0.18,
-        ButtonHover         = Color3.fromRGB(212, 220, 234),
-        ButtonActive        = Color3.fromRGB(196, 206, 224),
-        ButtonBorder        = Color3.fromRGB(145, 158, 178),
-        ButtonBorderTrans   = 0.35,
-        ToggleOff           = Color3.fromRGB(198, 206, 218),
-        ToggleOffTrans      = 0.15,
-        ToggleOffBorder     = Color3.fromRGB(150, 160, 178),
-        ToggleOffBorderTrans= 0.40,
+        DockBorderTrans     = 0.65,
+        ButtonBg            = Color3.fromRGB(44, 44, 48),
+        ButtonTrans         = 0.22,
+        ButtonHover         = Color3.fromRGB(58, 58, 64),
+        ButtonActive        = Color3.fromRGB(72, 72, 78),
+        ButtonBorder        = Color3.fromRGB(255, 255, 255),
+        ButtonBorderTrans   = 0.76,
+        ToggleOff           = Color3.fromRGB(57, 57, 61),
+        ToggleOffTrans      = 0.12,
+        ToggleOffBorder     = Color3.fromRGB(255, 255, 255),
+        ToggleOffBorderTrans= 0.82,
         ToggleKnob          = Color3.fromRGB(255, 255, 255),
-        SliderTrack         = Color3.fromRGB(192, 200, 214),
-        SliderTrackTrans    = 0.16,
-        TextWhite           = Color3.fromRGB(14, 16, 22),
-        TextPrimary         = Color3.fromRGB(14, 16, 22),
-        TextSecondary       = Color3.fromRGB(64, 72, 88),
-        TextTertiary        = Color3.fromRGB(102, 112, 130),
-        TextMuted           = Color3.fromRGB(102, 112, 130),
+        SliderTrack         = Color3.fromRGB(58, 58, 62),
+        SliderTrackTrans    = 0.18,
+        TextWhite           = Color3.fromRGB(255, 255, 255),
+        TextPrimary         = Color3.fromRGB(245, 245, 247),
+        TextSecondary       = Color3.fromRGB(174, 174, 178),
+        TextTertiary        = Color3.fromRGB(142, 142, 147),
+        TextMuted           = Color3.fromRGB(142, 142, 147),
         TextOnAccent        = Color3.fromRGB(255, 255, 255),
-        IconPrimary         = Color3.fromRGB(14, 16, 22),
-        IconSecondary       = Color3.fromRGB(68, 76, 94),
-        EditorBg            = Color3.fromRGB(246, 248, 252),
-        EditorGutter        = Color3.fromRGB(234, 238, 246),
-        LineDivider         = Color3.fromRGB(175, 186, 204),
-        LineDividerTrans    = 0.50,
-        FloatingToolbar     = Color3.fromRGB(238, 242, 250),
-        ActiveLineBar       = Color3.fromRGB(222, 230, 244),
-        ShadowColor         = Color3.fromRGB(35, 45, 65),
-        ShadowTrans         = 0.60,
+        IconPrimary         = Color3.fromRGB(245, 245, 247),
+        IconSecondary       = Color3.fromRGB(174, 174, 178),
+        EditorBg            = Color3.fromRGB(14, 14, 18),
+        EditorGutter        = Color3.fromRGB(10, 10, 14),
+        LineDivider         = Color3.fromRGB(255, 255, 255),
+        LineDividerTrans    = 0.88,
+        FloatingToolbar     = Color3.fromRGB(24, 24, 28),
+        ActiveLineBar       = Color3.fromRGB(38, 38, 44),
+        ShadowColor         = Color3.fromRGB(0, 0, 0),
+        ShadowTrans         = 0.38,
+    },
+    Light = {
+        GlassBaseColor       = Color3.fromRGB(242, 242, 247),
+        GlassTransparency   = isMobile and 0.10 or 0.14,
+        GlassGradientTop    = Color3.fromRGB(255, 255, 255),
+        GlassGradientBot    = Color3.fromRGB(235, 235, 242),
+        GlassRimColor       = Color3.fromRGB(255, 255, 255),
+        GlassRimTrans       = 0.25,
+        FrostSubstrateColor = Color3.fromRGB(236, 236, 242),
+        FrostSubstrateTrans = 0.16,
+        CardBg              = Color3.fromRGB(255, 255, 255),
+        CardTrans           = isMobile and 0.06 or 0.08,
+        CardHover           = Color3.fromRGB(235, 235, 240),
+        CardBorder          = Color3.fromRGB(180, 180, 190),
+        CardBorderTrans     = 0.68,
+        HairlineColor       = Color3.fromRGB(60, 60, 67),
+        HairlineTrans       = 0.86,
+        SectionHeaderColor  = Color3.fromRGB(109, 109, 114),
+        DockBg              = Color3.fromRGB(0, 0, 0),
+        DockTrans           = 0.04,
+        DockBorder          = Color3.fromRGB(255, 255, 255),
+        DockBorderTrans     = 0.62,
+        ButtonBg            = Color3.fromRGB(229, 229, 234),
+        ButtonTrans         = 0.12,
+        ButtonHover         = Color3.fromRGB(216, 216, 222),
+        ButtonActive        = Color3.fromRGB(200, 200, 208),
+        ButtonBorder        = Color3.fromRGB(185, 185, 195),
+        ButtonBorderTrans   = 0.62,
+        ToggleOff           = Color3.fromRGB(209, 209, 214),
+        ToggleOffTrans      = 0.08,
+        ToggleOffBorder     = Color3.fromRGB(180, 180, 190),
+        ToggleOffBorderTrans= 0.72,
+        ToggleKnob          = Color3.fromRGB(255, 255, 255),
+        SliderTrack         = Color3.fromRGB(209, 209, 214),
+        SliderTrackTrans    = 0.12,
+        TextWhite           = Color3.fromRGB(28, 28, 30),
+        TextPrimary         = Color3.fromRGB(28, 28, 30),
+        TextSecondary       = Color3.fromRGB(99, 99, 102),
+        TextTertiary        = Color3.fromRGB(142, 142, 147),
+        TextMuted           = Color3.fromRGB(142, 142, 147),
+        TextOnAccent        = Color3.fromRGB(255, 255, 255),
+        IconPrimary         = Color3.fromRGB(28, 28, 30),
+        IconSecondary       = Color3.fromRGB(99, 99, 102),
+        EditorBg            = Color3.fromRGB(250, 250, 252),
+        EditorGutter        = Color3.fromRGB(242, 242, 247),
+        LineDivider         = Color3.fromRGB(198, 198, 204),
+        LineDividerTrans    = 0.55,
+        FloatingToolbar     = Color3.fromRGB(245, 245, 250),
+        ActiveLineBar       = Color3.fromRGB(232, 232, 240),
+        ShadowColor         = Color3.fromRGB(20, 24, 38),
+        ShadowTrans         = 0.62,
     },
     Halloween = {
         GlassBaseColor       = Color3.fromRGB(15, 8, 22),
@@ -1533,39 +1533,76 @@ local function PlayChime(notifyType)
     end)
 end
 local Motion = {
-    ActiveTweens = {}
+    ActiveTweens = setmetatable({}, { __mode = "k" }),
+    _GuiService = game:GetService("GuiService"),
+    _TextService = game:GetService("TextService"),
 }
+function Motion.IsReduced()
+    if AppState.InstantOpen or AppState.ReduceMotion then return true end
+    local ok, rm = pcall(function() return Motion._GuiService.ReducedMotionEnabled end)
+    return ok and rm == true
+end
 function Motion.Tween(inst, dur, props, style, dir)
-    if not inst then return end
-    if AppState.InstantOpen or AppState.ReduceMotion then
+    if not inst or not inst.Parent then
+        return {
+            Completed = {
+                Connect = function(_, fn) if fn then task.defer(fn, Enum.PlaybackState.Cancelled) end end,
+                Once = function(_, fn) if fn then task.defer(fn, Enum.PlaybackState.Cancelled) end end,
+                Wait = function() return Enum.PlaybackState.Cancelled end
+            },
+            Cancel = function() end
+        }
+    end
+    if Motion.IsReduced() then
+        Motion.Cancel(inst)
         for k, v in pairs(props) do
             pcall(function() inst[k] = v end)
         end
-        return { Completed = { Connect = function(_, fn) task.defer(fn) end, Wait = function() end }, Cancel = function() end }
+        return {
+            Completed = {
+                Connect = function(_, fn) if fn then task.defer(fn, Enum.PlaybackState.Completed) end end,
+                Once = function(_, fn) if fn then task.defer(fn, Enum.PlaybackState.Completed) end end,
+                Wait = function() return Enum.PlaybackState.Completed end
+            },
+            Cancel = function() end
+        }
     end
-    if not Motion.ActiveTweens[inst] then
-        Motion.ActiveTweens[inst] = {}
-    end
-    for propName, oldTw in pairs(Motion.ActiveTweens[inst]) do
-        if props[propName] ~= nil then
+    local oldMap = Motion.ActiveTweens[inst]
+    if oldMap then
+        local toCancel = {}
+        for propName, oldTw in pairs(oldMap) do
+            if props[propName] ~= nil then
+                toCancel[propName] = oldTw
+                oldMap[propName] = nil
+            end
+        end
+        for _, oldTw in pairs(toCancel) do
             pcall(function() oldTw:Cancel() end)
-            Motion.ActiveTweens[inst][propName] = nil
         end
     end
     style = style or AppState.AnimationEasingStyle or Enum.EasingStyle.Quart
     dir = dir or Enum.EasingDirection.Out
     local speedMul = math.max(0.1, AppState.AnimationSpeedMultiplier or 1.0)
-    local scaledDur = (dur or 0.24) / speedMul
+    local scaledDur = math.max(0.01, (dur or 0.22) / speedMul)
     local tw = TweenService:Create(inst, TweenInfo.new(scaledDur, style, dir), props)
+    local activeMap = Motion.ActiveTweens[inst]
+    if not activeMap then
+        activeMap = {}
+        Motion.ActiveTweens[inst] = activeMap
+    end
     for propName in pairs(props) do
-        Motion.ActiveTweens[inst][propName] = tw
+        activeMap[propName] = tw
     end
     tw.Completed:Connect(function()
-        if Motion.ActiveTweens[inst] then
+        local map = Motion.ActiveTweens[inst]
+        if map then
             for propName in pairs(props) do
-                if Motion.ActiveTweens[inst][propName] == tw then
-                    Motion.ActiveTweens[inst][propName] = nil
+                if map[propName] == tw then
+                    map[propName] = nil
                 end
+            end
+            if next(map) == nil then
+                Motion.ActiveTweens[inst] = nil
             end
         end
     end)
@@ -1583,7 +1620,7 @@ function Motion.Cancel(inst)
 end
 function Motion.Press(btn, pressScale, baseScale)
     if not btn or not btn:IsA("GuiObject") then return end
-    pressScale = pressScale or 0.97
+    pressScale = pressScale or 0.96
     baseScale = baseScale or 1.0
     local scale = btn:FindFirstChildOfClass("UIScale")
     if not scale then
@@ -1592,42 +1629,70 @@ function Motion.Press(btn, pressScale, baseScale)
         scale.Parent = btn
     end
     local isPressed = false
+    local activeInput = nil
+    local releaseConn = nil
+    local function release()
+        if releaseConn then
+            releaseConn:Disconnect()
+            releaseConn = nil
+        end
+        activeInput = nil
+        if isPressed then
+            isPressed = false
+            if scale and scale.Parent then
+                Motion.Tween(scale, 0.14, { Scale = baseScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end
+        end
+    end
     btn.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
             isPressed = true
-            Motion.Tween(scale, 0.09, { Scale = pressScale }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+            activeInput = input
+            Motion.Tween(scale, 0.08, { Scale = pressScale }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+            if releaseConn then releaseConn:Disconnect() end
+            releaseConn = UserInputService.InputEnded:Connect(function(endInput)
+                if endInput == activeInput or (activeInput and activeInput.UserInputType == Enum.UserInputType.MouseButton1 and endInput.UserInputType == Enum.UserInputType.MouseButton1) then
+                    release()
+                end
+            end)
         end
     end)
-    local function release()
-        if isPressed then
-            isPressed = false
-            Motion.Tween(scale, 0.18, { Scale = baseScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
-        end
-    end
     btn.InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        if input == activeInput or (activeInput and activeInput.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseButton1) then
             release()
         end
     end)
-    btn.MouseLeave:Connect(release)
+    btn.MouseLeave:Connect(function()
+        if not isMobile then release() end
+    end)
 end
 function Motion.Hover(btn, hoverProps, normProps)
     if isMobile or not btn then return end
     btn.MouseEnter:Connect(function()
         local hp = type(hoverProps) == "function" and hoverProps() or hoverProps
-        Motion.Tween(btn, 0.15, hp, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        Motion.Tween(btn, 0.14, hp, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     end)
     btn.MouseLeave:Connect(function()
         local np = type(normProps) == "function" and normProps() or normProps
-        Motion.Tween(btn, 0.15, np, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        Motion.Tween(btn, 0.14, np, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     end)
 end
-function Motion.Ripple(container, clickPos)
-    if AppState.ReduceMotion or not container then return end
+function Motion.Ripple(container, clickPos, isScreenSpace)
+    if Motion.IsReduced() or not container or not container.Parent then return end
     pcall(function()
+        if not container.ClipsDescendants then
+            container.ClipsDescendants = true
+        end
         local absPos = container.AbsolutePosition
+        local insetY = 0
+        if isScreenSpace then
+            local ok, topLeft = pcall(function() return Motion._GuiService:GetGuiInset() end)
+            if ok and topLeft then insetY = topLeft.Y end
+        end
         local relX = clickPos and (clickPos.X - absPos.X) or (container.AbsoluteSize.X / 2)
-        local relY = clickPos and (clickPos.Y - absPos.Y) or (container.AbsoluteSize.Y / 2)
+        local relY = clickPos and ((clickPos.Y - insetY) - absPos.Y) or (container.AbsoluteSize.Y / 2)
+        relX = math.clamp(relX, 0, math.max(1, container.AbsoluteSize.X))
+        relY = math.clamp(relY, 0, math.max(1, container.AbsoluteSize.Y))
         local rip = Instance.new("Frame")
         rip.Name = "MotionRipple"
         rip.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1641,24 +1706,71 @@ function Motion.Ripple(container, clickPos)
         local rc = Instance.new("UICorner")
         rc.CornerRadius = UDim.new(1, 0)
         rc.Parent = rip
-        local maxDim = math.max(container.AbsoluteSize.X, container.AbsoluteSize.Y) * 1.6
-        local tw = Motion.Tween(rip, 0.32, {
+        local maxDim = math.max(container.AbsoluteSize.X, container.AbsoluteSize.Y) * 1.65
+        local tw = Motion.Tween(rip, 0.30, {
             Size = UDim2.fromOffset(maxDim, maxDim),
             BackgroundTransparency = 1.0
-        }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
         tw.Completed:Connect(function()
-            rip:Destroy()
+            if rip and rip.Parent then rip:Destroy() end
         end)
     end)
 end
+function Motion.Burst(container, clickPos, sparkColor, isScreenSpace)
+    if Motion.IsReduced() or not container or not container.Parent then return end
+    pcall(function()
+        local absPos = container.AbsolutePosition
+        local insetY = 0
+        if isScreenSpace then
+            local ok, topLeft = pcall(function() return Motion._GuiService:GetGuiInset() end)
+            if ok and topLeft then insetY = topLeft.Y end
+        end
+        local relX = clickPos and (clickPos.X - absPos.X) or (container.AbsoluteSize.X / 2)
+        local relY = clickPos and ((clickPos.Y - insetY) - absPos.Y) or (container.AbsoluteSize.Y / 2)
+        relX = math.clamp(relX, 4, math.max(5, container.AbsoluteSize.X - 4))
+        relY = math.clamp(relY, 4, math.max(5, container.AbsoluteSize.Y - 4))
+        local baseCol = sparkColor or Color3.fromRGB(120, 210, 255)
+        local count = 7
+        for i = 1, count do
+            local angle = ((i - 1) / count) * math.pi * 2 + (math.random() - 0.5) * 0.45
+            local dist = math.random(22, 46)
+            local sz = (i % 2 == 0) and 5 or 4
+            local sp = Instance.new("Frame")
+            sp.Name = "MotionSpark3D"
+            sp.AnchorPoint = Vector2.new(0.5, 0.5)
+            sp.Position = UDim2.fromOffset(relX, relY)
+            sp.Size = UDim2.fromOffset(sz, sz)
+            sp.Rotation = (i % 2 == 0) and 45 or 0
+            sp.BackgroundColor3 = (i % 3 == 0) and Color3.fromRGB(255, 255, 255) or baseCol
+            sp.BackgroundTransparency = 0.05
+            sp.BorderSizePixel = 0
+            sp.ZIndex = (container.ZIndex or 3) + 7
+            sp.Parent = container
+            local sc = Instance.new("UICorner")
+            sc.CornerRadius = UDim.new((i % 2 == 0) and 0 or 1, (i % 2 == 0) and 1 or 0)
+            sc.Parent = sp
+            local tx = relX + math.cos(angle) * dist
+            local ty = relY + math.sin(angle) * (dist * 0.72)
+            local tw = Motion.Tween(sp, 0.34 + (i % 3) * 0.04, {
+                Position = UDim2.fromOffset(tx, ty),
+                Size = UDim2.fromOffset(1, 1),
+                Rotation = sp.Rotation + (i % 2 == 0 and 95 or -85),
+                BackgroundTransparency = 1.0
+            }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            tw.Completed:Connect(function()
+                if sp and sp.Parent then sp:Destroy() end
+            end)
+        end
+    end)
+end
 function Motion.StaggerIn(items, delayPerItem, animFn)
-    if AppState.ReduceMotion or AppState.InstantOpen then
+    if Motion.IsReduced() then
         for idx, item in ipairs(items) do
             if animFn then animFn(item, idx) end
         end
         return
     end
-    delayPerItem = delayPerItem or 0.02
+    delayPerItem = delayPerItem or 0.018
     for idx, item in ipairs(items) do
         task.delay((idx - 1) * delayPerItem, function()
             if animFn then animFn(item, idx) end
@@ -1666,10 +1778,10 @@ function Motion.StaggerIn(items, delayPerItem, animFn)
     end
 end
 function Motion.Pop(inst, startScale, targetScale)
-    if not inst then return end
+    if not inst or not inst.Parent then return end
     targetScale = targetScale or 1.0
-    startScale = startScale or 0.6
-    if AppState.ReduceMotion or AppState.InstantOpen then
+    startScale = startScale or 0.86
+    if Motion.IsReduced() then
         local sc = inst:FindFirstChildOfClass("UIScale")
         if sc then sc.Scale = targetScale end
         return
@@ -1680,18 +1792,21 @@ function Motion.Pop(inst, startScale, targetScale)
         sc.Parent = inst
     end
     sc.Scale = startScale
-    Motion.Tween(sc, 0.22, { Scale = targetScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+    Motion.Tween(sc, 0.18, { Scale = targetScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 end
 function Motion.CrossFadeText(label, newText)
-    if not label or not label:IsA("TextLabel") then return end
-    if AppState.ReduceMotion or AppState.InstantOpen then
+    if not label or not label.Parent or not label:IsA("TextLabel") then return end
+    if label.Text == newText then return end
+    if Motion.IsReduced() then
         label.Text = newText
+        label.TextTransparency = 0
         return
     end
-    local tw = Motion.Tween(label, 0.09, { TextTransparency = 0.55 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-    tw.Completed:Connect(function()
+    local tw = Motion.Tween(label, 0.07, { TextTransparency = 0.55 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    tw.Completed:Connect(function(state)
+        if state ~= Enum.PlaybackState.Completed or not label or not label.Parent then return end
         label.Text = newText
-        Motion.Tween(label, 0.12, { TextTransparency = 0 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        Motion.Tween(label, 0.12, { TextTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     end)
 end
 if Lighting:FindFirstChild("LloydUI_GlassBlur") then
@@ -1720,8 +1835,11 @@ if not okParent then
 end
 local function ClampToScreen(targetPos, targetSize)
     local vp = Camera and Camera.ViewportSize or Vector2.new(1920, 1080)
-    local halfW = (targetSize.X.Offset > 0 and targetSize.X.Offset or 560) / 2
-    local halfH = (targetSize.Y.Offset > 0 and targetSize.Y.Offset or 460) / 2
+    local uiScale = AppState.GlobalUIScale or 1.0
+    local rawW = (targetSize.X.Scale * vp.X) + (targetSize.X.Offset > 0 and targetSize.X.Offset or 560)
+    local rawH = (targetSize.Y.Scale * vp.Y) + (targetSize.Y.Offset > 0 and targetSize.Y.Offset or 460)
+    local halfW = math.min((rawW * uiScale) / 2, (vp.X / 2) - 8)
+    local halfH = math.min((rawH * uiScale) / 2, (vp.Y / 2) - 24)
     local minX = halfW + 10
     local maxX = vp.X - halfW - 10
     local minY = halfH + 45
@@ -1826,6 +1944,7 @@ local function MakeResizable(handle, target, minW, minH, maxW, maxH, onResize)
             local newW = math.clamp(startSize.X + delta.X, minW, maxW)
             local newH = math.clamp(startSize.Y + delta.Y, minH, maxH)
             target.Size = UDim2.fromOffset(newW, newH)
+            target.Position = ClampToScreen(target.Position, target.Size)
             if onResize then
                 onResize(target.Size)
             end
@@ -1834,7 +1953,7 @@ local function MakeResizable(handle, target, minW, minH, maxW, maxH, onResize)
 end
 local Tooltip = Instance.new("Frame")
 Tooltip.Name = "GlassTooltip"
-Tooltip.Size = UDim2.fromOffset(80, 26)
+Tooltip.Size = UDim2.fromOffset(80, 28)
 Tooltip.BackgroundColor3 = Color3.fromRGB(12, 14, 20)
 Tooltip.BackgroundTransparency = 1
 Tooltip.BorderSizePixel = 0
@@ -1842,50 +1961,103 @@ Tooltip.Visible = false
 Tooltip.ZIndex = 9999
 Tooltip.Parent = ScreenGui
 local ttCorner = Instance.new("UICorner")
-ttCorner.CornerRadius = UDim.new(0, 8)
+ttCorner.CornerRadius = UDim.new(0, 10)
 ttCorner.Parent = Tooltip
 local ttStroke = Instance.new("UIStroke")
-ttStroke.Color = Theme.CardBorder
+ttStroke.Color = Theme.AccentCyan
 ttStroke.Transparency = 1
-ttStroke.Thickness = 0
+ttStroke.Thickness = 1.1
 ttStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 ttStroke.Parent = Tooltip
+local ttScale = Instance.new("UIScale")
+ttScale.Scale = 0.92
+ttScale.Parent = Tooltip
+do
+    local ttShadow = Instance.new("ImageLabel")
+    ttShadow.Name = "TooltipShadow3D"
+    ttShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+    ttShadow.Position = UDim2.new(0.5, 0, 0.5, 4)
+    ttShadow.Size = UDim2.new(1, 20, 1, 18)
+    ttShadow.BackgroundTransparency = 1
+    ttShadow.Image = "rbxassetid://8992230677"
+    ttShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    ttShadow.ImageTransparency = 0.52
+    ttShadow.ScaleType = Enum.ScaleType.Slice
+    ttShadow.SliceCenter = Rect.new(99, 99, 99, 99)
+    ttShadow.ZIndex = 9998
+    ttShadow.Parent = Tooltip
+    local ttDome = Instance.new("Frame")
+    ttDome.Name = "TooltipDome3D"
+    ttDome.Size = UDim2.new(1, -4, 0.45, 0)
+    ttDome.Position = UDim2.fromOffset(2, 1)
+    ttDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ttDome.BackgroundTransparency = 0.90
+    ttDome.BorderSizePixel = 0
+    ttDome.ZIndex = 10000
+    ttDome.Parent = Tooltip
+    Instance.new("UICorner", ttDome).CornerRadius = UDim.new(0, 8)
+    local ttDomeGrad = Instance.new("UIGradient")
+    ttDomeGrad.Rotation = 90
+    ttDomeGrad.Transparency = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 0.10),
+        NumberSequenceKeypoint.new(1, 1.0)
+    })
+    ttDomeGrad.Parent = ttDome
+end
 local ttLabel = Instance.new("TextLabel")
-ttLabel.Size = UDim2.new(1, -16, 1, 0)
-ttLabel.Position = UDim2.new(0, 8, 0, 0)
+ttLabel.Size = UDim2.new(1, -18, 1, 0)
+ttLabel.Position = UDim2.new(0, 9, 0, 0)
 ttLabel.BackgroundTransparency = 1
 ttLabel.Font = FontBold
 ttLabel.Text = ""
-ttLabel.TextSize = 11
+ttLabel.TextSize = 11.5
 ttLabel.TextColor3 = Color3.fromRGB(245, 248, 255)
 ttLabel.TextTransparency = 1
+ttLabel.ZIndex = 10001
 ttLabel.Parent = Tooltip
 local tooltipHideThread = nil
 local function ShowTooltip(targetInst, text)
-    if not AppState.TooltipsEnabled or isMobile then return end
-    if tooltipHideThread then task.cancel(tooltipHideThread) end
+    if not AppState.TooltipsEnabled or isMobile or not targetInst or not targetInst.Parent then return end
+    if tooltipHideThread then task.cancel(tooltipHideThread); tooltipHideThread = nil end
+    text = tostring(text or "")
     ttLabel.Text = text
-    local textWidth = ttLabel.TextBounds.X + 22
-    local width = math.max(textWidth, 60)
-    Tooltip.Size = UDim2.fromOffset(width, 26)
+    local measuredW = ttLabel.TextBounds.X
+    pcall(function()
+        local sz = Motion._TextService:GetTextSize(text, ttLabel.TextSize, ttLabel.Font, Vector2.new(420, 28))
+        if sz and sz.X > 0 then measuredW = sz.X end
+    end)
+    local width = math.max(measuredW + 24, 64)
+    Tooltip.Size = UDim2.fromOffset(width, 28)
     local vp = Camera and Camera.ViewportSize or Vector2.new(1920, 1080)
     local pos = targetInst.AbsolutePosition
     local size = targetInst.AbsoluteSize
     local targetX = math.clamp(pos.X + (size.X / 2) - (width / 2), 8, math.max(8, vp.X - width - 8))
-    local targetY = math.clamp(pos.Y + size.Y + 8, 8, math.max(8, vp.Y - 34))
-    Tooltip.Position = UDim2.fromOffset(targetX, targetY - 3)
+    local targetY = pos.Y + size.Y + 9
+    if targetY + 32 > vp.Y then
+        targetY = math.max(8, pos.Y - 36)
+    end
+    Tooltip.Position = UDim2.fromOffset(targetX, targetY - 5)
+    ttStroke.Color = Theme.AccentCyan
+    ttScale.Scale = 0.90
     Tooltip.Visible = true
-    Tween(Tooltip, 0.16, {Position = UDim2.fromOffset(targetX, targetY), BackgroundTransparency = Theme.GlassTransparency})
-    Tween(ttLabel, 0.16, {TextTransparency = 0})
+    Tween(Tooltip, 0.16, { Position = UDim2.fromOffset(targetX, targetY), BackgroundTransparency = math.max(0.08, (Theme.GlassTransparency or 0.14)) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+    Tween(ttScale, 0.16, { Scale = 1.0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+    Tween(ttStroke, 0.14, { Transparency = 0.36 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+    Tween(ttLabel, 0.14, { TextTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 end
 local function HideTooltip()
-    if tooltipHideThread then task.cancel(tooltipHideThread) end
+    if tooltipHideThread then task.cancel(tooltipHideThread); tooltipHideThread = nil end
+    if not Tooltip.Visible then return end
     tooltipHideThread = task.spawn(function()
-        local tw = Tween(Tooltip, 0.12, {BackgroundTransparency = 1})
-        Tween(ttStroke, 0.12, {Transparency = 1})
-        Tween(ttLabel, 0.12, {TextTransparency = 1})
-        tw.Completed:Wait()
-        Tooltip.Visible = false
+        local tw = Tween(Tooltip, 0.11, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(ttScale, 0.11, { Scale = 0.94 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(ttStroke, 0.11, { Transparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(ttLabel, 0.11, { TextTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        local state = tw.Completed:Wait()
+        if state == Enum.PlaybackState.Completed or state == nil then
+            Tooltip.Visible = false
+        end
+        tooltipHideThread = nil
     end)
 end
 local NotifyHost = Instance.new("Frame")
@@ -1935,6 +2107,35 @@ local LloydUI = {
 }
 _G.LloydUI = LloydUI
 pcall(function() if getgenv then getgenv().LloydUI = LloydUI end end)
+do
+    if _G.LloydViewportConn then
+        pcall(function() _G.LloydViewportConn:Disconnect() end)
+        _G.LloydViewportConn = nil
+    end
+    local function reclampAllWindows()
+        for _, win in ipairs(LloydUI.OpenWindows) do
+            if win and win.MainFrame and win.MainFrame.Parent then
+                win.MainFrame.Position = ClampToScreen(win.MainFrame.Position, win.MainFrame.Size)
+            end
+        end
+        if LloydUI.LastWindowPosition and LloydUI.CurrentActiveWin and LloydUI.CurrentActiveWin.MainFrame then
+            LloydUI.LastWindowPosition = LloydUI.CurrentActiveWin.MainFrame.Position
+        end
+    end
+    local function hookViewport(cam)
+        if _G.LloydViewportConn then
+            pcall(function() _G.LloydViewportConn:Disconnect() end)
+            _G.LloydViewportConn = nil
+        end
+        if cam then
+            _G.LloydViewportConn = cam:GetPropertyChangedSignal("ViewportSize"):Connect(reclampAllWindows)
+        end
+    end
+    hookViewport(Camera)
+    workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+        hookViewport(workspace.CurrentCamera)
+    end)
+end
 function LloydUI:RegisterRotatingStroke(grad)
     if grad and typeof(grad) == "Instance" then
         table.insert(self.RotatingBorderGradients, grad)
@@ -2013,8 +2214,13 @@ function LloydUI:RegisterBorderStroke(stroke)
     if not stroke:GetAttribute("LloydOriginalColor") then
         stroke:SetAttribute("LloydOriginalColor", stroke.Color)
     end
-    for _, s in ipairs(self.RegisteredBorderStrokes) do
-        if s == stroke then return end
+    for i = #self.RegisteredBorderStrokes, 1, -1 do
+        local s = self.RegisteredBorderStrokes[i]
+        if not s or not s.Parent then
+            table.remove(self.RegisteredBorderStrokes, i)
+        elseif s == stroke then
+            return
+        end
     end
     table.insert(self.RegisteredBorderStrokes, stroke)
 end
@@ -2038,7 +2244,6 @@ function LloydUI:BindAccent(inst, prop, role)
     end
     pcall(function() inst[prop] = color end)
     table.insert(self.AccentBoundElements, { Object = inst, Property = prop, Role = role })
-    table.insert(self.AccentListeners, { Inst = inst, Prop = prop })
 end
 function LloydUI:RegisterAccent(inst, propertyName)
     self:BindAccent(inst, propertyName or "BackgroundColor3", "Primary")
@@ -2187,8 +2392,10 @@ function LloydUI:RegisterText(inst, key, formatFn, baseSize)
 end
 LloydUI.LangCallbacks = {}
 function LloydUI:UpdateAllTexts()
+    local aliveListeners = {}
     for _, item in ipairs(self.TextListeners) do
         if item.Inst and item.Inst.Parent then
+            table.insert(aliveListeners, item)
             pcall(function()
                 local str = T(item.Key)
                 if item.Format then str = item.Format(str) end
@@ -2204,12 +2411,16 @@ function LloydUI:UpdateAllTexts()
             end)
         end
     end
+    self.TextListeners = aliveListeners
     local langLabel = AppState.LangMode == "en" and "EN" or "TH"
+    local aliveLangBtns = {}
     for _, btn in ipairs(self.HeaderLangBtns) do
         if btn and btn.Parent then
+            table.insert(aliveLangBtns, btn)
             btn.Text = langLabel
         end
     end
+    self.HeaderLangBtns = aliveLangBtns
     for _, cb in ipairs(self.LangCallbacks) do
         pcall(cb, AppState.LangMode)
     end
@@ -2249,7 +2460,8 @@ function LloydUI:ApplyTheme(skipAnim)
     self.BoundElements = activeBound
     for _, win in ipairs(self.OpenWindows) do
         if win.GlassFrame and win.GlassFrame.Parent then
-            if isSkip then
+            local winSkip = isSkip or not win.IsOpen
+            if winSkip then
                 win.GlassFrame.BackgroundColor3 = Theme.GlassBaseColor
                 if win.IsOpen then win.GlassFrame.BackgroundTransparency = Theme.GlassTransparency end
                 if win.MainStroke then
@@ -2258,31 +2470,31 @@ function LloydUI:ApplyTheme(skipAnim)
                 end
                 if win.FrostSubstrate then
                     win.FrostSubstrate.BackgroundColor3 = Theme.FrostSubstrateColor
-                    win.FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans
+                    if win.IsOpen then win.FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans end
                 end
                 if win.DeepShadow then
                     win.DeepShadow.ImageColor3 = Theme.ShadowColor
-                    win.DeepShadow.ImageTransparency = Theme.ShadowTrans
+                    if win.IsOpen then win.DeepShadow.ImageTransparency = Theme.ShadowTrans end
                 end
             else
-                Tween(win.GlassFrame, 0.22, {
+                Tween(win.GlassFrame, 0.20, {
                     BackgroundColor3 = Theme.GlassBaseColor,
-                    BackgroundTransparency = win.IsOpen and Theme.GlassTransparency or 1
+                    BackgroundTransparency = Theme.GlassTransparency
                 })
                 if win.MainStroke then
-                    Tween(win.MainStroke, 0.22, {
+                    Tween(win.MainStroke, 0.20, {
                         Color = Theme.GlassRimColor,
                         Transparency = Theme.GlassRimTrans
                     })
                 end
                 if win.FrostSubstrate then
-                    Tween(win.FrostSubstrate, 0.22, {
+                    Tween(win.FrostSubstrate, 0.20, {
                         BackgroundColor3 = Theme.FrostSubstrateColor,
                         BackgroundTransparency = Theme.FrostSubstrateTrans
                     })
                 end
                 if win.DeepShadow then
-                    Tween(win.DeepShadow, 0.22, {
+                    Tween(win.DeepShadow, 0.20, {
                         ImageColor3 = Theme.ShadowColor,
                         ImageTransparency = Theme.ShadowTrans
                     })
@@ -2664,65 +2876,95 @@ function LloydUI:Notify(cfg)
     end
     PlayChime(nType)
     local vpWidth = Camera and Camera.ViewportSize.X or 1920
-    local bannerW = math.min(340, vpWidth * 0.90)
+    local bannerW = math.min(348, vpWidth * 0.90)
     local banner = Instance.new("Frame")
     banner.Name = "NotifyCard"
-    banner.Size = UDim2.new(0, bannerW, 0, 56)
+    banner.Size = UDim2.new(0, bannerW, 0, 60)
     banner.AnchorPoint = Vector2.new(0.5, 0)
-    banner.Position = UDim2.new(0.5, 0, 0, -34)
+    banner.Position = UDim2.new(0.5, 0, 0, -36)
     banner.BackgroundColor3 = Theme.GlassBaseColor
     banner.BackgroundTransparency = 1
     banner.BorderSizePixel = 0
     banner.ClipsDescendants = true
     banner.ZIndex = 4550
     banner.Parent = NotifyHost
-    LloydUI:Bind(banner, "BackgroundColor3", "GlassBaseColor")
     local bCorner = Instance.new("UICorner")
-    bCorner.CornerRadius = UDim.new(0, 16)
+    bCorner.CornerRadius = UDim.new(0, 18)
     bCorner.Parent = banner
     local bStroke = Instance.new("UIStroke")
     bStroke.Color = Theme.CardBorder
-    bStroke.Transparency = 0.32
-    bStroke.Thickness = 1.2
+    bStroke.Transparency = Theme.CardBorderTrans or 0.30
+    bStroke.Thickness = 1.25
     bStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     bStroke.Parent = banner
-    LloydUI:Bind(bStroke, "Color", "CardBorder")
-    LloydUI:Bind(bStroke, "Transparency", "CardBorderTrans")
-    CreateRotatingStrokeGradient(bStroke, true)
-    table.insert(LloydUI.RegisteredBorderStrokes, bStroke)
-    local bLip = Instance.new("Frame")
-    bLip.Name = "NotifyLip"
-    bLip.Size = UDim2.new(1, -28, 0, 1)
-    bLip.Position = UDim2.new(0, 14, 0, 1)
-    bLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bLip.BackgroundTransparency = 0.62
-    bLip.BorderSizePixel = 0
-    bLip.ZIndex = 4552
-    bLip.Parent = banner
-    local bLipGrad = Instance.new("UIGradient")
-    bLipGrad.Transparency = NumberSequence.new({
-        NumberSequenceKeypoint.new(0, 1.0),
-        NumberSequenceKeypoint.new(0.5, 0.30),
-        NumberSequenceKeypoint.new(1, 1.0)
-    })
-    bLipGrad.Parent = bLip
+    do
+        local bStrokeGrad = Instance.new("UIGradient")
+        bStrokeGrad.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(220, 228, 244)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+        })
+        bStrokeGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.0),
+            NumberSequenceKeypoint.new(0.25, 0.20),
+            NumberSequenceKeypoint.new(0.50, 0.36),
+            NumberSequenceKeypoint.new(0.75, 0.20),
+            NumberSequenceKeypoint.new(1, 0.0),
+        })
+        bStrokeGrad.Rotation = 45
+        bStrokeGrad.Parent = bStroke
+        local bDome = Instance.new("Frame")
+        bDome.Name = "NotifyDome3D"
+        bDome.Size = UDim2.new(1, -4, 0.46, 0)
+        bDome.Position = UDim2.fromOffset(2, 1)
+        bDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        bDome.BackgroundTransparency = 0.92
+        bDome.BorderSizePixel = 0
+        bDome.ZIndex = 4551
+        bDome.Parent = banner
+        Instance.new("UICorner", bDome).CornerRadius = UDim.new(0, 16)
+        local bdGrad = Instance.new("UIGradient")
+        bdGrad.Rotation = 90
+        bdGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.08),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        bdGrad.Parent = bDome
+        local bLip = Instance.new("Frame")
+        bLip.Name = "NotifyLip"
+        bLip.Size = UDim2.new(1, -28, 0, 1)
+        bLip.Position = UDim2.new(0, 14, 0, 1)
+        bLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        bLip.BackgroundTransparency = 0.44
+        bLip.BorderSizePixel = 0
+        bLip.ZIndex = 4552
+        bLip.Parent = banner
+        local bLipGrad = Instance.new("UIGradient")
+        bLipGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1.0),
+            NumberSequenceKeypoint.new(0.5, 0.14),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        bLipGrad.Parent = bLip
+    end
     local bScale = Instance.new("UIScale")
-    bScale.Scale = 0.92
+    bScale.Scale = 0.90
     bScale.Parent = banner
     local iconTile = Instance.new("Frame")
     iconTile.Name = "IconTile"
-    iconTile.Size = UDim2.fromOffset(34, 34)
-    iconTile.AnchorPoint = Vector2.new(0, 0.5)
-    iconTile.Position = UDim2.new(0, 11, 0.5, -1)
+    iconTile.AnchorPoint = Vector2.new(0.5, 0.5)
+    iconTile.Size = UDim2.fromOffset(36, 36)
+    iconTile.Position = UDim2.new(0, 30, 0.5, -1)
     iconTile.BorderSizePixel = 0
+    iconTile.ZIndex = 4554
     iconTile.Parent = banner
     local itCorner = Instance.new("UICorner")
-    itCorner.CornerRadius = UDim.new(0, 10)
+    itCorner.CornerRadius = UDim.new(0, 11)
     itCorner.Parent = iconTile
     local itStroke = Instance.new("UIStroke")
     itStroke.Color = Color3.fromRGB(255, 255, 255)
-    itStroke.Transparency = 0.68
-    itStroke.Thickness = 0.9
+    itStroke.Transparency = 0.56
+    itStroke.Thickness = 1.0
     itStroke.Parent = iconTile
     local itGrad = Instance.new("UIGradient")
     itGrad.Rotation = 45
@@ -2751,50 +2993,101 @@ function LloydUI:Notify(cfg)
         accentColorForBar = Theme.WarningAmber
     else
         itGrad.Color = ColorSequence.new({
-            ColorSequenceKeypoint.new(0, Color3.fromRGB(64, 72, 92)),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(30, 34, 46))
+            ColorSequenceKeypoint.new(0, Theme.AccentCyan or Color3.fromRGB(64, 128, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(36, 52, 92))
         })
         glyphIconId = cfg.Icon or Icons.Play
         accentColorForBar = Theme.AccentCyan
     end
     itGrad.Parent = iconTile
+    bStroke.Color = accentColorForBar
+    do
+        local nGlow = Instance.new("ImageLabel")
+        nGlow.Name = "NotifyAmbientGlow3D"
+        nGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        nGlow.Position = UDim2.new(0, 30, 0.5, 0)
+        nGlow.Size = UDim2.fromOffset(118, 118)
+        nGlow.BackgroundTransparency = 1
+        nGlow.Image = "rbxassetid://8992230677"
+        nGlow.ImageColor3 = accentColorForBar
+        nGlow.ImageTransparency = 0.78
+        nGlow.ZIndex = 4551
+        nGlow.Parent = banner
+        local itBase = Instance.new("Frame")
+        itBase.Name = "IconDepthBase3D"
+        itBase.AnchorPoint = Vector2.new(0.5, 0.5)
+        itBase.Size = UDim2.fromOffset(36, 36)
+        itBase.Position = UDim2.new(0, 30, 0.5, 2)
+        itBase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        itBase.BackgroundTransparency = 0.52
+        itBase.BorderSizePixel = 0
+        itBase.ZIndex = 4553
+        itBase.Parent = banner
+        Instance.new("UICorner", itBase).CornerRadius = UDim.new(0, 11)
+        if not Motion.IsReduced() then
+            iconTile.Rotation = -16
+            Motion.Tween(iconTile, 0.34, { Rotation = 0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            Motion.Pop(iconTile, 0.70, 1.0)
+            local nSweep = Instance.new("Frame")
+            nSweep.Name = "NotifySpecularSweep"
+            nSweep.Size = UDim2.new(0.32, 0, 2.4, 0)
+            nSweep.Position = UDim2.new(-0.45, 0, -0.7, 0)
+            nSweep.Rotation = 22
+            nSweep.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            nSweep.BackgroundTransparency = 0.84
+            nSweep.BorderSizePixel = 0
+            nSweep.ZIndex = 4556
+            nSweep.Parent = banner
+            local nswGrad = Instance.new("UIGradient")
+            nswGrad.Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 1.0),
+                NumberSequenceKeypoint.new(0.5, 0.24),
+                NumberSequenceKeypoint.new(1, 1.0)
+            })
+            nswGrad.Parent = nSweep
+            Motion.Tween(nSweep, 0.52, { Position = UDim2.new(1.30, 0, -0.7, 0) }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out).Completed:Connect(function()
+                if nSweep and nSweep.Parent then nSweep:Destroy() end
+            end)
+        end
+    end
     local glyph = Instance.new("ImageLabel")
-    glyph.Size = UDim2.fromOffset(16, 16)
+    glyph.Size = UDim2.fromOffset(17, 17)
     glyph.AnchorPoint = Vector2.new(0.5, 0.5)
     glyph.Position = UDim2.new(0.5, 0, 0.5, 0)
     glyph.BackgroundTransparency = 1
     glyph.Image = glyphIconId
     glyph.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    glyph.ZIndex = 4555
     glyph.Parent = iconTile
     local nowLbl = Instance.new("TextLabel")
     nowLbl.Name = "NowLbl"
     nowLbl.Size = UDim2.fromOffset(58, 14)
-    nowLbl.Position = UDim2.new(1, -68, 0, 9)
+    nowLbl.Position = UDim2.new(1, -68, 0, 10)
     nowLbl.BackgroundTransparency = 1
     nowLbl.Font = FontNormal
     nowLbl.Text = (AppState.LangMode == "th" and "เมื่อสักครู่" or "now")
     nowLbl.TextSize = 10.5
     nowLbl.TextColor3 = Theme.TextMuted
     nowLbl.TextXAlignment = Enum.TextXAlignment.Right
+    nowLbl.ZIndex = 4555
     nowLbl.Parent = banner
-    LloydUI:Bind(nowLbl, "TextColor3", "TextMuted")
     local titleLbl = Instance.new("TextLabel")
     titleLbl.Name = "TitleLbl"
-    titleLbl.Size = UDim2.new(1, -124, 0, 17)
-    titleLbl.Position = UDim2.new(0, 54, 0, 8)
+    titleLbl.Size = UDim2.new(1, -128, 0, 18)
+    titleLbl.Position = UDim2.new(0, 58, 0, 9)
     titleLbl.BackgroundTransparency = 1
     titleLbl.Font = FontBold
     titleLbl.Text = title
-    titleLbl.TextSize = 13
+    titleLbl.TextSize = 13.5
     titleLbl.TextColor3 = Theme.TextPrimary
     titleLbl.TextXAlignment = Enum.TextXAlignment.Left
     titleLbl.TextTruncate = Enum.TextTruncate.AtEnd
+    titleLbl.ZIndex = 4555
     titleLbl.Parent = banner
-    LloydUI:Bind(titleLbl, "TextColor3", "TextPrimary")
     local bodyLbl = Instance.new("TextLabel")
     bodyLbl.Name = "BodyLbl"
-    bodyLbl.Size = UDim2.new(1, -66, 0, 16)
-    bodyLbl.Position = UDim2.new(0, 54, 0, 27)
+    bodyLbl.Size = UDim2.new(1, -70, 0, 16)
+    bodyLbl.Position = UDim2.new(0, 58, 0, 29)
     bodyLbl.BackgroundTransparency = 1
     bodyLbl.Font = FontNormal
     bodyLbl.Text = content
@@ -2803,25 +3096,40 @@ function LloydUI:Notify(cfg)
     bodyLbl.TextXAlignment = Enum.TextXAlignment.Left
     bodyLbl.TextTruncate = Enum.TextTruncate.AtEnd
     bodyLbl.TextWrapped = false
+    bodyLbl.ZIndex = 4555
     bodyLbl.Parent = banner
-    LloydUI:Bind(bodyLbl, "TextColor3", "TextSecondary")
     local progTrack = Instance.new("Frame")
     progTrack.Name = "ProgressTrack"
-    progTrack.Size = UDim2.new(1, -28, 0, 2)
-    progTrack.Position = UDim2.new(0, 14, 1, -3)
+    progTrack.Size = UDim2.new(1, -28, 0, 2.5)
+    progTrack.Position = UDim2.new(0, 14, 1, -4)
     progTrack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     progTrack.BackgroundTransparency = 0.88
     progTrack.BorderSizePixel = 0
+    progTrack.ZIndex = 4555
     progTrack.Parent = banner
     Instance.new("UICorner", progTrack).CornerRadius = UDim.new(1, 0)
     local progFill = Instance.new("Frame")
     progFill.Name = "ProgressFill"
     progFill.Size = UDim2.new(1, 0, 1, 0)
     progFill.BackgroundColor3 = accentColorForBar
-    progFill.BackgroundTransparency = 0.15
+    progFill.BackgroundTransparency = 0.08
     progFill.BorderSizePixel = 0
+    progFill.ZIndex = 4556
     progFill.Parent = progTrack
     Instance.new("UICorner", progFill).CornerRadius = UDim.new(1, 0)
+    do
+        local headGlow = Instance.new("Frame")
+        headGlow.Name = "ProgHeadGlow"
+        headGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        headGlow.Position = UDim2.new(1, 0, 0.5, 0)
+        headGlow.Size = UDim2.fromOffset(6, 6)
+        headGlow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        headGlow.BackgroundTransparency = 0.15
+        headGlow.BorderSizePixel = 0
+        headGlow.ZIndex = 4557
+        headGlow.Parent = progFill
+        Instance.new("UICorner", headGlow).CornerRadius = UDim.new(1, 0)
+    end
     local notifData = {
         Frame = banner,
         Scale = bScale,
@@ -2836,27 +3144,45 @@ function LloydUI:Notify(cfg)
     banner.MouseEnter:Connect(function() notifData.IsPaused = true end)
     banner.MouseLeave:Connect(function() if not notifData.IsDragging then notifData.IsPaused = false end end)
     local dragStartY = nil
+    local activeDragInput = nil
+    local connMove, connEnd = nil, nil
+    local function cleanupNotifDrag()
+        if connMove then connMove:Disconnect(); connMove = nil end
+        if connEnd then connEnd:Disconnect(); connEnd = nil end
+        activeDragInput = nil
+        notifData.IsDragging = false
+        notifData.IsPaused = false
+    end
+    banner.Destroying:Connect(cleanupNotifDrag)
     banner.InputBegan:Connect(function(input)
+        if notifData.IsDismissed or notifData.IsDragging then return end
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
             dragStartY = input.Position.Y
+            activeDragInput = input
             notifData.IsDragging = true
             notifData.IsPaused = true
-            local connMove, connEnd
             connMove = UserInputService.InputChanged:Connect(function(moveInput)
-                if notifData.IsDragging and (moveInput.UserInputType == Enum.UserInputType.MouseMovement or moveInput.UserInputType == Enum.UserInputType.Touch) then
+                if notifData.IsDismissed or not notifData.IsDragging then
+                    cleanupNotifDrag()
+                    return
+                end
+                local isSameTouch = (moveInput == activeDragInput)
+                local isMouseMove = (activeDragInput and activeDragInput.UserInputType == Enum.UserInputType.MouseButton1 and moveInput.UserInputType == Enum.UserInputType.MouseMovement)
+                if isSameTouch or isMouseMove then
                     local dy = moveInput.Position.Y - dragStartY
                     if dy < 0 then
                         banner.Position = UDim2.new(0.5, 0, 0, dy)
+                    else
+                        local damped = (dy * 18 * 0.55) / (18 + 0.55 * dy)
+                        banner.Position = UDim2.new(0.5, 0, 0, damped)
                     end
                 end
             end)
             connEnd = UserInputService.InputEnded:Connect(function(endInput)
-                if endInput.UserInputType == Enum.UserInputType.MouseButton1 or endInput.UserInputType == Enum.UserInputType.Touch then
-                    notifData.IsDragging = false
-                    notifData.IsPaused = false
-                    if connMove then connMove:Disconnect() end
-                    if connEnd then connEnd:Disconnect() end
+                local isSame = (endInput == activeDragInput) or (activeDragInput and activeDragInput.UserInputType == Enum.UserInputType.MouseButton1 and endInput.UserInputType == Enum.UserInputType.MouseButton1)
+                if isSame then
                     local dy = endInput.Position.Y - dragStartY
+                    cleanupNotifDrag()
                     if dy < -14 then
                         DismissNotification(notifData)
                     else
@@ -2866,24 +3192,28 @@ function LloydUI:Notify(cfg)
             end)
         end
     end)
-    task.spawn(function()
+    do
         local totalDur = math.max(0.5, duration)
         local timeLeft = totalDur
-        while timeLeft > 0 do
-            task.wait(0.05)
-            if notifData.IsDismissed then break end
+        local progConn
+        progConn = RunService.Heartbeat:Connect(function(dt)
+            if notifData.IsDismissed or not banner or not banner.Parent then
+                if progConn then progConn:Disconnect(); progConn = nil end
+                return
+            end
             if not notifData.IsPaused and not notifData.IsDragging then
-                timeLeft = timeLeft - 0.05
+                timeLeft = timeLeft - dt
                 if progFill and progFill.Parent then
                     local ratio = math.clamp(timeLeft / totalDur, 0, 1)
-                    Tween(progFill, 0.05, { Size = UDim2.new(ratio, 0, 1, 0) }, Enum.EasingStyle.Linear)
+                    progFill.Size = UDim2.new(ratio, 0, 1, 0)
+                end
+                if timeLeft <= 0 then
+                    if progConn then progConn:Disconnect(); progConn = nil end
+                    DismissNotification(notifData)
                 end
             end
-        end
-        if not notifData.IsDismissed then
-            DismissNotification(notifData)
-        end
-    end)
+        end)
+    end
 end
 function LloydUI:CreateWindow(config)
     config = config or {}
@@ -2958,7 +3288,7 @@ function LloydUI:CreateWindow(config)
     FrostSubstrate.ZIndex = 2
     FrostSubstrate.Parent = RootFrame
     local FrostCorner = Instance.new("UICorner")
-    FrostCorner.CornerRadius = UDim.new(0, isMobile and 17 or 21)
+    FrostCorner.CornerRadius = UDim.new(0, isMobile and 21 or 24)
     FrostCorner.Parent = FrostSubstrate
     local GlassFrame = Instance.new("Frame")
     GlassFrame.Name = "GlassFrame"
@@ -2975,37 +3305,147 @@ function LloydUI:CreateWindow(config)
         ColorSequenceKeypoint.new(1, Theme.GlassGradientBot)
     })
     GlassGrad.Transparency = NumberSequence.new({
-        NumberSequenceKeypoint.new(0, 0.04),
-        NumberSequenceKeypoint.new(0.45, 0.18),
-        NumberSequenceKeypoint.new(1, 0.32)
+        NumberSequenceKeypoint.new(0, 0.06),
+        NumberSequenceKeypoint.new(0.45, 0.16),
+        NumberSequenceKeypoint.new(1, 0.28)
     })
     GlassGrad.Rotation = 65
     GlassGrad.Parent = GlassFrame
     local MainCorner = Instance.new("UICorner")
-    MainCorner.CornerRadius = UDim.new(0, isMobile and 18 or 22)
+    MainCorner.CornerRadius = UDim.new(0, isMobile and 22 or 25)
     MainCorner.Parent = GlassFrame
+    local AmbientLayer = Instance.new("Frame")
+    AmbientLayer.Name = "Ambient3DLayer"
+    AmbientLayer.Size = UDim2.new(1, 0, 1, 0)
+    AmbientLayer.BackgroundTransparency = 1
+    AmbientLayer.BorderSizePixel = 0
+    AmbientLayer.ClipsDescendants = true
+    AmbientLayer.ZIndex = 3
+    AmbientLayer.Parent = GlassFrame
+    Instance.new("UICorner", AmbientLayer).CornerRadius = UDim.new(0, isMobile and 22 or 25)
+    local AuroraOrbA = Instance.new("ImageLabel")
+    AuroraOrbA.Name = "AuroraOrbA"
+    AuroraOrbA.AnchorPoint = Vector2.new(0.5, 0.5)
+    AuroraOrbA.Position = UDim2.new(0.22, 0, 0.18, 0)
+    AuroraOrbA.Size = UDim2.fromOffset(isMobile and 240 or 310, isMobile and 240 or 310)
+    AuroraOrbA.BackgroundTransparency = 1
+    AuroraOrbA.Image = "rbxassetid://8992230677"
+    AuroraOrbA.ImageColor3 = Theme.AccentCyan
+    AuroraOrbA.ImageTransparency = 0.84
+    AuroraOrbA.ZIndex = 3
+    AuroraOrbA.Parent = AmbientLayer
+    LloydUI:RegisterAccent(AuroraOrbA, "ImageColor3")
+    local AuroraOrbB = Instance.new("ImageLabel")
+    AuroraOrbB.Name = "AuroraOrbB"
+    AuroraOrbB.AnchorPoint = Vector2.new(0.5, 0.5)
+    AuroraOrbB.Position = UDim2.new(0.80, 0, 0.82, 0)
+    AuroraOrbB.Size = UDim2.fromOffset(isMobile and 220 or 290, isMobile and 220 or 290)
+    AuroraOrbB.BackgroundTransparency = 1
+    AuroraOrbB.Image = "rbxassetid://8992230677"
+    AuroraOrbB.ImageColor3 = Color3.fromRGB(130, 92, 255)
+    AuroraOrbB.ImageTransparency = 0.87
+    AuroraOrbB.ZIndex = 3
+    AuroraOrbB.Parent = AmbientLayer
+    local CursorGlow = Instance.new("ImageLabel")
+    CursorGlow.Name = "CursorSpotlight3D"
+    CursorGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+    CursorGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+    CursorGlow.Size = UDim2.fromOffset(210, 210)
+    CursorGlow.BackgroundTransparency = 1
+    CursorGlow.Image = "rbxassetid://8992230677"
+    CursorGlow.ImageColor3 = Theme.AccentCyan
+    CursorGlow.ImageTransparency = 1
+    CursorGlow.Visible = false
+    CursorGlow.ZIndex = 3
+    CursorGlow.Parent = AmbientLayer
+    LloydUI:RegisterAccent(CursorGlow, "ImageColor3")
+    Window._AuroraOrbA = AuroraOrbA
+    Window._AuroraOrbB = AuroraOrbB
+    Window._CursorGlow = CursorGlow
+    Window._MouseNX = 0
+    Window._MouseNY = 0
+    Window._AuroraPhase = math.random() * 6.28
+    if not isMobile then
+        GlassFrame.InputChanged:Connect(function(inp)
+            if Motion.IsReduced() or not Window.IsOpen then return end
+            if inp.UserInputType == Enum.UserInputType.MouseMovement then
+                local absPos = GlassFrame.AbsolutePosition
+                local absSize = GlassFrame.AbsoluteSize
+                if absSize.X > 10 and absSize.Y > 10 then
+                    local rx = inp.Position.X - absPos.X
+                    local ry = inp.Position.Y - absPos.Y
+                    local nx = math.clamp((rx / absSize.X) * 2 - 1, -1, 1)
+                    local ny = math.clamp((ry / absSize.Y) * 2 - 1, -1, 1)
+                    Window._MouseNX = nx
+                    Window._MouseNY = ny
+                    DeepShadow.Position = UDim2.new(0.5, math.round(-nx * 9), 0.5, 6 + math.round(-ny * 6))
+                    GlassGrad.Rotation = 65 + (nx * 20) + (ny * 8)
+                    CursorGlow.Visible = true
+                    CursorGlow.Position = UDim2.fromOffset(rx, ry)
+                    if CursorGlow.ImageTransparency > 0.90 then
+                        Tween(CursorGlow, 0.16, { ImageTransparency = 0.87 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    end
+                end
+            end
+        end)
+        GlassFrame.MouseLeave:Connect(function()
+            Window._MouseNX = 0
+            Window._MouseNY = 0
+            if not Window.IsOpen then return end
+            Tween(DeepShadow, 0.28, { Position = UDim2.new(0.5, 0, 0.5, 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(GlassGrad, 0.28, { Rotation = 65 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(CursorGlow, 0.24, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        end)
+    end
+    LloydUI._AuroraWindows = LloydUI._AuroraWindows or {}
+    table.insert(LloydUI._AuroraWindows, Window)
+    if not LloydUI._AuroraLoopStarted then
+        LloydUI._AuroraLoopStarted = true
+        local lastStep = 0
+        RunService.RenderStepped:Connect(function()
+            if Motion.IsReduced() then return end
+            local now = os.clock()
+            if (now - lastStep) < 0.033 then return end
+            lastStep = now
+            for _, w in ipairs(LloydUI._AuroraWindows) do
+                if w.IsOpen and w._AuroraOrbA and w._AuroraOrbA.Parent then
+                    local t = now * 0.55 + (w._AuroraPhase or 0)
+                    local mx = (w._MouseNX or 0) * 0.09
+                    local my = (w._MouseNY or 0) * 0.07
+                    w._AuroraOrbA.Position = UDim2.new(0.24 + math.sin(t) * 0.14 + mx, 0, 0.20 + math.cos(t * 0.78) * 0.12 + my, 0)
+                    if w._AuroraOrbB and w._AuroraOrbB.Parent then
+                        w._AuroraOrbB.Position = UDim2.new(0.78 + math.cos(t * 0.72) * 0.13 - mx * 1.2, 0, 0.80 + math.sin(t * 0.92) * 0.11 - my * 1.2, 0)
+                    end
+                    if w._HeaderBeam and w._HeaderBeam.Parent then
+                        local bx = ((now * 0.36 + (w._AuroraPhase or 0) * 0.1) % 1.45) - 0.22
+                        w._HeaderBeam.Position = UDim2.new(bx, 0, 0, 0)
+                    end
+                end
+            end
+        end)
+    end
     local MainStroke = Instance.new("UIStroke")
     MainStroke.Color = Theme.GlassRimColor
     MainStroke.Transparency = Theme.GlassRimTrans
-    MainStroke.Thickness = 1.6
+    MainStroke.Thickness = 1.15
     MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     MainStroke.Parent = GlassFrame
     local StrokeGrad = CreateRotatingStrokeGradient(MainStroke, false)
     local TopRefractionLip = Instance.new("Frame")
     TopRefractionLip.Name = "TopRefractionLip"
-    TopRefractionLip.Size = UDim2.new(1, -32, 0, 1.4)
-    TopRefractionLip.Position = UDim2.new(0, 16, 0, 1)
+    TopRefractionLip.Size = UDim2.new(1, -36, 0, 1)
+    TopRefractionLip.Position = UDim2.new(0, 18, 0, 1)
     TopRefractionLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TopRefractionLip.BackgroundTransparency = 0.38
+    TopRefractionLip.BackgroundTransparency = 0.42
     TopRefractionLip.BorderSizePixel = 0
     TopRefractionLip.ZIndex = 4
     TopRefractionLip.Parent = GlassFrame
     local LipGrad = Instance.new("UIGradient")
     LipGrad.Transparency = NumberSequence.new({
         NumberSequenceKeypoint.new(0, 1.0),
-        NumberSequenceKeypoint.new(0.22, 0.25),
-        NumberSequenceKeypoint.new(0.5, 0.08),
-        NumberSequenceKeypoint.new(0.78, 0.25),
+        NumberSequenceKeypoint.new(0.22, 0.20),
+        NumberSequenceKeypoint.new(0.5, 0.04),
+        NumberSequenceKeypoint.new(0.78, 0.20),
         NumberSequenceKeypoint.new(1, 1.0)
     })
     LipGrad.Parent = TopRefractionLip
@@ -3014,14 +3454,14 @@ function LloydUI:CreateWindow(config)
     BottomRefractionLip.Size = UDim2.new(1, -44, 0, 1)
     BottomRefractionLip.Position = UDim2.new(0, 22, 1, -2)
     BottomRefractionLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    BottomRefractionLip.BackgroundTransparency = 0.62
+    BottomRefractionLip.BackgroundTransparency = 0.56
     BottomRefractionLip.BorderSizePixel = 0
     BottomRefractionLip.ZIndex = 4
     BottomRefractionLip.Parent = GlassFrame
     local BotLipGrad = Instance.new("UIGradient")
     BotLipGrad.Transparency = NumberSequence.new({
         NumberSequenceKeypoint.new(0, 1.0),
-        NumberSequenceKeypoint.new(0.5, 0.45),
+        NumberSequenceKeypoint.new(0.5, 0.38),
         NumberSequenceKeypoint.new(1, 1.0)
     })
     BotLipGrad.Parent = BottomRefractionLip
@@ -3037,7 +3477,7 @@ function LloydUI:CreateWindow(config)
     HalloweenWatermark.ScaleType = Enum.ScaleType.Fit
     HalloweenWatermark.ZIndex = 3
     HalloweenWatermark.Visible = (Theme.ThemeMode == "Halloween")
-    HalloweenWatermark.Parent = GlassFrame
+    HalloweenWatermark.Parent = AmbientLayer
     local PumpkinCornerGrad = Instance.new("UIGradient")
     PumpkinCornerGrad.Transparency = NumberSequence.new({
         NumberSequenceKeypoint.new(0, 0.38),
@@ -3047,10 +3487,23 @@ function LloydUI:CreateWindow(config)
     PumpkinCornerGrad.Parent = HalloweenWatermark
     local HeaderBar = Instance.new("Frame")
     HeaderBar.Name = "HeaderBar"
-    HeaderBar.Size = UDim2.new(1, 0, 0, 60)
+    HeaderBar.Size = UDim2.new(1, 0, 0, 62)
     HeaderBar.BackgroundTransparency = 1
     HeaderBar.ZIndex = 4
     HeaderBar.Parent = GlassFrame
+    do
+        local grabber = Instance.new("Frame")
+        grabber.Name = "iOSGrabberPill"
+        grabber.AnchorPoint = Vector2.new(0.5, 0)
+        grabber.Position = UDim2.new(0.5, 0, 0, 5)
+        grabber.Size = UDim2.fromOffset(36, 4)
+        grabber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        grabber.BackgroundTransparency = 0.74
+        grabber.BorderSizePixel = 0
+        grabber.ZIndex = 6
+        grabber.Parent = HeaderBar
+        Instance.new("UICorner", grabber).CornerRadius = UDim.new(1, 0)
+    end
     MakeDraggable(HeaderBar, RootFrame, function(finalPos)
         AppState.WindowPositions[TitleKey] = finalPos
         if not isIndependent then
@@ -3059,37 +3512,107 @@ function LloydUI:CreateWindow(config)
     end)
     local BrandBadge = Instance.new("Frame")
     BrandBadge.Name = "BrandBadge"
-    BrandBadge.Size = UDim2.fromOffset(34, 34)
-    BrandBadge.Position = UDim2.new(0, 16, 0.5, -17)
-    BrandBadge.BackgroundColor3 = Theme.CardBg
-    BrandBadge.BackgroundTransparency = Theme.CardTrans
+    BrandBadge.AnchorPoint = Vector2.new(0.5, 0.5)
+    BrandBadge.Size = UDim2.fromOffset(38, 38)
+    BrandBadge.Position = UDim2.new(0, 34, 0.5, 0)
+    BrandBadge.BackgroundColor3 = Theme.AccentCyan
+    BrandBadge.BackgroundTransparency = 0.78
     BrandBadge.BorderSizePixel = 0
-    BrandBadge.ZIndex = 4
+    BrandBadge.ZIndex = 5
     BrandBadge.Parent = HeaderBar
-    LloydUI:Bind(BrandBadge, "BackgroundColor3", "CardBg")
-    LloydUI:Bind(BrandBadge, "BackgroundTransparency", "CardTrans")
+    LloydUI:RegisterAccent(BrandBadge, "BackgroundColor3")
+    do
+        local brandGlow = Instance.new("ImageLabel")
+        brandGlow.Name = "BrandGlow3D"
+        brandGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        brandGlow.Position = UDim2.new(0, 34, 0.5, 1)
+        brandGlow.Size = UDim2.fromOffset(62, 62)
+        brandGlow.BackgroundTransparency = 1
+        brandGlow.Image = "rbxassetid://8992230677"
+        brandGlow.ImageColor3 = Theme.AccentCyan
+        brandGlow.ImageTransparency = 0.70
+        brandGlow.ZIndex = 3
+        brandGlow.Parent = HeaderBar
+        LloydUI:RegisterAccent(brandGlow, "ImageColor3")
+        local brandBase = Instance.new("Frame")
+        brandBase.Name = "BrandDepthBase3D"
+        brandBase.AnchorPoint = Vector2.new(0.5, 0.5)
+        brandBase.Size = UDim2.fromOffset(38, 38)
+        brandBase.Position = UDim2.new(0, 34, 0.5, 3)
+        brandBase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        brandBase.BackgroundTransparency = 0.48
+        brandBase.BorderSizePixel = 0
+        brandBase.ZIndex = 4
+        brandBase.Parent = HeaderBar
+        Instance.new("UICorner", brandBase).CornerRadius = UDim.new(0, 12)
+        local bbSheen = Instance.new("Frame")
+        bbSheen.Name = "BrandDomeSheen"
+        bbSheen.Size = UDim2.new(1, -4, 0.45, 0)
+        bbSheen.Position = UDim2.fromOffset(2, 1)
+        bbSheen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        bbSheen.BackgroundTransparency = 0.80
+        bbSheen.BorderSizePixel = 0
+        bbSheen.ZIndex = 5
+        bbSheen.Parent = BrandBadge
+        Instance.new("UICorner", bbSheen).CornerRadius = UDim.new(0, 9)
+        local shGrad = Instance.new("UIGradient")
+        shGrad.Rotation = 90
+        shGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.10),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        shGrad.Parent = bbSheen
+        local bbScale = Instance.new("UIScale")
+        bbScale.Scale = 1.0
+        bbScale.Parent = BrandBadge
+        Window._BrandBadge = BrandBadge
+        Window._BrandScale = bbScale
+        Window._BrandGlow = brandGlow
+        if not isMobile then
+            BrandBadge.MouseEnter:Connect(function()
+                if Motion.IsReduced() then return end
+                Tween(BrandBadge, 0.18, { Rotation = 10, Position = UDim2.new(0, 34, 0.5, -2) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                Tween(bbScale, 0.18, { Scale = 1.09 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                Tween(brandGlow, 0.18, { ImageTransparency = 0.48, Size = UDim2.fromOffset(72, 72) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+            BrandBadge.MouseLeave:Connect(function()
+                Tween(BrandBadge, 0.22, { Rotation = 0, Position = UDim2.new(0, 34, 0.5, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(bbScale, 0.22, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(brandGlow, 0.22, { ImageTransparency = 0.70, Size = UDim2.fromOffset(62, 62) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+        end
+    end
+    local bbGrad = Instance.new("UIGradient")
+    bbGrad.Rotation = 135
+    bbGrad.Transparency = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 0.0),
+        NumberSequenceKeypoint.new(1, 0.40)
+    })
+    bbGrad.Parent = BrandBadge
     local bbCorner = Instance.new("UICorner")
-    bbCorner.CornerRadius = UDim.new(0, 11)
+    bbCorner.CornerRadius = UDim.new(0, 12)
     bbCorner.Parent = BrandBadge
     local bbStroke = Instance.new("UIStroke")
-    bbStroke.Thickness = 1
+    bbStroke.Thickness = 1.15
+    bbStroke.Color = Theme.AccentCyan
+    bbStroke.Transparency = 0.42
     bbStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     bbStroke.Parent = BrandBadge
-    LloydUI:Bind(bbStroke, "Color", "CardBorder")
-    LloydUI:Bind(bbStroke, "Transparency", "CardBorderTrans")
+    LloydUI:RegisterAccent(bbStroke, "Color")
     CreateRotatingStrokeGradient(bbStroke, true)
     local BrandIcon = Instance.new("ImageLabel")
-    BrandIcon.Size = UDim2.fromOffset(18, 18)
-    BrandIcon.Position = UDim2.new(0.5, -9, 0.5, -9)
+    BrandIcon.Size = UDim2.fromOffset(19, 19)
+    BrandIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+    BrandIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
     BrandIcon.BackgroundTransparency = 1
     BrandIcon.Image = config.Icon or Icons.Zap
     BrandIcon.ImageColor3 = Theme.AccentCyan
-    BrandIcon.ZIndex = 5
+    BrandIcon.ZIndex = 6
     BrandIcon.Parent = BrandBadge
     LloydUI:RegisterAccent(BrandIcon, "ImageColor3")
     local TitleLbl = Instance.new("TextLabel")
-    TitleLbl.Size = UDim2.new(1, -180, 0, 22)
-    TitleLbl.Position = UDim2.new(0, 58, 0, 11)
+    TitleLbl.Size = UDim2.new(1, -184, 0, 22)
+    TitleLbl.Position = UDim2.new(0, 60, 0, 13)
     TitleLbl.BackgroundTransparency = 1
     TitleLbl.Font = FontBold
     TitleLbl.Text = T(TitleKey, TitleKey)
@@ -3102,8 +3625,8 @@ function LloydUI:CreateWindow(config)
     LloydUI:Bind(TitleLbl, "TextColor3", "TextPrimary")
     LloydUI:RegisterText(TitleLbl, TitleKey)
     local SubLbl = Instance.new("TextLabel")
-    SubLbl.Size = UDim2.new(1, -180, 0, 16)
-    SubLbl.Position = UDim2.new(0, 58, 0, 33)
+    SubLbl.Size = UDim2.new(1, -184, 0, 16)
+    SubLbl.Position = UDim2.new(0, 60, 0, 35)
     SubLbl.BackgroundTransparency = 1
     SubLbl.Font = FontRegular
     SubLbl.Text = T(SubKey, SubKey)
@@ -3116,8 +3639,8 @@ function LloydUI:CreateWindow(config)
     LloydUI:Bind(SubLbl, "TextColor3", "TextSecondary")
     if SubKey ~= "" then LloydUI:RegisterText(SubLbl, SubKey) end
     local LangBtn = Instance.new("TextButton")
-    LangBtn.Size = UDim2.fromOffset(isMobile and 48 or 54, 28)
-    LangBtn.Position = UDim2.new(1, isMobile and -100 or -106, 0.5, -14)
+    LangBtn.Size = UDim2.fromOffset(isMobile and 46 or 50, 30)
+    LangBtn.Position = UDim2.new(1, isMobile and -100 or -104, 0.5, -15)
     LangBtn.BackgroundColor3 = Theme.ButtonBg
     LangBtn.BackgroundTransparency = Theme.ButtonTrans
     LangBtn.Text = AppState.LangMode == "en" and "EN" or "TH"
@@ -3157,8 +3680,8 @@ function LloydUI:CreateWindow(config)
         end
     end)
     local CloseBtn = Instance.new("TextButton")
-    CloseBtn.Size = UDim2.fromOffset(28, 28)
-    CloseBtn.Position = UDim2.new(1, -44, 0.5, -14)
+    CloseBtn.Size = UDim2.fromOffset(30, 30)
+    CloseBtn.Position = UDim2.new(1, -46, 0.5, -15)
     CloseBtn.BackgroundColor3 = Theme.ButtonBg
     CloseBtn.BackgroundTransparency = Theme.ButtonTrans
     CloseBtn.Text = ""
@@ -3189,14 +3712,16 @@ function LloydUI:CreateWindow(config)
     CloseIcon.Parent = CloseBtn
     LloydUI:Bind(CloseIcon, "ImageColor3", "TextSecondary")
     CloseBtn.MouseEnter:Connect(function()
-        Tween(CloseBtn, 0.15, {BackgroundColor3 = Theme.DangerRed, BackgroundTransparency = 0.15})
-        Tween(ClStroke, 0.15, {Color = Theme.DangerRed, Transparency = 0.25})
-        Tween(CloseIcon, 0.15, {ImageColor3 = Color3.fromRGB(255, 255, 255)})
+        if isMobile then return end
+        Tween(CloseBtn, 0.14, {BackgroundColor3 = Theme.DangerRed, BackgroundTransparency = 0.15}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(ClStroke, 0.14, {Color = Theme.DangerRed, Transparency = 0.25}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(CloseIcon, 0.14, {ImageColor3 = Color3.fromRGB(255, 255, 255)}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     end)
     CloseBtn.MouseLeave:Connect(function()
-        Tween(CloseBtn, 0.15, {BackgroundColor3 = Theme.ButtonBg, BackgroundTransparency = Theme.ButtonTrans})
-        Tween(ClStroke, 0.15, {Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans})
-        Tween(CloseIcon, 0.15, {ImageColor3 = Theme.TextSecondary})
+        if isMobile then return end
+        Tween(CloseBtn, 0.14, {BackgroundColor3 = Theme.ButtonBg, BackgroundTransparency = Theme.ButtonTrans}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(ClStroke, 0.14, {Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        Tween(CloseIcon, 0.14, {ImageColor3 = Theme.TextSecondary}, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     end)
     local HeaderDivider = Instance.new("Frame")
     HeaderDivider.Name = "HeaderDivider"
@@ -3205,10 +3730,31 @@ function LloydUI:CreateWindow(config)
     HeaderDivider.BackgroundColor3 = Theme.HairlineColor
     HeaderDivider.BackgroundTransparency = Theme.HairlineTrans
     HeaderDivider.BorderSizePixel = 0
+    HeaderDivider.ClipsDescendants = true
     HeaderDivider.ZIndex = 5
     HeaderDivider.Parent = HeaderBar
     LloydUI:Bind(HeaderDivider, "BackgroundColor3", "HairlineColor")
     LloydUI:Bind(HeaderDivider, "BackgroundTransparency", "HairlineTrans")
+    do
+        local hBeam = Instance.new("Frame")
+        hBeam.Name = "HeaderSpecularBeam"
+        hBeam.Size = UDim2.new(0.28, 0, 1, 0)
+        hBeam.Position = UDim2.new(-0.25, 0, 0, 0)
+        hBeam.BackgroundColor3 = Theme.AccentCyan
+        hBeam.BackgroundTransparency = 0.15
+        hBeam.BorderSizePixel = 0
+        hBeam.ZIndex = 6
+        hBeam.Parent = HeaderDivider
+        LloydUI:RegisterAccent(hBeam, "BackgroundColor3")
+        local hbGrad = Instance.new("UIGradient")
+        hbGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1.0),
+            NumberSequenceKeypoint.new(0.5, 0.0),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        hbGrad.Parent = hBeam
+        Window._HeaderBeam = hBeam
+    end
     CloseBtn.MouseButton1Click:Connect(function()
         PlaySound(Sounds.Click, 0.7)
         Window:Close()
@@ -3239,7 +3785,9 @@ function LloydUI:CreateWindow(config)
     ContentScroll.ScrollBarThickness = 3
     ContentScroll.ScrollBarImageColor3 = Theme.AccentCyan
     ContentScroll.ScrollBarImageTransparency = 1.0
+    ContentScroll.CanvasSize = UDim2.fromOffset(0, 0)
     ContentScroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    ContentScroll.ElasticBehavior = Enum.ElasticBehavior.Always
     ContentScroll.ZIndex = 6
     ContentScroll.Parent = ContentViewport
     LloydUI:BindAccent(ContentScroll, "ScrollBarImageColor3")
@@ -3255,13 +3803,13 @@ function LloydUI:CreateWindow(config)
     end)
     local ContentLayout = Instance.new("UIListLayout")
     ContentLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    ContentLayout.Padding = UDim.new(0, 10)
+    ContentLayout.Padding = UDim.new(0, 14)
     ContentLayout.Parent = ContentScroll
     local ContentPad = Instance.new("UIPadding")
-    ContentPad.PaddingTop = UDim.new(0, 2)
+    ContentPad.PaddingTop = UDim.new(0, 6)
     ContentPad.PaddingLeft = UDim.new(0, 4)
     ContentPad.PaddingRight = UDim.new(0, 4)
-    ContentPad.PaddingBottom = UDim.new(0, 12)
+    ContentPad.PaddingBottom = UDim.new(0, 16)
     ContentPad.Parent = ContentScroll
     local DropdownOverlay = Instance.new("Frame")
     DropdownOverlay.Name = "DropdownOverlay"
@@ -3289,18 +3837,32 @@ function LloydUI:CreateWindow(config)
     Window.DropdownOverlay = DropdownOverlay
     Window.HalloweenWatermark = HalloweenWatermark
     function Window:Open(skipAnim)
+        local wasHidden = not RootFrame.Visible
         Window.IsOpen = true
         RootFrame.Visible = true
+        CloseBtn.BackgroundColor3 = Theme.ButtonBg
+        CloseBtn.BackgroundTransparency = Theme.ButtonTrans
+        ClStroke.Color = Theme.ButtonBorder
+        ClStroke.Transparency = Theme.ButtonBorderTrans
+        CloseIcon.ImageColor3 = Theme.TextSecondary
         local basePos = (not isIndependent and LloydUI.LastWindowPosition) or AppState.WindowPositions[TitleKey] or RootFrame.Position
         basePos = ClampToScreen(basePos, RootFrame.Size)
         if not isIndependent then
             LloydUI.LastWindowPosition = basePos
         end
         RootFrame.Position = basePos
-        if skipAnim or AppState.ReduceMotion then
-            MainScale.Scale = 1.0 * AppState.GlobalUIScale
+        local targetScale = 1.0 * AppState.GlobalUIScale
+        local targetShadowTrans = Theme.ShadowTrans or 0.52
+        if skipAnim or Motion.IsReduced() then
+            Motion.Cancel(MainScale)
+            Motion.Cancel(GlassFrame)
+            Motion.Cancel(FrostSubstrate)
+            Motion.Cancel(DeepShadow)
+            Motion.Cancel(ContentViewport)
+            MainScale.Scale = targetScale
             GlassFrame.BackgroundTransparency = Theme.GlassTransparency
-            DeepShadow.ImageTransparency = 0.52
+            FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans
+            DeepShadow.ImageTransparency = targetShadowTrans
             ContentViewport.GroupTransparency = 0
             ContentScroll.Position = UDim2.new(0, 0, 0, 0)
             if HalloweenWatermark then
@@ -3308,46 +3870,88 @@ function LloydUI:CreateWindow(config)
                 HalloweenWatermark.ImageTransparency = 0.88
             end
         else
-            MainScale.Scale = 0.95 * AppState.GlobalUIScale
-            GlassFrame.BackgroundTransparency = 1
-            DeepShadow.ImageTransparency = 1
-            ContentViewport.GroupTransparency = 1
+            if wasHidden then
+                MainScale.Scale = 0.965 * AppState.GlobalUIScale
+                GlassFrame.BackgroundTransparency = 1
+                FrostSubstrate.BackgroundTransparency = 1
+                DeepShadow.ImageTransparency = 1
+                DeepShadow.Size = UDim2.new(1, 16, 1, 16)
+                ContentViewport.GroupTransparency = 1
+                RootFrame.Position = UDim2.new(basePos.X.Scale, basePos.X.Offset, basePos.Y.Scale, basePos.Y.Offset + 12)
+            end
             ContentScroll.Position = UDim2.new(0, 0, 0, 0)
             if HalloweenWatermark then
                 HalloweenWatermark.Visible = (Theme.ThemeMode == "Halloween")
-                HalloweenWatermark.ImageTransparency = 1
+                if wasHidden then HalloweenWatermark.ImageTransparency = 1 end
                 if Theme.ThemeMode == "Halloween" then
-                    Tween(HalloweenWatermark, 0.28, { ImageTransparency = 0.88 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Tween(HalloweenWatermark, 0.24, { ImageTransparency = 0.88 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end
-            Tween(MainScale, 0.28, { Scale = 1.0 * AppState.GlobalUIScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
-            Tween(GlassFrame, 0.22, { BackgroundTransparency = Theme.GlassTransparency }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-            Tween(FrostSubstrate, 0.22, { BackgroundTransparency = Theme.FrostSubstrateTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-            Tween(DeepShadow, 0.22, { ImageTransparency = 0.52 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-            Tween(ContentViewport, 0.22, { GroupTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(RootFrame, 0.26, { Position = basePos }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            Tween(MainScale, 0.26, { Scale = targetScale }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            Tween(GlassFrame, 0.20, { BackgroundTransparency = Theme.GlassTransparency }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSubstrate, 0.20, { BackgroundTransparency = Theme.FrostSubstrateTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DeepShadow, 0.26, { ImageTransparency = targetShadowTrans, Size = UDim2.new(1, 34, 1, 34) }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            Tween(ContentViewport, 0.18, { GroupTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            if wasHidden then
+                if Window._BrandBadge and Window._BrandBadge.Parent then
+                    Window._BrandBadge.Rotation = -18
+                    Tween(Window._BrandBadge, 0.34, { Rotation = 0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    if Window._BrandScale then
+                        Window._BrandScale.Scale = 0.72
+                        Tween(Window._BrandScale, 0.32, { Scale = 1.0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    end
+                end
+                if MainStroke and MainStroke.Parent then
+                    MainStroke.Transparency = math.max(0.10, (Theme.GlassRimTrans or 0.65) - 0.42)
+                    Tween(MainStroke, 0.45, { Transparency = Theme.GlassRimTrans or 0.65 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                end
+            end
+            if wasHidden and Window.Cards and #Window.Cards > 0 then
+                local cascadeCards = {}
+                for i = 1, math.min(#Window.Cards, 6) do
+                    local cd = Window.Cards[i]
+                    if cd and cd.Parent then table.insert(cascadeCards, cd) end
+                end
+                Motion.StaggerIn(cascadeCards, 0.022, function(cd)
+                    if cd and cd.Parent then
+                        Motion.Pop(cd, 0.975, 1.0)
+                    end
+                end)
+            end
         end
         if Window.OnStateChanged then Window.OnStateChanged(true) end
     end
     function Window:Close(skipAnim)
         Window.IsOpen = false
+        HideTooltip()
+        if _G.LloydUI_CurrentOpenDropdown then
+            pcall(_G.LloydUI_CurrentOpenDropdown)
+        end
         if not isIndependent then
             LloydUI.LastWindowPosition = RootFrame.Position
         else
             AppState.WindowPositions[TitleKey] = RootFrame.Position
         end
-        if skipAnim or AppState.ReduceMotion then
+        if skipAnim or Motion.IsReduced() then
+            Motion.Cancel(MainScale)
+            Motion.Cancel(GlassFrame)
+            Motion.Cancel(FrostSubstrate)
+            Motion.Cancel(DeepShadow)
+            Motion.Cancel(ContentViewport)
             RootFrame.Visible = false
+            MainScale.Scale = 1.0 * AppState.GlobalUIScale
         else
-            local tw = Tween(MainScale, 0.18, { Scale = 0.96 * AppState.GlobalUIScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
-            Tween(GlassFrame, 0.18, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
-            Tween(FrostSubstrate, 0.18, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
-            Tween(DeepShadow, 0.18, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
-            Tween(ContentViewport, 0.16, { GroupTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
+            local tw = Tween(MainScale, 0.14, { Scale = 0.985 * AppState.GlobalUIScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(GlassFrame, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSubstrate, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DeepShadow, 0.14, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(ContentViewport, 0.12, { GroupTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             if HalloweenWatermark and HalloweenWatermark.Visible then
-                Tween(HalloweenWatermark, 0.18, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.In)
+                Tween(HalloweenWatermark, 0.14, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end
-            tw.Completed:Connect(function()
-                if not Window.IsOpen then
+            tw.Completed:Connect(function(playState)
+                if playState == Enum.PlaybackState.Completed and not Window.IsOpen then
                     RootFrame.Visible = false
                     MainScale.Scale = 1.0 * AppState.GlobalUIScale
                 end
@@ -3372,17 +3976,34 @@ function LloydUI:CreateWindow(config)
         sLayout.Padding = UDim.new(0, 6)
         sLayout.Parent = Section
         if gbKeyOrTitle then
+            local sHeadWrap = Instance.new("Frame")
+            sHeadWrap.Name = "SectionHeaderWrap"
+            sHeadWrap.Size = UDim2.new(1, 0, 0, 20)
+            sHeadWrap.BackgroundTransparency = 1
+            sHeadWrap.LayoutOrder = 1
+            sHeadWrap.Parent = Section
+            local sDot = Instance.new("Frame")
+            sDot.Name = "SectionAccentDot"
+            sDot.Size = UDim2.fromOffset(5, 5)
+            sDot.AnchorPoint = Vector2.new(0, 0.5)
+            sDot.Position = UDim2.new(0, 8, 0.5, 0)
+            sDot.BackgroundColor3 = Theme.AccentCyan
+            sDot.BackgroundTransparency = 0.15
+            sDot.BorderSizePixel = 0
+            sDot.Parent = sHeadWrap
+            Instance.new("UICorner", sDot).CornerRadius = UDim.new(1, 0)
+            LloydUI:BindAccent(sDot, "BackgroundColor3")
             local sHeader = Instance.new("TextLabel")
             sHeader.Name = "SectionHeader"
-            sHeader.Size = UDim2.new(1, -24, 0, 18)
-            sHeader.Position = UDim2.new(0, 12, 0, 0)
+            sHeader.Size = UDim2.new(1, -26, 1, 0)
+            sHeader.Position = UDim2.new(0, 19, 0, 0)
             sHeader.BackgroundTransparency = 1
             sHeader.Font = FontBold
             sHeader.Text = string.upper(T(gbKeyOrTitle, gbKeyOrTitle))
-            sHeader.TextSize = 12
+            sHeader.TextSize = 11.5
             sHeader.TextXAlignment = Enum.TextXAlignment.Left
-            sHeader.LayoutOrder = 1
-            sHeader.Parent = Section
+            sHeader.TextTruncate = Enum.TextTruncate.AtEnd
+            sHeader.Parent = sHeadWrap
             LloydUI:Bind(sHeader, "TextColor3", "SectionHeaderColor")
             LloydUI:RegisterText(sHeader, gbKeyOrTitle, function(s) return string.upper(s) end)
         end
@@ -3399,14 +4020,14 @@ function LloydUI:CreateWindow(config)
         LloydUI:Bind(Card, "BackgroundColor3", "CardBg")
         LloydUI:Bind(Card, "BackgroundTransparency", "CardTrans")
         local cCorner = Instance.new("UICorner")
-        cCorner.CornerRadius = UDim.new(0, isMobile and 16 or 18)
+        cCorner.CornerRadius = UDim.new(0, isMobile and 15 or 16)
         cCorner.Parent = Card
         local cPad = Instance.new("UIPadding")
         cPad.PaddingTop = UDim.new(0, 2)
         cPad.PaddingBottom = UDim.new(0, 2)
         cPad.Parent = Card
         local cStroke = Instance.new("UIStroke")
-        cStroke.Thickness = 1.6
+        cStroke.Thickness = 1.0
         cStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
         cStroke.Parent = Card
         LloydUI:Bind(cStroke, "Color", "CardBorder")
@@ -3426,10 +4047,32 @@ function LloydUI:CreateWindow(config)
         local cLipGrad = Instance.new("UIGradient")
         cLipGrad.Transparency = NumberSequence.new({
             NumberSequenceKeypoint.new(0, 1.0),
-            NumberSequenceKeypoint.new(0.5, 0.40),
+            NumberSequenceKeypoint.new(0.5, 0.35),
             NumberSequenceKeypoint.new(1, 1.0)
         })
         cLipGrad.Parent = cLip
+        if not isMobile then
+            Card.MouseEnter:Connect(function()
+                Motion.Tween(cStroke, 0.18, {
+                    Color = Theme.AccentCyan or Theme.CardBorder,
+                    Transparency = math.max(0.32, (Theme.CardBorderTrans or 0.78) - 0.30)
+                }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(cLip, 0.18, {
+                    BackgroundColor3 = Theme.AccentCyan or Color3.fromRGB(255, 255, 255),
+                    BackgroundTransparency = 0.22
+                }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+            Card.MouseLeave:Connect(function()
+                Motion.Tween(cStroke, 0.22, {
+                    Color = Theme.CardBorder,
+                    Transparency = Theme.CardBorderTrans or 0.78
+                }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(cLip, 0.22, {
+                    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+                    BackgroundTransparency = 0.65
+                }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+        end
         local cLayout = Instance.new("UIListLayout")
         cLayout.SortOrder = Enum.SortOrder.LayoutOrder
         cLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -3438,7 +4081,11 @@ function LloydUI:CreateWindow(config)
         function Box:RegisterRow(rowFrame)
             if #Box.Rows > 0 then
                 local prevRow = Box.Rows[#Box.Rows]
-                if prevRow and prevRow.Parent then
+                local skipHair = prevRow and rowFrame and (
+                    ((prevRow:GetAttribute("IsBentoActionRow") == true) and (rowFrame:GetAttribute("IsBentoActionRow") == true))
+                    or (prevRow:FindFirstChildOfClass("UIListLayout") ~= nil)
+                )
+                if prevRow and prevRow.Parent and not skipHair then
                     local hairline = Instance.new("Frame")
                     hairline.Name = "Hairline"
                     hairline.Size = UDim2.new(1, -32, 0, 1)
@@ -3495,23 +4142,45 @@ function LloydUI:CreateWindow(config)
                 LloydUI:Bind(descL, "TextColor3", "TextSecondary")
                 LloydUI:RegisterText(descL, descKey)
             end
+            local switchHalo = Instance.new("ImageLabel")
+            switchHalo.Name = "SwitchHalo3D"
+            switchHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+            switchHalo.Position = UDim2.new(1, -41, 0.5, 0)
+            switchHalo.Size = UDim2.fromOffset(74, 48)
+            switchHalo.BackgroundTransparency = 1
+            switchHalo.Image = "rbxassetid://8992230677"
+            switchHalo.ImageColor3 = Theme.AccentCyan
+            switchHalo.ImageTransparency = state and 0.68 or 1
+            switchHalo.ZIndex = 1
+            switchHalo.Parent = row
+            LloydUI:RegisterAccent(switchHalo, "ImageColor3")
             local switchBg = Instance.new("Frame")
             switchBg.Name = "SwitchTrack"
-            switchBg.Size = UDim2.fromOffset(46, 26)
-            switchBg.Position = UDim2.new(1, -62, 0.5, -13)
+            switchBg.Size = UDim2.fromOffset(50, 30)
+            switchBg.Position = UDim2.new(1, -66, 0.5, -15)
             switchBg.BackgroundColor3 = state and Theme.AccentCyan or Theme.ToggleOff
-            switchBg.BackgroundTransparency = state and 0.12 or Theme.ToggleOffTrans
+            switchBg.BackgroundTransparency = state and 0.05 or Theme.ToggleOffTrans
             switchBg.BorderSizePixel = 0
+            switchBg.ZIndex = 2
             switchBg.Parent = row
             local swCorner = Instance.new("UICorner")
             swCorner.CornerRadius = UDim.new(1, 0)
             swCorner.Parent = switchBg
             local swStroke = Instance.new("UIStroke")
-            swStroke.Thickness = 1.0
+            swStroke.Thickness = 1.05
             swStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             swStroke.Color = state and Theme.AccentCyan or Theme.ToggleOffBorder
-            swStroke.Transparency = state and 0.45 or Theme.ToggleOffBorderTrans
+            swStroke.Transparency = state and 0.35 or Theme.ToggleOffBorderTrans
             swStroke.Parent = switchBg
+            do
+                local swInnerGrad = Instance.new("UIGradient")
+                swInnerGrad.Rotation = 90
+                swInnerGrad.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(220, 226, 238)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+                })
+                swInnerGrad.Parent = switchBg
+            end
             local ToggleObj = {}
             local function getKnobColor(isOn, accentCol)
                 if not isOn then return Color3.fromRGB(255, 255, 255) end
@@ -3523,10 +4192,11 @@ function LloydUI:CreateWindow(config)
             end
             local knob = Instance.new("Frame")
             knob.Name = "Knob"
-            knob.Size = UDim2.fromOffset(20, 20)
-            knob.Position = state and UDim2.new(1, -23, 0.5, -10) or UDim2.new(0, 3, 0.5, -10)
+            knob.Size = UDim2.fromOffset(24, 24)
+            knob.Position = state and UDim2.new(1, -27, 0.5, -12) or UDim2.new(0, 3, 0.5, -12)
             knob.BackgroundColor3 = getKnobColor(state, Theme.AccentCyan)
             knob.BorderSizePixel = 0
+            knob.ZIndex = 3
             knob.Parent = switchBg
             local knCorner = Instance.new("UICorner")
             knCorner.CornerRadius = UDim.new(1, 0)
@@ -3537,31 +4207,67 @@ function LloydUI:CreateWindow(config)
             knStroke.Color = Color3.fromRGB(0, 0, 0)
             knStroke.Transparency = 0.78
             knStroke.Parent = knob
+            do
+                local knShadow = Instance.new("ImageLabel")
+                knShadow.Name = "KnobShadow3D"
+                knShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+                knShadow.Position = UDim2.new(0.5, 0, 0.5, 2)
+                knShadow.Size = UDim2.new(1, 10, 1, 10)
+                knShadow.BackgroundTransparency = 1
+                knShadow.Image = "rbxassetid://8992230677"
+                knShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+                knShadow.ImageTransparency = 0.56
+                knShadow.ScaleType = Enum.ScaleType.Slice
+                knShadow.SliceCenter = Rect.new(99, 99, 99, 99)
+                knShadow.ZIndex = 2
+                knShadow.Parent = knob
+                local knDome = Instance.new("Frame")
+                knDome.Name = "KnobDome3D"
+                knDome.AnchorPoint = Vector2.new(0.5, 0)
+                knDome.Position = UDim2.new(0.5, 0, 0, 2)
+                knDome.Size = UDim2.new(0.68, 0, 0.36, 0)
+                knDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                knDome.BackgroundTransparency = 0.38
+                knDome.BorderSizePixel = 0
+                knDome.ZIndex = 4
+                knDome.Parent = knob
+                Instance.new("UICorner", knDome).CornerRadius = UDim.new(1, 0)
+            end
             local function UpdateVisuals(skipTween)
-                local targetPos = state and UDim2.new(1, -23, 0.5, -10) or UDim2.new(0, 3, 0.5, -10)
+                local targetPos = state and UDim2.new(1, -27, 0.5, -12) or UDim2.new(0, 3, 0.5, -12)
                 local targetColor = state and Theme.AccentCyan or Theme.ToggleOff
-                local targetTrans = state and 0.08 or Theme.ToggleOffTrans
+                local targetTrans = state and 0.05 or Theme.ToggleOffTrans
                 local targetStrokeCol = state and Theme.AccentCyan or Theme.ToggleOffBorder
-                local targetStrokeTrans = state and 0.35 or Theme.ToggleOffBorderTrans
+                local targetStrokeTrans = state and 0.30 or Theme.ToggleOffBorderTrans
                 local targetKnobCol = getKnobColor(state, Theme.AccentCyan)
-                if skipTween or AppState.ReduceMotion then
+                local targetHaloTrans = state and 0.66 or 1
+                if skipTween or Motion.IsReduced() then
                     switchBg.BackgroundColor3 = targetColor
                     switchBg.BackgroundTransparency = targetTrans
                     swStroke.Color = targetStrokeCol
                     swStroke.Transparency = targetStrokeTrans
+                    switchHalo.ImageTransparency = targetHaloTrans
                     knob.BackgroundColor3 = targetKnobCol
                     knob.Position = targetPos
-                    knob.Size = UDim2.fromOffset(20, 20)
+                    knob.Size = UDim2.fromOffset(24, 24)
                 else
-                    Motion.Tween(switchBg, 0.22, { BackgroundColor3 = targetColor, BackgroundTransparency = targetTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                    Motion.Tween(swStroke, 0.22, { Color = targetStrokeCol, Transparency = targetStrokeTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                    Motion.Tween(knob, 0.18, { BackgroundColor3 = targetKnobCol })
-                    Motion.Tween(knob, 0.10, {
-                        Size = UDim2.fromOffset(24, 20),
-                        Position = targetPos
-                    }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out).Completed:Connect(function()
-                        Motion.Tween(knob, 0.16, { Size = UDim2.fromOffset(20, 20) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(switchBg, 0.18, { BackgroundColor3 = targetColor, BackgroundTransparency = targetTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(swStroke, 0.18, { Color = targetStrokeCol, Transparency = targetStrokeTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(switchHalo, 0.22, { ImageTransparency = targetHaloTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(knob, 0.16, { BackgroundColor3 = targetKnobCol }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(knob, 0.20, { Position = targetPos }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    local stretchTw = Motion.Tween(knob, 0.08, { Size = UDim2.fromOffset(29, 23) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    stretchTw.Completed:Connect(function(playState)
+                        if playState == Enum.PlaybackState.Completed and knob and knob.Parent then
+                            Motion.Tween(knob, 0.14, { Size = UDim2.fromOffset(24, 24) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                        end
                     end)
+                    if state then
+                        pcall(function()
+                            local centerPos = switchBg.AbsolutePosition + (switchBg.AbsoluteSize * 0.5)
+                            Motion.Burst(row, centerPos, Theme.AccentCyan, false)
+                        end)
+                    end
                 end
             end
             table.insert(LloydUI.AccentCallbacks, function(color, skip)
@@ -3677,8 +4383,8 @@ function LloydUI:CreateWindow(config)
             dragArea.Parent = frame
             local track = Instance.new("Frame")
             track.Name = "Track"
-            track.Size = UDim2.new(1, 0, 0, 8)
-            track.Position = UDim2.new(0, 0, 0.5, -4)
+            track.Size = UDim2.new(1, 0, 0, 6)
+            track.Position = UDim2.new(0, 0, 0.5, -3)
             track.BorderSizePixel = 0
             track.Parent = dragArea
             LloydUI:Bind(track, "BackgroundColor3", "SliderTrack")
@@ -3687,7 +4393,7 @@ function LloydUI:CreateWindow(config)
             trCorner.CornerRadius = UDim.new(1, 0)
             trCorner.Parent = track
             local trStroke = Instance.new("UIStroke")
-            trStroke.Thickness = 0.9
+            trStroke.Thickness = 0.8
             trStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             trStroke.Color = Theme.ButtonBorder
             trStroke.Transparency = Theme.ButtonBorderTrans
@@ -3706,17 +4412,17 @@ function LloydUI:CreateWindow(config)
             flCorner.Parent = fill
             local fillGrad = Instance.new("UIGradient")
             fillGrad.Color = ColorSequence.new({
-                ColorSequenceKeypoint.new(0, Color3.fromRGB(215, 225, 240)),
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(225, 232, 244)),
                 ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
             })
             fillGrad.Transparency = NumberSequence.new({
-                NumberSequenceKeypoint.new(0, 0.22),
+                NumberSequenceKeypoint.new(0, 0.16),
                 NumberSequenceKeypoint.new(1, 0.0)
             })
             fillGrad.Parent = fill
             local knob = Instance.new("Frame")
             knob.Name = "ThumbKnob"
-            knob.Size = UDim2.fromOffset(22, 14)
+            knob.Size = UDim2.fromOffset(20, 20)
             knob.AnchorPoint = Vector2.new(0.5, 0.5)
             knob.Position = UDim2.new(1, 0, 0.5, 0)
             knob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3726,28 +4432,40 @@ function LloydUI:CreateWindow(config)
             local knCorner = Instance.new("UICorner")
             knCorner.CornerRadius = UDim.new(1, 0)
             knCorner.Parent = knob
+            local knGlow = Instance.new("ImageLabel")
+            knGlow.Name = "ThumbGlow3D"
+            knGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+            knGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+            knGlow.Size = UDim2.fromOffset(38, 38)
+            knGlow.BackgroundTransparency = 1
+            knGlow.Image = "rbxassetid://8992230677"
+            knGlow.ImageColor3 = Theme.AccentCyan
+            knGlow.ImageTransparency = 0.80
+            knGlow.ZIndex = 2
+            knGlow.Parent = knob
+            LloydUI:RegisterAccent(knGlow, "ImageColor3")
             local knShadow = Instance.new("ImageLabel")
             knShadow.Name = "KnobShadow"
             knShadow.AnchorPoint = Vector2.new(0.5, 0.5)
             knShadow.Position = UDim2.new(0.5, 0, 0.5, 2)
-            knShadow.Size = UDim2.new(1, 10, 1, 10)
+            knShadow.Size = UDim2.new(1, 12, 1, 12)
             knShadow.BackgroundTransparency = 1
             knShadow.Image = "rbxassetid://8992230677"
             knShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-            knShadow.ImageTransparency = 0.52
+            knShadow.ImageTransparency = 0.54
             knShadow.ScaleType = Enum.ScaleType.Slice
             knShadow.SliceCenter = Rect.new(99, 99, 99, 99)
             knShadow.ZIndex = 2
             knShadow.Parent = knob
             local knStroke = Instance.new("UIStroke")
-            knStroke.Thickness = 1.2
+            knStroke.Thickness = 0.9
             knStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            knStroke.Color = Color3.fromRGB(16, 20, 28)
-            knStroke.Transparency = 0.55
+            knStroke.Color = Color3.fromRGB(0, 0, 0)
+            knStroke.Transparency = 0.76
             knStroke.Parent = knob
             local knobCore = Instance.new("Frame")
             knobCore.Name = "KnobCore"
-            knobCore.Size = UDim2.fromOffset(8, 4)
+            knobCore.Size = UDim2.fromOffset(7, 7)
             knobCore.AnchorPoint = Vector2.new(0.5, 0.5)
             knobCore.Position = UDim2.new(0.5, 0, 0.5, 0)
             knobCore.BorderSizePixel = 0
@@ -3772,15 +4490,19 @@ function LloydUI:CreateWindow(config)
             end
             local function setVisualSlidingState(active)
                 if active then
-                    Motion.Tween(knob, 0.14, { Size = UDim2.fromOffset(26, 17) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
-                    Motion.Tween(knobCore, 0.14, { Size = UDim2.fromOffset(10, 5), BackgroundTransparency = 0 })
-                    Motion.Tween(track, 0.14, { Size = UDim2.new(1, 0, 0, 10), Position = UDim2.new(0, 0, 0.5, -5) })
-                    Motion.Tween(vbStroke, 0.14, { Color = Theme.AccentCyan, Transparency = 0.18 })
+                    Motion.Tween(knob, 0.16, { Size = UDim2.fromOffset(25, 25) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(knGlow, 0.16, { ImageTransparency = 0.42, Size = UDim2.fromOffset(52, 52) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(knobCore, 0.14, { Size = UDim2.fromOffset(9, 9), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(track, 0.14, { Size = UDim2.new(1, 0, 0, 8), Position = UDim2.new(0, 0, 0.5, -4) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(vbStroke, 0.14, { Color = Theme.AccentCyan, Transparency = 0.14, Thickness = 1.2 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(vL, 0.14, { TextColor3 = Theme.AccentCyan }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 else
-                    Motion.Tween(knob, 0.16, { Size = UDim2.fromOffset(22, 14) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-                    Motion.Tween(knobCore, 0.16, { Size = UDim2.fromOffset(8, 4), BackgroundTransparency = 0.25 })
-                    Motion.Tween(track, 0.16, { Size = UDim2.new(1, 0, 0, 8), Position = UDim2.new(0, 0, 0.5, -4) })
-                    Motion.Tween(vbStroke, 0.16, { Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans })
+                    Motion.Tween(knob, 0.16, { Size = UDim2.fromOffset(20, 20) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(knGlow, 0.18, { ImageTransparency = 0.80, Size = UDim2.fromOffset(38, 38) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(knobCore, 0.15, { Size = UDim2.fromOffset(7, 7), BackgroundTransparency = 0.25 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(track, 0.15, { Size = UDim2.new(1, 0, 0, 6), Position = UDim2.new(0, 0, 0.5, -3) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(vbStroke, 0.15, { Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans, Thickness = 0.9 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(vL, 0.15, { TextColor3 = Theme.TextPrimary }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end
             local function UpdateSlider(inputPos, isEnd)
@@ -3800,6 +4522,62 @@ function LloydUI:CreateWindow(config)
                     callback(currentVal, isEnd or false)
                 end
             end
+            local sliderMoveConn, sliderEndConn = nil, nil
+            local function detachSliderConns()
+                if sliderMoveConn then sliderMoveConn:Disconnect(); sliderMoveConn = nil end
+                if sliderEndConn then sliderEndConn:Disconnect(); sliderEndConn = nil end
+            end
+            frame.Destroying:Connect(detachSliderConns)
+            local function attachSliderConns()
+                detachSliderConns()
+                sliderMoveConn = UserInputService.InputChanged:Connect(function(input)
+                    if not activeInputObj then detachSliderConns(); return end
+                    local isSameTouch = (input == activeInputObj)
+                    local isMouseMove = (activeInputObj.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseMovement)
+                    if not (isSameTouch or isMouseMove) then return end
+                    if isPendingTouch then
+                        local dx = math.abs(input.Position.X - touchStartPos.X)
+                        local dy = math.abs(input.Position.Y - touchStartPos.Y)
+                        if dy > 6 and dy >= dx * 0.85 then
+                            isPendingTouch = false
+                            activeInputObj = nil
+                            detachSliderConns()
+                            if ContentScroll then ContentScroll.ScrollingEnabled = true end
+                            return
+                        end
+                        if dx >= 7 and dx > dy * 1.25 then
+                            isPendingTouch = false
+                            isSliding = true
+                            if ContentScroll then ContentScroll.ScrollingEnabled = false end
+                            setVisualSlidingState(true)
+                            UpdateSlider(input.Position, false)
+                        end
+                    elseif isSliding then
+                        UpdateSlider(input.Position, false)
+                    end
+                end)
+                sliderEndConn = UserInputService.InputEnded:Connect(function(input)
+                    if not activeInputObj then detachSliderConns(); return end
+                    local isSameInput = (input == activeInputObj) or (activeInputObj.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseButton1)
+                    if not isSameInput then return end
+                    if isPendingTouch then
+                        isPendingTouch = false
+                        activeInputObj = nil
+                        detachSliderConns()
+                        if ContentScroll then ContentScroll.ScrollingEnabled = true end
+                        UpdateSlider(input.Position, true)
+                        return
+                    end
+                    if isSliding then
+                        isSliding = false
+                        activeInputObj = nil
+                        detachSliderConns()
+                        if ContentScroll then ContentScroll.ScrollingEnabled = true end
+                        setVisualSlidingState(false)
+                        UpdateSlider(input.Position, true)
+                    end
+                end)
+            end
             dragArea.InputBegan:Connect(function(input)
                 if isSliding or isPendingTouch then return end
                 if input.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -3808,53 +4586,12 @@ function LloydUI:CreateWindow(config)
                     if ContentScroll then ContentScroll.ScrollingEnabled = false end
                     setVisualSlidingState(true)
                     UpdateSlider(input.Position, false)
+                    attachSliderConns()
                 elseif input.UserInputType == Enum.UserInputType.Touch then
                     activeInputObj = input
                     touchStartPos = input.Position
                     isPendingTouch = true
-                end
-            end)
-            UserInputService.InputChanged:Connect(function(input)
-                if not activeInputObj then return end
-                local isSameTouch = (input == activeInputObj)
-                local isMouseMove = (activeInputObj.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseMovement)
-                if not (isSameTouch or isMouseMove) then return end
-                if isPendingTouch then
-                    local dx = math.abs(input.Position.X - touchStartPos.X)
-                    local dy = math.abs(input.Position.Y - touchStartPos.Y)
-                    if dy > 6 and dy >= dx * 0.85 then
-                        isPendingTouch = false
-                        activeInputObj = nil
-                        if ContentScroll then ContentScroll.ScrollingEnabled = true end
-                        return
-                    end
-                    if dx >= 7 and dx > dy * 1.35 then
-                        isPendingTouch = false
-                        isSliding = true
-                        if ContentScroll then ContentScroll.ScrollingEnabled = false end
-                        setVisualSlidingState(true)
-                        UpdateSlider(input.Position, false)
-                    end
-                elseif isSliding then
-                    UpdateSlider(input.Position, false)
-                end
-            end)
-            UserInputService.InputEnded:Connect(function(input)
-                if not activeInputObj then return end
-                local isSameInput = (input == activeInputObj) or (activeInputObj.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseButton1)
-                if not isSameInput then return end
-                if isPendingTouch then
-                    isPendingTouch = false
-                    activeInputObj = nil
-                    if ContentScroll then ContentScroll.ScrollingEnabled = true end
-                    return
-                end
-                if isSliding then
-                    isSliding = false
-                    activeInputObj = nil
-                    if ContentScroll then ContentScroll.ScrollingEnabled = true end
-                    setVisualSlidingState(false)
-                    UpdateSlider(input.Position, true)
+                    attachSliderConns()
                 end
             end)
             function SliderObj.Set(val, silent)
@@ -3876,39 +4613,427 @@ function LloydUI:CreateWindow(config)
             return SliderObj
         end
         function Box:AddButton(titleKey, callback)
+            local btnH = isMobile and 46 or 42
+            local keyLower = string.lower(tostring(titleKey or ""))
+            local labelLower = string.lower(tostring(T(titleKey, titleKey) or ""))
+            local combined = keyLower .. " " .. labelLower
+            local variant = "standard"
+            local glyphIcon = Icons.Sparkles
+            if combined:find("stop", 1, true) or combined:find("remove", 1, true)
+                or combined:find("clear", 1, true) or combined:find("delete", 1, true)
+                or combined:find("reset", 1, true) or combined:find("clean", 1, true)
+                or combined:find("kill", 1, true) or combined:find("destroy", 1, true)
+                or combined:find("หยุด", 1, true) or combined:find("ลบ", 1, true)
+                or combined:find("ล้าง", 1, true) or combined:find("รีเซ็ต", 1, true) then
+                variant = "destructive"
+                glyphIcon = (combined:find("reset", 1, true) or combined:find("รีเซ็ต", 1, true)) and Icons.Refresh
+                    or ((combined:find("stop", 1, true) or combined:find("หยุด", 1, true)) and Icons.Pause or Icons.Trash)
+            elseif combined:find("play", 1, true) or combined:find("spawn", 1, true)
+                or combined:find("tp", 1, true) or combined:find("teleport", 1, true)
+                or combined:find("scan", 1, true) or combined:find("steal", 1, true)
+                or combined:find("copy", 1, true) or combined:find("create", 1, true)
+                or combined:find("add", 1, true) or combined:find("equip", 1, true)
+                or combined:find("auto", 1, true) or combined:find("dup", 1, true)
+                or combined:find("เล่น", 1, true) or combined:find("เสก", 1, true)
+                or combined:find("วาร์ป", 1, true) or combined:find("สแกน", 1, true)
+                or combined:find("คัดลอก", 1, true) or combined:find("สร้าง", 1, true) then
+                variant = "primary"
+                if combined:find("play", 1, true) or combined:find("เล่น", 1, true) then
+                    glyphIcon = Icons.Play
+                elseif combined:find("copy", 1, true) or combined:find("คัดลอก", 1, true) then
+                    glyphIcon = Icons.Clipboard
+                elseif combined:find("scan", 1, true) or combined:find("สแกน", 1, true) then
+                    glyphIcon = Icons.Search
+                elseif combined:find("tp", 1, true) or combined:find("teleport", 1, true) or combined:find("วาร์ป", 1, true) then
+                    glyphIcon = Icons.Navigation
+                elseif combined:find("create", 1, true) or combined:find("add", 1, true) or combined:find("สร้าง", 1, true) then
+                    glyphIcon = Icons.Plus
+                else
+                    glyphIcon = Icons.Zap
+                end
+            elseif combined:find("refresh", 1, true) or combined:find("รีเฟรช", 1, true) then
+                glyphIcon = Icons.Refresh
+            elseif combined:find("health", 1, true) or combined:find("สถานะ", 1, true) then
+                glyphIcon = Icons.Activity
+            end
+            local targetRow = nil
+            local innerGrid = nil
+            local isPairedSlot = false
+            local lastRow = Box.Rows[#Box.Rows]
+            if lastRow and lastRow.Parent
+                and lastRow:GetAttribute("IsBentoActionRow") == true
+                and (lastRow:GetAttribute("BentoSlots") or 0) == 1 then
+                targetRow = lastRow
+                innerGrid = lastRow:FindFirstChild("BentoInner")
+                if innerGrid then
+                    isPairedSlot = true
+                    lastRow:SetAttribute("BentoSlots", 2)
+                    for _, child in ipairs(innerGrid:GetChildren()) do
+                        if child:IsA("Frame") and child.Name == "Tile3DSlot" then
+                            child.Size = UDim2.new(0.5, -5, 1, 0)
+                        end
+                    end
+                end
+            end
+            if not innerGrid then
+                targetRow = Instance.new("Frame")
+                targetRow.Name = "ActionBentoRow"
+                targetRow.Size = UDim2.new(1, 0, 0, btnH + 20)
+                targetRow.BackgroundTransparency = 1
+                targetRow.BorderSizePixel = 0
+                targetRow.ClipsDescendants = false
+                targetRow:SetAttribute("IsBentoActionRow", true)
+                targetRow:SetAttribute("BentoSlots", 1)
+                targetRow.Parent = Card
+                innerGrid = Instance.new("Frame")
+                innerGrid.Name = "BentoInner"
+                innerGrid.Size = UDim2.new(1, -24, 0, btnH + 5)
+                innerGrid.Position = UDim2.fromOffset(12, 7)
+                innerGrid.BackgroundTransparency = 1
+                innerGrid.BorderSizePixel = 0
+                innerGrid.ClipsDescendants = false
+                innerGrid.Parent = targetRow
+                local rLayout = Instance.new("UIListLayout")
+                rLayout.FillDirection = Enum.FillDirection.Horizontal
+                rLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
+                rLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+                rLayout.SortOrder = Enum.SortOrder.LayoutOrder
+                rLayout.Padding = UDim.new(0, 10)
+                rLayout.Parent = innerGrid
+                Box:RegisterRow(targetRow)
+            end
+            local tileSlot = Instance.new("Frame")
+            tileSlot.Name = "Tile3DSlot"
+            tileSlot.Size = isPairedSlot and UDim2.new(0.5, -5, 1, 0) or UDim2.new(1, 0, 1, 0)
+            tileSlot.LayoutOrder = isPairedSlot and 2 or 1
+            tileSlot.BackgroundTransparency = 1
+            tileSlot.BorderSizePixel = 0
+            tileSlot.ClipsDescendants = false
+            tileSlot.Parent = innerGrid
+            local depthShadow = Instance.new("ImageLabel")
+            depthShadow.Name = "TileShadow"
+            depthShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+            depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
+            depthShadow.Size = UDim2.new(1, 14, 1, 12)
+            depthShadow.BackgroundTransparency = 1
+            depthShadow.Image = "rbxassetid://8992230677"
+            depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+            depthShadow.ImageTransparency = 0.64
+            depthShadow.ScaleType = Enum.ScaleType.Slice
+            depthShadow.SliceCenter = Rect.new(99, 99, 99, 99)
+            depthShadow.ZIndex = 1
+            depthShadow.Parent = tileSlot
+            local depthBase = Instance.new("Frame")
+            depthBase.Name = "DepthBase3D"
+            depthBase.Size = UDim2.new(1, 0, 1, -5)
+            depthBase.Position = UDim2.fromOffset(0, 5)
+            depthBase.BorderSizePixel = 0
+            depthBase.ZIndex = 2
+            depthBase.Parent = tileSlot
+            Instance.new("UICorner", depthBase).CornerRadius = UDim.new(0, 13)
             local btn = Instance.new("TextButton")
-            btn.Name = "ButtonRow_" .. tostring(titleKey)
-            btn.Size = UDim2.new(1, 0, 0, isMobile and 48 or 44)
-            btn.BackgroundTransparency = 1
+            btn.Name = "ButtonTile_" .. tostring(titleKey)
+            btn.Size = UDim2.new(1, 0, 1, -5)
+            btn.Position = UDim2.fromOffset(0, 0)
             btn.Text = ""
             btn.AutoButtonColor = false
+            btn.BorderSizePixel = 0
             btn.ClipsDescendants = true
-            btn.Parent = Card
-            local btnCorner = Instance.new("UICorner")
-            btnCorner.CornerRadius = UDim.new(0, isMobile and 14 or 16)
-            btnCorner.Parent = btn
-            Motion.Press(btn, 0.98, 1.0)
-            Motion.Hover(btn, function() return { BackgroundColor3 = Theme.ButtonHover, BackgroundTransparency = 0.84 } end, { BackgroundTransparency = 1 })
+            btn.ZIndex = 3
+            btn.Parent = tileSlot
+            Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 13)
+            local btnStroke = Instance.new("UIStroke")
+            btnStroke.Thickness = 1.15
+            btnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+            btnStroke.Parent = btn
+            do
+                local btnGrad = Instance.new("UIGradient")
+                btnGrad.Rotation = 122
+                btnGrad.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+                    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(224, 230, 244)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(168, 178, 202))
+                })
+                btnGrad.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 0.0),
+                    NumberSequenceKeypoint.new(1, 0.24)
+                })
+                btnGrad.Parent = btn
+                local topDome = Instance.new("Frame")
+                topDome.Name = "TopGlassDome3D"
+                topDome.Size = UDim2.new(1, -4, 0.48, 0)
+                topDome.Position = UDim2.fromOffset(2, 1)
+                topDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                topDome.BackgroundTransparency = 0.89
+                topDome.BorderSizePixel = 0
+                topDome.ZIndex = 4
+                topDome.Parent = btn
+                Instance.new("UICorner", topDome).CornerRadius = UDim.new(0, 11)
+                local domeGrad = Instance.new("UIGradient")
+                domeGrad.Rotation = 90
+                domeGrad.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 0.05),
+                    NumberSequenceKeypoint.new(1, 1.0)
+                })
+                domeGrad.Parent = topDome
+                local topGlint = Instance.new("Frame")
+                topGlint.Name = "SpecularTop"
+                topGlint.AnchorPoint = Vector2.new(0.5, 0)
+                topGlint.Position = UDim2.new(0.5, 0, 0, 0)
+                topGlint.Size = UDim2.new(1, -18, 0, 1)
+                topGlint.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                topGlint.BackgroundTransparency = 0.36
+                topGlint.BorderSizePixel = 0
+                topGlint.ZIndex = 5
+                topGlint.Parent = btn
+                local tgGrad = Instance.new("UIGradient")
+                tgGrad.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 1.0),
+                    NumberSequenceKeypoint.new(0.5, 0.06),
+                    NumberSequenceKeypoint.new(1, 1.0)
+                })
+                tgGrad.Parent = topGlint
+            end
+            local bottomGlow = Instance.new("Frame")
+            bottomGlow.Name = "BottomNeonEdge"
+            bottomGlow.AnchorPoint = Vector2.new(0.5, 1)
+            bottomGlow.Position = UDim2.new(0.5, 0, 1, 0)
+            bottomGlow.Size = UDim2.new(0.76, 0, 0, 2)
+            bottomGlow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            bottomGlow.BackgroundTransparency = 0.72
+            bottomGlow.BorderSizePixel = 0
+            bottomGlow.ZIndex = 5
+            bottomGlow.Parent = btn
+            do
+                local bgGrad = Instance.new("UIGradient")
+                bgGrad.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 1.0),
+                    NumberSequenceKeypoint.new(0.5, 0.0),
+                    NumberSequenceKeypoint.new(1, 1.0)
+                })
+                bgGrad.Parent = bottomGlow
+            end
+            local sweepBar = Instance.new("Frame")
+            sweepBar.Name = "SpecularSweep"
+            sweepBar.Size = UDim2.new(0.36, 0, 2.4, 0)
+            sweepBar.Position = UDim2.new(-0.50, 0, -0.7, 0)
+            sweepBar.Rotation = 22
+            sweepBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            sweepBar.BackgroundTransparency = 0.80
+            sweepBar.BorderSizePixel = 0
+            sweepBar.ZIndex = 5
+            sweepBar.Visible = false
+            sweepBar.Parent = btn
+            do
+                local swGrad = Instance.new("UIGradient")
+                swGrad.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 1.0),
+                    NumberSequenceKeypoint.new(0.5, 0.22),
+                    NumberSequenceKeypoint.new(1, 1.0)
+                })
+                swGrad.Parent = sweepBar
+            end
+            local iconOrb = Instance.new("Frame")
+            iconOrb.Name = "IconOrb3D"
+            iconOrb.AnchorPoint = Vector2.new(0.5, 0.5)
+            iconOrb.Size = UDim2.fromOffset(24, 24)
+            iconOrb.Position = UDim2.new(0, 20, 0.5, 0)
+            iconOrb.BackgroundTransparency = 0.78
+            iconOrb.BorderSizePixel = 0
+            iconOrb.ZIndex = 6
+            iconOrb.Parent = btn
+            Instance.new("UICorner", iconOrb).CornerRadius = UDim.new(0, 8)
+            local orbStroke = Instance.new("UIStroke")
+            orbStroke.Thickness = 0.9
+            orbStroke.Transparency = 0.58
+            orbStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+            orbStroke.Parent = iconOrb
+            local orbScale = Instance.new("UIScale")
+            orbScale.Scale = 1.0
+            orbScale.Parent = iconOrb
+            local btnIcon = Instance.new("ImageLabel")
+            btnIcon.Name = "TileIcon"
+            btnIcon.Size = UDim2.fromOffset(13, 13)
+            btnIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+            btnIcon.Position = UDim2.new(0.5, 0, 0.5, 0)
+            btnIcon.BackgroundTransparency = 1
+            btnIcon.Image = glyphIcon
+            btnIcon.ZIndex = 7
+            btnIcon.Parent = iconOrb
+            local btnChevron = Instance.new("ImageLabel")
+            btnChevron.Name = "MagneticChevron"
+            btnChevron.Size = UDim2.fromOffset(11, 11)
+            btnChevron.AnchorPoint = Vector2.new(1, 0.5)
+            btnChevron.Position = UDim2.new(1, -10, 0.5, 0)
+            btnChevron.BackgroundTransparency = 1
+            btnChevron.Image = Icons.ChevronRight
+            btnChevron.ImageTransparency = 0.58
+            btnChevron.ZIndex = 6
+            btnChevron.Parent = btn
             local btnText = Instance.new("TextLabel")
-            btnText.Size = UDim2.new(1, -32, 1, 0)
-            btnText.Position = UDim2.new(0, 16, 0, 0)
+            btnText.Size = UDim2.new(1, -60, 1, 0)
+            btnText.Position = UDim2.new(0, 38, 0, 0)
             btnText.BackgroundTransparency = 1
             btnText.Font = FontBold
             btnText.Text = T(titleKey, titleKey)
-            btnText.TextSize = Theme.FontSize.Body * (AppState.TextScaleRatio or 1.0)
-            btnText.TextXAlignment = Enum.TextXAlignment.Center
+            btnText.TextSize = math.max(12, (Theme.FontSize.Body - 0.5) * (AppState.TextScaleRatio or 1.0))
+            btnText.TextXAlignment = Enum.TextXAlignment.Left
+            btnText.TextTruncate = Enum.TextTruncate.AtEnd
+            btnText.ZIndex = 6
             btnText.Parent = btn
-            LloydUI:BindAccent(btnText, "TextColor3")
             LloydUI:RegisterText(btnText, titleKey)
-            btn.MouseButton1Click:Connect(function(input)
-                PlaySound(Sounds.Click, 0.7)
+            local function darkenCol(c, f)
+                return Color3.new(c.R * f, c.G * f, c.B * f)
+            end
+            local function computeTileColors(isHover)
+                local isLight = (LloydUI.ThemeMode == "Light")
+                if variant == "destructive" then
+                    local redCol = isLight and Color3.fromRGB(215, 0, 21) or Color3.fromRGB(255, 69, 58)
+                    local txtCol = isLight and Color3.fromRGB(205, 16, 30) or Color3.fromRGB(255, 140, 132)
+                    return redCol, isHover and (isLight and 0.72 or 0.62) or (isLight and 0.84 or 0.78), redCol, isHover and 0.18 or 0.48, txtCol, darkenCol(redCol, 0.48), 0.52
+                elseif variant == "primary" then
+                    local acc = Theme.AccentCyan or Color3.fromRGB(10, 132, 255)
+                    local lum = 0.299 * acc.R + 0.587 * acc.G + 0.114 * acc.B
+                    local txtCol = isLight and (lum > 0.72 and Color3.fromRGB(24, 24, 28) or acc) or (lum < 0.28 and Color3.fromRGB(245, 245, 247) or acc)
+                    return acc, isHover and (isLight and 0.70 or 0.62) or (isLight and 0.83 or 0.78), acc, isHover and 0.16 or 0.44, txtCol, darkenCol(acc, 0.46), 0.50
+                else
+                    local bg = isHover and Theme.ButtonHover or Theme.ButtonBg
+                    local tr = isHover and math.max(0.04, (Theme.ButtonTrans or 0.22) - 0.12) or (Theme.ButtonTrans or 0.22)
+                    local brdTr = isHover and math.max(0.22, (Theme.ButtonBorderTrans or 0.76) - 0.30) or (Theme.ButtonBorderTrans or 0.76)
+                    return bg, tr, isHover and (Theme.AccentCyan or Theme.ButtonBorder) or Theme.ButtonBorder, brdTr, Theme.TextPrimary, darkenCol(Theme.ButtonBg or Color3.fromRGB(28, 28, 32), 0.40), 0.34
+                end
+            end
+            local function applyTileRest(skipAnim)
+                if not btn or not btn.Parent then return end
+                local bg, tr, brd, brdTr, txtCol, baseCol, baseTr = computeTileColors(false)
+                local orbTint = (variant == "standard") and (Theme.AccentCyan or txtCol) or brd
+                if skipAnim or Motion.IsReduced() then
+                    btn.BackgroundColor3 = bg
+                    btn.BackgroundTransparency = tr
+                    btn.Position = UDim2.fromOffset(0, 0)
+                    btnStroke.Color = brd
+                    btnStroke.Transparency = brdTr
+                    btnText.TextColor3 = txtCol
+                    btnIcon.ImageColor3 = txtCol
+                    btnChevron.ImageColor3 = txtCol
+                    btnChevron.ImageTransparency = 0.58
+                    btnChevron.Position = UDim2.new(1, -10, 0.5, 0)
+                    iconOrb.BackgroundColor3 = orbTint
+                    iconOrb.BackgroundTransparency = 0.80
+                    iconOrb.Rotation = 0
+                    orbStroke.Color = orbTint
+                    orbStroke.Transparency = 0.60
+                    orbScale.Scale = 1.0
+                    bottomGlow.BackgroundColor3 = orbTint
+                    bottomGlow.BackgroundTransparency = 0.72
+                    depthBase.BackgroundColor3 = baseCol
+                    depthBase.BackgroundTransparency = baseTr
+                    depthShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+                    depthShadow.ImageTransparency = 0.64
+                    depthShadow.Position = UDim2.new(0.5, 0, 0.5, 5)
+                else
+                    Motion.Tween(btn, 0.18, { BackgroundColor3 = bg, BackgroundTransparency = tr, Position = UDim2.fromOffset(0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnStroke, 0.18, { Color = brd, Transparency = brdTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnText, 0.18, { TextColor3 = txtCol }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnIcon, 0.18, { ImageColor3 = txtCol }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnChevron, 0.18, { ImageColor3 = txtCol, ImageTransparency = 0.58, Position = UDim2.new(1, -10, 0.5, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(iconOrb, 0.20, { BackgroundColor3 = orbTint, BackgroundTransparency = 0.80, Rotation = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(orbStroke, 0.18, { Color = orbTint, Transparency = 0.60 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(orbScale, 0.20, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(bottomGlow, 0.18, { BackgroundColor3 = orbTint, BackgroundTransparency = 0.72 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(depthBase, 0.18, { BackgroundColor3 = baseCol, BackgroundTransparency = baseTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(depthShadow, 0.18, { ImageColor3 = Color3.fromRGB(0, 0, 0), ImageTransparency = 0.64, Position = UDim2.new(0.5, 0, 0.5, 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                end
+            end
+            applyTileRest(true)
+            table.insert(LloydUI.ThemeCallbacks, function()
+                pcall(applyTileRest, true)
+            end)
+            table.insert(LloydUI.AccentCallbacks, function(_, skip)
+                if variant == "primary" or variant == "standard" then
+                    pcall(applyTileRest, skip)
+                end
+            end)
+            local isHovered = false
+            local activePress = nil
+            local endPressConn = nil
+            local function finish3DPress()
+                if endPressConn then endPressConn:Disconnect(); endPressConn = nil end
+                activePress = nil
+                if not btn or not btn.Parent then return end
+                local restY = (isHovered and not isMobile) and -3 or 0
+                Motion.Tween(btn, 0.20, { Position = UDim2.fromOffset(0, restY) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                Motion.Tween(depthShadow, 0.18, { ImageTransparency = (isHovered and not isMobile) and 0.46 or 0.64, Position = UDim2.new(0.5, 0, 0.5, (isHovered and not isMobile) and 7 or 5) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end
+            if not isMobile then
+                btn.MouseEnter:Connect(function()
+                    isHovered = true
+                    local bg, tr, brd, brdTr, txtCol, baseCol, baseTr = computeTileColors(true)
+                    local glowCol = (variant == "standard") and (Theme.AccentCyan or brd) or brd
+                    Motion.Tween(btn, 0.16, { BackgroundColor3 = bg, BackgroundTransparency = tr, Position = UDim2.fromOffset(0, activePress and 4 or -3) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(btnStroke, 0.16, { Color = brd, Transparency = brdTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnText, 0.16, { TextColor3 = txtCol }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnIcon, 0.16, { ImageColor3 = txtCol }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(btnChevron, 0.18, { ImageColor3 = glowCol, ImageTransparency = 0.08, Position = UDim2.new(1, -6, 0.5, 0) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(iconOrb, 0.20, { BackgroundColor3 = glowCol, BackgroundTransparency = 0.64, Rotation = -12 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(orbStroke, 0.16, { Color = glowCol, Transparency = 0.26 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(orbScale, 0.20, { Scale = 1.14 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Motion.Tween(bottomGlow, 0.16, { BackgroundColor3 = glowCol, BackgroundTransparency = 0.12 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(depthBase, 0.16, { BackgroundColor3 = baseCol, BackgroundTransparency = baseTr }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(depthShadow, 0.18, { ImageColor3 = (variant == "standard") and Color3.fromRGB(0, 0, 0) or glowCol, ImageTransparency = 0.46, Position = UDim2.new(0.5, 0, 0.5, 7) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    if not Motion.IsReduced() and sweepBar and sweepBar.Parent then
+                        sweepBar.Visible = true
+                        sweepBar.Position = UDim2.new(-0.50, 0, -0.7, 0)
+                        Motion.Tween(sweepBar, 0.40, { Position = UDim2.new(1.30, 0, -0.7, 0) }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out).Completed:Connect(function(st)
+                            if st == Enum.PlaybackState.Completed and sweepBar and sweepBar.Parent then
+                                sweepBar.Visible = false
+                            end
+                        end)
+                    end
+                end)
+                btn.MouseLeave:Connect(function()
+                    isHovered = false
+                    if not activePress then
+                        applyTileRest(false)
+                    end
+                end)
+            end
+            local lastTapPos = nil
+            btn.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                    lastTapPos = input.Position
+                    activePress = input
+                    Motion.Tween(btn, 0.06, { Position = UDim2.fromOffset(0, 4) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    Motion.Tween(depthShadow, 0.06, { ImageTransparency = 0.86, Position = UDim2.new(0.5, 0, 0.5, 1) }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    Motion.Tween(orbScale, 0.06, { Scale = 0.90 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    if endPressConn then endPressConn:Disconnect() end
+                    endPressConn = UserInputService.InputEnded:Connect(function(endInp)
+                        if endInp == activePress or (activePress and activePress.UserInputType == Enum.UserInputType.MouseButton1 and endInp.UserInputType == Enum.UserInputType.MouseButton1) then
+                            finish3DPress()
+                        end
+                    end)
+                end
+            end)
+            btn.InputEnded:Connect(function(input)
+                if input == activePress or (activePress and activePress.UserInputType == Enum.UserInputType.MouseButton1 and input.UserInputType == Enum.UserInputType.MouseButton1) then
+                    finish3DPress()
+                end
+            end)
+            btn.MouseButton1Click:Connect(function()
+                PlaySound(Sounds.Click, 0.72)
                 pcall(function()
-                    local pos = UserInputService:GetMouseLocation()
-                    Motion.Ripple(btn, pos)
+                    local sparkCol = (variant == "destructive") and Color3.fromRGB(255, 85, 78) or (Theme.AccentCyan or Color3.fromRGB(100, 210, 255))
+                    if lastTapPos then
+                        Motion.Ripple(btn, lastTapPos, false)
+                        Motion.Burst(btn, lastTapPos, sparkCol, false)
+                    else
+                        local mp = UserInputService:GetMouseLocation()
+                        Motion.Ripple(btn, mp, true)
+                        Motion.Burst(btn, mp, sparkCol, true)
+                    end
                 end)
                 if callback then callback() end
             end)
-            Box:RegisterRow(btn)
             return btn
         end
         function Box:AddDropdown(titleKey, itemsTable, defaultVal, callback)
@@ -3941,25 +5066,46 @@ function LloydUI:CreateWindow(config)
             LloydUI:Bind(titleL, "TextColor3", "TextPrimary")
             LloydUI:RegisterText(titleL, titleKey)
             local valueL = Instance.new("TextLabel")
-            valueL.Size = UDim2.new(0.52, -40, 1, 0)
+            valueL.Size = UDim2.new(0.52, -46, 1, 0)
             valueL.Position = UDim2.new(0.48, 0, 0, 0)
             valueL.BackgroundTransparency = 1
-            valueL.Font = FontNormal
+            valueL.Font = FontBold
             valueL.Text = ""
             valueL.TextSize = Theme.FontSize.Desc * (AppState.TextScaleRatio or 1.0)
             valueL.TextXAlignment = Enum.TextXAlignment.Right
             valueL.TextTruncate = Enum.TextTruncate.AtEnd
             valueL.Parent = dropRow
-            LloydUI:Bind(valueL, "TextColor3", "TextSecondary")
+            LloydUI:BindAccent(valueL, "TextColor3")
+            local chevOrb = Instance.new("Frame")
+            chevOrb.Name = "ChevronOrb3D"
+            chevOrb.AnchorPoint = Vector2.new(1, 0.5)
+            chevOrb.Size = UDim2.fromOffset(22, 22)
+            chevOrb.Position = UDim2.new(1, -14, 0.5, 0)
+            chevOrb.BackgroundColor3 = Theme.ButtonBg
+            chevOrb.BackgroundTransparency = 0.45
+            chevOrb.BorderSizePixel = 0
+            chevOrb.Parent = dropRow
+            Instance.new("UICorner", chevOrb).CornerRadius = UDim.new(1, 0)
+            LloydUI:Bind(chevOrb, "BackgroundColor3", "ButtonBg")
+            do
+                local coStroke = Instance.new("UIStroke")
+                coStroke.Thickness = 0.9
+                coStroke.Color = Theme.ButtonBorder
+                coStroke.Transparency = Theme.ButtonBorderTrans
+                coStroke.Parent = chevOrb
+                LloydUI:Bind(coStroke, "Color", "ButtonBorder")
+                LloydUI:Bind(coStroke, "Transparency", "ButtonBorderTrans")
+            end
             local chevron = Instance.new("ImageLabel")
             chevron.Name = "Chevron"
-            chevron.Size = UDim2.fromOffset(16, 16)
-            chevron.Position = UDim2.new(1, -28, 0.5, -8)
+            chevron.AnchorPoint = Vector2.new(0.5, 0.5)
+            chevron.Size = UDim2.fromOffset(13, 13)
+            chevron.Position = UDim2.new(0.5, 0, 0.5, 0)
             chevron.BackgroundTransparency = 1
             chevron.Image = Icons.ChevronDown
             chevron.ImageColor3 = Theme.TextSecondary
             chevron.Rotation = 0
-            chevron.Parent = dropRow
+            chevron.Parent = chevOrb
             LloydUI:Bind(chevron, "ImageColor3", "TextSecondary")
             local optWrapper = Instance.new("Frame")
             optWrapper.Name = "OptionsWrapper_" .. tostring(titleKey)
@@ -4112,10 +5258,12 @@ function LloydUI:CreateWindow(config)
                 if dropHair then dropHair.Visible = true end
                 optWrapHair.Visible = false
                 optWrapPad.PaddingBottom = UDim.new(0, 0)
-                Motion.Tween(chevron, 0.20, { Rotation = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                local tw = Motion.Tween(optContainer, 0.20, { Size = UDim2.new(1, -24, 0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                tw.Completed:Connect(function()
-                    if not isExpanded then optContainer.Visible = false end
+                Motion.Tween(chevron, 0.16, { Rotation = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                local tw = Motion.Tween(optContainer, 0.16, { Size = UDim2.new(1, -24, 0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                tw.Completed:Connect(function(playState)
+                    if playState == Enum.PlaybackState.Completed and not isExpanded then
+                        optContainer.Visible = false
+                    end
                 end)
             end
             local function Expand()
@@ -4138,17 +5286,21 @@ function LloydUI:CreateWindow(config)
                 local targetH = calculateHeight(#options, hasSearch)
                 optScroll.Size = UDim2.new(1, 0, 1, hasSearch and -34 or 0)
                 optScroll.Position = UDim2.new(0, 0, 0, hasSearch and 34 or 0)
-                Motion.Tween(chevron, 0.24, { Rotation = 180 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-                Motion.Tween(optContainer, 0.24, { Size = UDim2.new(1, -24, 0, targetH) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(chevron, 0.22, { Rotation = 180 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(optContainer, 0.22, { Size = UDim2.new(1, -24, 0, targetH) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 local visibleButtons = {}
                 for _, btn in ipairs(optButtons) do
-                    if btn.Visible then table.insert(visibleButtons, btn) end
+                    if btn.Visible then
+                        table.insert(visibleButtons, btn)
+                        if #visibleButtons >= 10 then break end
+                    end
                 end
-                Motion.StaggerIn(visibleButtons, 0.02, function(btn, idx)
+                Motion.StaggerIn(visibleButtons, 0.014, function(btn)
+                    if not btn or not btn.Parent then return end
                     local isSel = (optBtnMap[btn] and optBtnMap[btn].Value == selectedValue)
                     if not isSel then
-                        btn.BackgroundTransparency = 0.70
-                        Motion.Tween(btn, 0.15, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                        btn.BackgroundTransparency = 0.78
+                        Motion.Tween(btn, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                     end
                 end)
                 task.defer(function()
@@ -4238,10 +5390,10 @@ function LloydUI:CreateWindow(config)
                     optCheck.BackgroundTransparency = 1
                     optCheck.Font = FontBold
                     optCheck.Text = isSelected and "✓" or ""
+                    optCheck.TextColor3 = Theme.AccentCyan
                     optCheck.TextSize = 13
                     optCheck.ZIndex = 3
                     optCheck.Parent = optBtn
-                    LloydUI:BindAccent(optCheck, "TextColor3")
                     local optLbl = Instance.new("TextLabel")
                     optLbl.Name = "Label"
                     optLbl.Size = UDim2.new(1, -44, 1, 0)
@@ -4259,16 +5411,21 @@ function LloydUI:CreateWindow(config)
                     Motion.Press(optBtn, 0.98, 1.0)
                     optBtn.MouseEnter:Connect(function()
                         if opt.Value ~= selectedValue then
-                            Motion.Tween(optBtn, 0.12, { BackgroundColor3 = Theme.ButtonHover, BackgroundTransparency = 0.85 })
+                            Motion.Tween(optBtn, 0.14, { BackgroundColor3 = Theme.ButtonHover, BackgroundTransparency = 0.80 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                            Motion.Tween(optLbl, 0.14, { Position = UDim2.new(0, 38, 0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                         end
                     end)
                     optBtn.MouseLeave:Connect(function()
                         if opt.Value ~= selectedValue then
-                            Motion.Tween(optBtn, 0.12, { BackgroundTransparency = 1 })
+                            Motion.Tween(optBtn, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                            Motion.Tween(optLbl, 0.14, { Position = UDim2.new(0, 34, 0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                         end
                     end)
                     optBtn.MouseButton1Click:Connect(function()
                         PlaySound(Sounds.Click, 0.8)
+                        pcall(function()
+                            Motion.Burst(optBtn, optBtn.AbsolutePosition + (optBtn.AbsoluteSize * 0.5), Theme.AccentCyan, false)
+                        end)
                         DropdownObj.Set(opt.Value)
                         Collapse()
                     end)
@@ -4285,25 +5442,39 @@ function LloydUI:CreateWindow(config)
                         break
                     end
                 end
-                Motion.CrossFadeText(valueL, selectedText)
+                if silent or valueL.Text == "" then
+                    valueL.Text = selectedText
+                    valueL.TextTransparency = 0
+                else
+                    Motion.CrossFadeText(valueL, selectedText)
+                end
                 for _, child in ipairs(optButtons) do
                     local optData = optBtnMap[child]
                     local isSel = (optData and optData.Value == selectedValue)
                     local check = child:FindFirstChild("Checkmark")
                     local lbl = child:FindFirstChild("Label")
                     if isSel then
-                        child.BackgroundColor3 = Theme.AccentCyan
-                        child.BackgroundTransparency = 0.82
+                        if silent then
+                            child.BackgroundColor3 = Theme.AccentCyan
+                            child.BackgroundTransparency = 0.82
+                        else
+                            Motion.Tween(child, 0.15, { BackgroundColor3 = Theme.AccentCyan, BackgroundTransparency = 0.82 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                        end
                         if check and check.Text ~= "✓" then
                             check.Text = "✓"
-                            Motion.Pop(check, 0.4, 1.0)
+                            check.TextColor3 = Theme.AccentCyan
+                            if not silent then Motion.Pop(check, 0.65, 1.0) end
                         end
                         if lbl then
                             lbl.Font = FontBold
                             lbl.TextColor3 = Theme.AccentCyan
                         end
                     else
-                        child.BackgroundTransparency = 1
+                        if silent then
+                            child.BackgroundTransparency = 1
+                        else
+                            Motion.Tween(child, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                        end
                         if check then check.Text = "" end
                         if lbl then
                             lbl.Font = FontNormal
@@ -4328,8 +5499,10 @@ function LloydUI:CreateWindow(config)
                 if isExpanded then
                     local hasSearch = #options > 10
                     searchFrame.Visible = hasSearch
+                    optScroll.Size = UDim2.new(1, 0, 1, hasSearch and -34 or 0)
+                    optScroll.Position = UDim2.new(0, 0, 0, hasSearch and 34 or 0)
                     local newH = calculateHeight(#options, hasSearch)
-                    Motion.Tween(optContainer, 0.20, { Size = UDim2.new(1, -24, 0, newH) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Motion.Tween(optContainer, 0.18, { Size = UDim2.new(1, -24, 0, newH) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end
             local function syncDropdownVisuals()
@@ -4399,8 +5572,8 @@ function LloydUI:CreateWindow(config)
             LloydUI:Bind(tL, "TextColor3", "TextPrimary")
             LloydUI:RegisterText(tL, titleKey)
             local tBox = Instance.new("TextBox")
-            tBox.Size = UDim2.new(0.58, -16, 0, 30)
-            tBox.Position = UDim2.new(0.42, 0, 0.5, -15)
+            tBox.Size = UDim2.new(0.58, -16, 0, 32)
+            tBox.Position = UDim2.new(0.42, 0, 0.5, -16)
             tBox.BackgroundColor3 = Theme.ButtonBg
             tBox.BackgroundTransparency = Theme.ButtonTrans
             tBox.Font = FontNormal
@@ -4410,30 +5583,50 @@ function LloydUI:CreateWindow(config)
             tBox.TextSize = Theme.FontSize.Desc * (AppState.TextScaleRatio or 1.0)
             tBox.TextXAlignment = Enum.TextXAlignment.Left
             tBox.TextTruncate = Enum.TextTruncate.AtEnd
+            tBox.ClipsDescendants = true
             tBox.ClearTextOnFocus = false
+            tBox.ZIndex = 3
             tBox.Parent = frame
             LloydUI:Bind(tBox, "BackgroundColor3", "ButtonBg")
             LloydUI:Bind(tBox, "BackgroundTransparency", "ButtonTrans")
             LloydUI:Bind(tBox, "TextColor3", "TextPrimary")
             LloydUI:Bind(tBox, "PlaceholderColor3", "TextMuted")
+            local tbGlow = Instance.new("ImageLabel")
+            tbGlow.Name = "InputFocusGlow3D"
+            tbGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+            tbGlow.Position = UDim2.new(0.71, -8, 0.5, 0)
+            tbGlow.Size = UDim2.new(0.58, 12, 0, 52)
+            tbGlow.BackgroundTransparency = 1
+            tbGlow.Image = "rbxassetid://8992230677"
+            tbGlow.ImageColor3 = Theme.AccentCyan
+            tbGlow.ImageTransparency = 1
+            tbGlow.ScaleType = Enum.ScaleType.Slice
+            tbGlow.SliceCenter = Rect.new(99, 99, 99, 99)
+            tbGlow.ZIndex = 1
+            tbGlow.Parent = frame
+            LloydUI:RegisterAccent(tbGlow, "ImageColor3")
             local tbPad = Instance.new("UIPadding")
-            tbPad.PaddingLeft = UDim.new(0, 10)
-            tbPad.PaddingRight = UDim.new(0, 10)
+            tbPad.PaddingLeft = UDim.new(0, 11)
+            tbPad.PaddingRight = UDim.new(0, 11)
             tbPad.Parent = tBox
             local tbCorner = Instance.new("UICorner")
-            tbCorner.CornerRadius = UDim.new(0, 10)
+            tbCorner.CornerRadius = UDim.new(0, 11)
             tbCorner.Parent = tBox
             local tbStroke = Instance.new("UIStroke")
-            tbStroke.Thickness = 1
+            tbStroke.Thickness = 1.0
             tbStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             tbStroke.Parent = tBox
             LloydUI:Bind(tbStroke, "Color", "ButtonBorder")
             LloydUI:Bind(tbStroke, "Transparency", "ButtonBorderTrans")
             tBox.Focused:Connect(function()
-                Motion.Tween(tbStroke, 0.16, { Color = Theme.AccentCyan, Transparency = 0.25 })
+                Motion.Tween(tbStroke, 0.16, { Color = Theme.AccentCyan, Transparency = 0.14, Thickness = 1.45 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(tBox, 0.16, { BackgroundTransparency = math.max(0.06, (Theme.ButtonTrans or 0.35) - 0.14) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(tbGlow, 0.20, { ImageTransparency = 0.72 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end)
             tBox.FocusLost:Connect(function()
-                Motion.Tween(tbStroke, 0.16, { Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans })
+                Motion.Tween(tbStroke, 0.16, { Color = Theme.ButtonBorder, Transparency = Theme.ButtonBorderTrans, Thickness = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(tBox, 0.16, { BackgroundTransparency = Theme.ButtonTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Motion.Tween(tbGlow, 0.20, { ImageTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 if callback then callback(tBox.Text) end
             end)
             local InputObj = {}
@@ -4455,24 +5648,82 @@ function LloydUI:CreateWindow(config)
             pCard.Parent = Card
             local avatar = Instance.new("ImageLabel")
             avatar.Name = "AvatarThumbnail"
-            avatar.Size = UDim2.fromOffset(60, 60)
-            avatar.Position = UDim2.new(0, 16, 0.5, -30)
+            avatar.AnchorPoint = Vector2.new(0.5, 0.5)
+            avatar.Size = UDim2.fromOffset(62, 62)
+            avatar.Position = UDim2.new(0, 47, 0.5, 0)
             avatar.BackgroundColor3 = Theme.ButtonBg
             avatar.BackgroundTransparency = Theme.ButtonTrans
             avatar.Image = "rbxthumb://type=AvatarHeadShot&id=" .. tostring(pUserId) .. "&w=150&h=150"
+            avatar.ZIndex = 4
             avatar.Parent = pCard
             LloydUI:Bind(avatar, "BackgroundColor3", "ButtonBg")
             LloydUI:Bind(avatar, "BackgroundTransparency", "ButtonTrans")
             local avCorner = Instance.new("UICorner")
-            avCorner.CornerRadius = UDim.new(0, 16)
+            avCorner.CornerRadius = UDim.new(0, 17)
             avCorner.Parent = avatar
             local avStroke = Instance.new("UIStroke")
             avStroke.Color = Theme.AccentCyan
-            avStroke.Transparency = 0.25
-            avStroke.Thickness = 1.6
+            avStroke.Transparency = 0.22
+            avStroke.Thickness = 1.65
             avStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             avStroke.Parent = avatar
             LloydUI:BindAccent(avStroke, "Color")
+            CreateRotatingStrokeGradient(avStroke, true)
+            do
+                local avHalo = Instance.new("ImageLabel")
+                avHalo.Name = "AvatarHalo3D"
+                avHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+                avHalo.Position = UDim2.new(0, 47, 0.5, 1)
+                avHalo.Size = UDim2.fromOffset(92, 92)
+                avHalo.BackgroundTransparency = 1
+                avHalo.Image = "rbxassetid://8992230677"
+                avHalo.ImageColor3 = Theme.AccentCyan
+                avHalo.ImageTransparency = 0.68
+                avHalo.ZIndex = 2
+                avHalo.Parent = pCard
+                LloydUI:RegisterAccent(avHalo, "ImageColor3")
+                local avBase = Instance.new("Frame")
+                avBase.Name = "AvatarDepth3D"
+                avBase.AnchorPoint = Vector2.new(0.5, 0.5)
+                avBase.Size = UDim2.fromOffset(62, 62)
+                avBase.Position = UDim2.new(0, 47, 0.5, 4)
+                avBase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                avBase.BackgroundTransparency = 0.48
+                avBase.BorderSizePixel = 0
+                avBase.ZIndex = 3
+                avBase.Parent = pCard
+                Instance.new("UICorner", avBase).CornerRadius = UDim.new(0, 17)
+                local onlineDot = Instance.new("Frame")
+                onlineDot.Name = "LiveOnlineDot"
+                onlineDot.Size = UDim2.fromOffset(13, 13)
+                onlineDot.AnchorPoint = Vector2.new(1, 1)
+                onlineDot.Position = UDim2.new(1, 2, 1, 2)
+                onlineDot.BackgroundColor3 = Color3.fromRGB(48, 209, 88)
+                onlineDot.BorderSizePixel = 0
+                onlineDot.ZIndex = 6
+                onlineDot.Parent = avatar
+                Instance.new("UICorner", onlineDot).CornerRadius = UDim.new(1, 0)
+                local odStroke = Instance.new("UIStroke")
+                odStroke.Color = Color3.fromRGB(16, 18, 24)
+                odStroke.Thickness = 2.2
+                odStroke.Parent = onlineDot
+                local avScale = Instance.new("UIScale")
+                avScale.Scale = 1.0
+                avScale.Parent = avatar
+                if not isMobile then
+                    avatar.MouseEnter:Connect(function()
+                        if Motion.IsReduced() then return end
+                        Motion.Tween(avatar, 0.20, { Rotation = -6, Position = UDim2.new(0, 47, 0.5, -2) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                        Motion.Tween(avScale, 0.20, { Scale = 1.07 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                        Motion.Tween(avHalo, 0.20, { ImageTransparency = 0.44, Size = UDim2.fromOffset(104, 104) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    end)
+                    avatar.MouseLeave:Connect(function()
+                        Motion.Tween(avatar, 0.22, { Rotation = 0, Position = UDim2.new(0, 47, 0.5, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                        Motion.Tween(avScale, 0.22, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                        Motion.Tween(avHalo, 0.22, { ImageTransparency = 0.68, Size = UDim2.fromOffset(92, 92) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    end)
+                end
+            end
             local nameLbl = Instance.new("TextLabel")
             nameLbl.Size = UDim2.new(1, -104, 0, 18)
             nameLbl.Position = UDim2.new(0, 88, 0, 14)
@@ -4609,6 +5860,20 @@ function LloydUI:CreateDock(dockPages)
     local WidgetScale = Instance.new("UIScale")
     WidgetScale.Scale = 1.0
     WidgetScale.Parent = DockPill
+    local DockAmbientHalo = Instance.new("ImageLabel")
+    DockAmbientHalo.Name = "DockAmbientHalo3D"
+    DockAmbientHalo.Size = UDim2.new(1, 56, 1, 36)
+    DockAmbientHalo.Position = UDim2.new(0.5, 0, 0.5, 2)
+    DockAmbientHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+    DockAmbientHalo.BackgroundTransparency = 1
+    DockAmbientHalo.Image = "rbxassetid://8992230677"
+    DockAmbientHalo.ImageColor3 = Theme.AccentCyan
+    DockAmbientHalo.ImageTransparency = 0.82
+    DockAmbientHalo.ScaleType = Enum.ScaleType.Slice
+    DockAmbientHalo.SliceCenter = Rect.new(99, 99, 99, 99)
+    DockAmbientHalo.ZIndex = 7997
+    DockAmbientHalo.Parent = DockPill
+    LloydUI:RegisterAccent(DockAmbientHalo, "ImageColor3")
     local CardShadow = Instance.new("ImageLabel")
     CardShadow.Name = "CardShadow"
     CardShadow.Size = UDim2.new(1, 24, 1, 24)
@@ -4648,13 +5913,49 @@ function LloydUI:CreateDock(dockPages)
     dgCorner.Parent = DockGlass
     local dgStroke = Instance.new("UIStroke")
     dgStroke.Color = Theme.AccentCyan
-    dgStroke.Transparency = 0.28
-    dgStroke.Thickness = 1.25
+    dgStroke.Transparency = 0.24
+    dgStroke.Thickness = 1.35
     dgStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     dgStroke.Parent = DockGlass
     CreateRotatingStrokeGradient(dgStroke, true)
     table.insert(LloydUI.RegisteredBorderStrokes, dgStroke)
     LloydUI:RegisterAccent(dgStroke, "Color")
+    do
+        local dockTopDome = Instance.new("Frame")
+        dockTopDome.Name = "DockConvexDome3D"
+        dockTopDome.Size = UDim2.new(1, -6, 0.44, 0)
+        dockTopDome.Position = UDim2.fromOffset(3, 1)
+        dockTopDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        dockTopDome.BackgroundTransparency = 0.90
+        dockTopDome.BorderSizePixel = 0
+        dockTopDome.ZIndex = 8001
+        dockTopDome.Parent = DockGlass
+        Instance.new("UICorner", dockTopDome).CornerRadius = UDim.new(0, 15)
+        local dtdGrad = Instance.new("UIGradient")
+        dtdGrad.Rotation = 90
+        dtdGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.08),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        dtdGrad.Parent = dockTopDome
+        local dockTopLip = Instance.new("Frame")
+        dockTopLip.Name = "DockSpecularLip3D"
+        dockTopLip.AnchorPoint = Vector2.new(0.5, 0)
+        dockTopLip.Position = UDim2.new(0.5, 0, 0, 1)
+        dockTopLip.Size = UDim2.new(0.76, 0, 0, 1)
+        dockTopLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        dockTopLip.BackgroundTransparency = 0.42
+        dockTopLip.BorderSizePixel = 0
+        dockTopLip.ZIndex = 8001
+        dockTopLip.Parent = DockGlass
+        local dtlGrad = Instance.new("UIGradient")
+        dtlGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1.0),
+            NumberSequenceKeypoint.new(0.5, 0.05),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        dtlGrad.Parent = dockTopLip
+    end
     local function setPillCornerRadius(pxRadius)
         local rOuter = UDim.new(0, pxRadius)
         if AppState.ReduceMotion then
@@ -4724,8 +6025,8 @@ function LloydUI:CreateDock(dockPages)
     Instance.new("UICorner", LeftSensor).CornerRadius = UDim.new(1, 0)
     local StatusDot = Instance.new("Frame")
     StatusDot.Name = "StatusDot"
-    StatusDot.Size = UDim2.fromOffset(5, 5)
-    StatusDot.Position = UDim2.new(0, 18, 0.5, -2.5)
+    StatusDot.Size = UDim2.fromOffset(6, 6)
+    StatusDot.Position = UDim2.new(0, 18, 0.5, -3)
     StatusDot.BackgroundColor3 = Color3.fromRGB(48, 209, 88)
     StatusDot.BackgroundTransparency = 0
     StatusDot.BorderSizePixel = 0
@@ -4733,6 +6034,19 @@ function LloydUI:CreateDock(dockPages)
     StatusDot.ZIndex = 8004
     StatusDot.Parent = colContent
     Instance.new("UICorner", StatusDot).CornerRadius = UDim.new(1, 0)
+    do
+        local dotHalo = Instance.new("ImageLabel")
+        dotHalo.Name = "StatusDotGlow3D"
+        dotHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+        dotHalo.Position = UDim2.new(0.5, 0, 0.5, 0)
+        dotHalo.Size = UDim2.fromOffset(18, 18)
+        dotHalo.BackgroundTransparency = 1
+        dotHalo.Image = "rbxassetid://8992230677"
+        dotHalo.ImageColor3 = Color3.fromRGB(48, 209, 88)
+        dotHalo.ImageTransparency = 0.45
+        dotHalo.ZIndex = 8003
+        dotHalo.Parent = StatusDot
+    end
     LloydUI.DockStatusDot = StatusDot
     local BrandText = Instance.new("TextLabel")
     BrandText.Name = "BrandText"
@@ -4755,26 +6069,59 @@ function LloydUI:CreateDock(dockPages)
     ExpandedView.Parent = DockGlass
     local ActiveTabPill = Instance.new("Frame")
     ActiveTabPill.Name = "ActiveTabPill"
-    ActiveTabPill.Size = UDim2.fromOffset(36, 28)
+    ActiveTabPill.Size = UDim2.fromOffset(40, 30)
     ActiveTabPill.AnchorPoint = Vector2.new(0.5, 0.5)
     ActiveTabPill.Position = UDim2.new(0.5, 0, 0.5, 0)
-    ActiveTabPill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ActiveTabPill.BackgroundTransparency = 0.86
+    ActiveTabPill.BackgroundColor3 = Theme.AccentCyan
+    ActiveTabPill.BackgroundTransparency = 0.80
     ActiveTabPill.BorderSizePixel = 0
     ActiveTabPill.ZIndex = 8002
     ActiveTabPill.Parent = ExpandedView
     Instance.new("UICorner", ActiveTabPill).CornerRadius = UDim.new(1, 0)
+    LloydUI:RegisterAccent(ActiveTabPill, "BackgroundColor3")
+    do
+        local atpStroke = Instance.new("UIStroke")
+        atpStroke.Color = Theme.AccentCyan
+        atpStroke.Transparency = 0.42
+        atpStroke.Thickness = 1.0
+        atpStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+        atpStroke.Parent = ActiveTabPill
+        LloydUI:RegisterAccent(atpStroke, "Color")
+        local atpGlow = Instance.new("ImageLabel")
+        atpGlow.Name = "ActiveTabGlow3D"
+        atpGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        atpGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+        atpGlow.Size = UDim2.fromOffset(58, 44)
+        atpGlow.BackgroundTransparency = 1
+        atpGlow.Image = "rbxassetid://8992230677"
+        atpGlow.ImageColor3 = Theme.AccentCyan
+        atpGlow.ImageTransparency = 0.62
+        atpGlow.ZIndex = 8001
+        atpGlow.Parent = ActiveTabPill
+        LloydUI:RegisterAccent(atpGlow, "ImageColor3")
+        local atpDome = Instance.new("Frame")
+        atpDome.Size = UDim2.new(0.80, 0, 0.42, 0)
+        atpDome.AnchorPoint = Vector2.new(0.5, 0)
+        atpDome.Position = UDim2.new(0.5, 0, 0, 1)
+        atpDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        atpDome.BackgroundTransparency = 0.72
+        atpDome.BorderSizePixel = 0
+        atpDome.ZIndex = 8003
+        atpDome.Parent = ActiveTabPill
+        Instance.new("UICorner", atpDome).CornerRadius = UDim.new(1, 0)
+    end
     local UnderlineDash = Instance.new("Frame")
     UnderlineDash.Name = "UnderlineDash"
-    UnderlineDash.Size = UDim2.fromOffset(12, 2)
+    UnderlineDash.Size = UDim2.fromOffset(18, 3)
     UnderlineDash.AnchorPoint = Vector2.new(0.5, 1)
-    UnderlineDash.Position = UDim2.new(0.5, 0, 1, -3)
-    UnderlineDash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    UnderlineDash.Position = UDim2.new(0.5, 0, 1, -2)
+    UnderlineDash.BackgroundColor3 = Theme.AccentCyan
     UnderlineDash.BackgroundTransparency = 0
     UnderlineDash.BorderSizePixel = 0
     UnderlineDash.ZIndex = 8020
     UnderlineDash.Parent = ExpandedView
     Instance.new("UICorner", UnderlineDash).CornerRadius = UDim.new(1, 0)
+    LloydUI:BindAccent(UnderlineDash, "BackgroundColor3")
     LloydUI.IslandMode = "Collapsed"
     LloydUI.LastIslandStateChange = os.clock()
     local isMouseOver = false
@@ -4782,12 +6129,13 @@ function LloydUI:CreateDock(dockPages)
     local iconButtons = {}
     local isTransitioning = false
     local btnWidth = expandedWidth / math.max(1, #dockPages)
+    local transitionToken = 0
     local function UpdateActiveIndicator(activeIdx)
         if activeIdx and activeIdx > 0 and activeIdx <= #dockPages then
             local targetX = (activeIdx - 0.5) * btnWidth
             UnderlineDash.Visible = true
             ActiveTabPill.Visible = true
-            if AppState.ReduceMotion then
+            if Motion.IsReduced() then
                 UnderlineDash.Position = UDim2.new(0, targetX, 1, -3)
                 UnderlineDash.BackgroundTransparency = 0
                 ActiveTabPill.Position = UDim2.new(0, targetX, 0.5, 0)
@@ -4796,15 +6144,25 @@ function LloydUI:CreateDock(dockPages)
                 Tween(UnderlineDash, 0.22, {
                     Position = UDim2.new(0, targetX, 1, -3),
                     BackgroundTransparency = 0
-                }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
                 Tween(ActiveTabPill, 0.24, {
                     Position = UDim2.new(0, targetX, 0.5, 0),
                     BackgroundTransparency = 0.86
-                }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             end
         else
-            Tween(UnderlineDash, 0.16, { BackgroundTransparency = 1 })
-            Tween(ActiveTabPill, 0.16, { BackgroundTransparency = 1 })
+            local twU = Tween(UnderlineDash, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            local twP = Tween(ActiveTabPill, 0.14, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            twU.Completed:Connect(function(st)
+                if st == Enum.PlaybackState.Completed and not LloydUI.CurrentActiveIdx then
+                    UnderlineDash.Visible = false
+                end
+            end)
+            twP.Completed:Connect(function(st)
+                if st == Enum.PlaybackState.Completed and not LloydUI.CurrentActiveIdx then
+                    ActiveTabPill.Visible = false
+                end
+            end)
         end
     end
     LloydUI.UpdateDockActiveIndicator = UpdateActiveIndicator
@@ -4815,16 +6173,25 @@ function LloydUI:CreateDock(dockPages)
             btnData.IsOpen = isActive
             local targetColor = isActive and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(160, 160, 168)
             local targetTrans = isActive and 0 or 0.20
+            local targetPos = UDim2.new(0.5, 0, 0.5, isActive and -3 or -1)
+            local targetScale = isActive and 1.08 or 1.0
             if LloydUI.IslandMode == "DockTabs" then
                 if AppState.ReduceMotion then
                     btnData.Icon.ImageColor3 = targetColor
                     btnData.Icon.ImageTransparency = targetTrans
+                    btnData.Icon.Position = targetPos
+                    if btnData.Scale then btnData.Scale.Scale = targetScale end
                 else
-                    Tween(btnData.Icon, 0.18, { ImageColor3 = targetColor, ImageTransparency = targetTrans })
+                    Tween(btnData.Icon, 0.20, { ImageColor3 = targetColor, ImageTransparency = targetTrans, Position = targetPos }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    if btnData.Scale then
+                        Tween(btnData.Scale, 0.20, { Scale = targetScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    end
                 end
             else
                 btnData.Icon.ImageColor3 = targetColor
                 btnData.Icon.ImageTransparency = targetTrans
+                btnData.Icon.Position = targetPos
+                if btnData.Scale then btnData.Scale.Scale = targetScale end
             end
         end
         UpdateActiveIndicator(activeIdx)
@@ -4846,65 +6213,62 @@ function LloydUI:CreateDock(dockPages)
         if mode == "Collapsed" then
             HideTooltip()
             setPillCornerRadius(17)
-            DockGlass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            DockGlass.BackgroundTransparency = 0
-            FrostSub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            FrostSub.BackgroundTransparency = 0
-            Tween(DockPill, 0.26, { Size = DOCK_COLLAPSED_SIZE }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            Tween(DockAmbientHalo, 0.24, { ImageTransparency = 0.84, Size = UDim2.new(1, 48, 1, 30) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockGlass, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSub, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockPill, 0.22, { Size = DOCK_COLLAPSED_SIZE }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             if WidgetScale and WidgetScale.Scale ~= 1.0 then
-                Tween(WidgetScale, 0.24, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(WidgetScale, 0.20, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end
             if NotifyHost then
-                Tween(NotifyHost, 0.22, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 44) })
+                Tween(NotifyHost, 0.20, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 44) })
             end
         elseif mode == "DockTabs" then
             setPillCornerRadius(20)
-            DockGlass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            DockGlass.BackgroundTransparency = 0
-            FrostSub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            FrostSub.BackgroundTransparency = 0
-            Tween(DockPill, 0.30, { Size = DOCK_EXPANDED_SIZE }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            Tween(DockAmbientHalo, 0.26, { ImageTransparency = 0.68, Size = UDim2.new(1, 68, 1, 42) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockGlass, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSub, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockPill, 0.26, { Size = DOCK_EXPANDED_SIZE }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             if WidgetScale and WidgetScale.Scale ~= 1.0 then
-                Tween(WidgetScale, 0.24, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(WidgetScale, 0.20, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end
             for idx, btnData in ipairs(iconButtons) do
                 local isActive = (idx == LloydUI.CurrentActiveIdx)
                 btnData.Icon.ImageColor3 = isActive and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(160, 160, 168)
                 btnData.Icon.ImageTransparency = isActive and 0 or 0.20
+                btnData.Icon.Position = UDim2.new(0.5, 0, 0.5, isActive and -3 or -1)
             end
             UpdateActiveIndicator(LloydUI.CurrentActiveIdx)
             if NotifyHost then
-                Tween(NotifyHost, 0.22, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 48) })
+                Tween(NotifyHost, 0.20, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 48) })
             end
         elseif mode == "MusicCompact" then
             HideTooltip()
             setPillCornerRadius(18)
-            DockGlass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            DockGlass.BackgroundTransparency = 0
-            FrostSub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            FrostSub.BackgroundTransparency = 0
-            Tween(DockPill, 0.28, { Size = MUSIC_COMPACT_SIZE }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            Tween(DockAmbientHalo, 0.24, { ImageTransparency = 0.74, Size = UDim2.new(1, 58, 1, 36) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockGlass, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSub, 0.20, { BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockPill, 0.24, { Size = MUSIC_COMPACT_SIZE }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             if WidgetScale and WidgetScale.Scale ~= 1.0 then
-                Tween(WidgetScale, 0.24, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(WidgetScale, 0.20, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end
             if NotifyHost then
-                Tween(NotifyHost, 0.22, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 46) })
+                Tween(NotifyHost, 0.20, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + 46) })
             end
         elseif mode == "MusicExpanded" then
             HideTooltip()
             setPillCornerRadius(26)
-            DockGlass.BackgroundColor3 = Color3.fromRGB(14, 16, 22)
-            DockGlass.BackgroundTransparency = 0.12
-            FrostSub.BackgroundColor3 = Color3.fromRGB(8, 10, 14)
-            FrostSub.BackgroundTransparency = 0.16
-            Tween(DockPill, 0.34, { Size = MUSIC_EXPANDED_SIZE }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            Tween(DockAmbientHalo, 0.28, { ImageTransparency = 0.66, Size = UDim2.new(1, 76, 1, 64) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockGlass, 0.24, { BackgroundColor3 = Color3.fromRGB(14, 16, 22), BackgroundTransparency = 0.12 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(FrostSub, 0.24, { BackgroundColor3 = Color3.fromRGB(8, 10, 14), BackgroundTransparency = 0.16 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            Tween(DockPill, 0.28, { Size = MUSIC_EXPANDED_SIZE }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             local targetScale = AppState.NowPlayingScale or (isMobile and 0.78 or 1.0)
             if WidgetScale then
-                WidgetScale.Scale = targetScale * 0.94
-                Tween(WidgetScale, 0.34, { Scale = targetScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                WidgetScale.Scale = targetScale * 0.96
+                Tween(WidgetScale, 0.26, { Scale = targetScale }, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
             end
             if NotifyHost then
-                Tween(NotifyHost, 0.24, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + (EXPANDED_MUSIC_HEIGHT * targetScale) + 12) })
+                Tween(NotifyHost, 0.22, { Position = UDim2.new(NotifyHost.Position.X.Scale, NotifyHost.Position.X.Offset, 0, AppState.DockOffsetY + (EXPANDED_MUSIC_HEIGHT * targetScale) + 12) })
             end
         end
     end
@@ -4912,15 +6276,21 @@ function LloydUI:CreateDock(dockPages)
     local function SwitchToPage(targetIdx)
         local targetItem = dockPages[targetIdx]
         if not targetItem or not targetItem.Window then return end
+        if _G.LloydUI_CurrentOpenDropdown then
+            pcall(_G.LloydUI_CurrentOpenDropdown)
+        end
         local oldWin = LloydUI.CurrentActiveWin
         local oldIdx = LloydUI.CurrentActiveIdx
         local newWin = targetItem.Window
         if oldWin == newWin and newWin.IsOpen then
+            transitionToken = transitionToken + 1
             newWin:Close()
             LloydUI.CurrentActiveWin = nil
             SetActiveDockTab(nil)
             return
         end
+        transitionToken = transitionToken + 1
+        local myToken = transitionToken
         if isTransitioning and oldWin and oldWin ~= newWin then
             Motion.Cancel(oldWin.ContentScroll)
             Motion.Cancel(oldWin.ContentViewport)
@@ -4942,42 +6312,57 @@ function LloydUI:CreateDock(dockPages)
         isTransitioning = true
         local rawDir = (targetIdx > (oldIdx or targetIdx)) and 1 or -1
         if AppState.InvertSlideDirection then rawDir = -rawDir end
-        local slideDist = AppState.SlideDistance or 55
-        local slideDur = AppState.SlideDuration or 0.24
-        local easing = AppState.SlideEasing or Enum.EasingStyle.Quart
+        local slideDist = math.min(AppState.SlideDistance or 28, 36)
+        local slideDur = AppState.SlideDuration or 0.20
+        local easing = AppState.SlideEasing or Enum.EasingStyle.Quint
         local sharedPos = ClampToScreen(oldWin.MainFrame.Position, newWin.MainFrame.Size)
+        Motion.Cancel(newWin.MainScale)
+        Motion.Cancel(newWin.GlassFrame)
+        Motion.Cancel(newWin.FrostSubstrate)
+        Motion.Cancel(newWin.DeepShadow)
+        Motion.Cancel(newWin.ContentViewport)
+        Motion.Cancel(newWin.ContentScroll)
         newWin.MainFrame.Position = sharedPos
         LloydUI.LastWindowPosition = sharedPos
         newWin.MainFrame.Visible = true
+        newWin.HeaderBar.Visible = true
         newWin.GlassFrame.BackgroundTransparency = Theme.GlassTransparency
         if newWin.FrostSubstrate then newWin.FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans end
-        newWin.DeepShadow.ImageTransparency = 0.52
+        newWin.DeepShadow.ImageTransparency = Theme.ShadowTrans or 0.52
         newWin.MainScale.Scale = 1.0 * AppState.GlobalUIScale
         newWin.IsOpen = true
         local enterOffset = rawDir * slideDist
         newWin.ContentScroll.Position = UDim2.new(0, enterOffset, 0, 0)
         newWin.ContentViewport.GroupTransparency = 1
         Tween(newWin.ContentScroll, slideDur, { Position = UDim2.new(0, 0, 0, 0) }, easing, Enum.EasingDirection.Out)
-        Tween(newWin.ContentViewport, slideDur * 0.85, { GroupTransparency = 0 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-        local exitOffset = -rawDir * slideDist
-        Tween(oldWin.ContentScroll, slideDur * 0.70, { Position = UDim2.new(0, exitOffset, 0, 0) }, easing, Enum.EasingDirection.In)
-        local exitTw = Tween(oldWin.ContentViewport, slideDur * 0.65, { GroupTransparency = 1 }, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+        Tween(newWin.ContentViewport, slideDur * 0.85, { GroupTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        local exitOffset = -rawDir * (slideDist * 0.65)
+        Tween(oldWin.ContentScroll, slideDur * 0.65, { Position = UDim2.new(0, exitOffset, 0, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        local exitTw = Tween(oldWin.ContentViewport, slideDur * 0.60, { GroupTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
         oldWin.GlassFrame.BackgroundTransparency = 1
         if oldWin.FrostSubstrate then oldWin.FrostSubstrate.BackgroundTransparency = 1 end
         oldWin.DeepShadow.ImageTransparency = 1
         oldWin.HeaderBar.Visible = false
-        exitTw.Completed:Connect(function()
-            oldWin.IsOpen = false
-            oldWin.MainFrame.Visible = false
-            oldWin.ContentScroll.Position = UDim2.new(0, 0, 0, 0)
-            oldWin.ContentViewport.GroupTransparency = 0
-            oldWin.GlassFrame.BackgroundTransparency = Theme.GlassTransparency
-            if oldWin.FrostSubstrate then oldWin.FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans end
-            oldWin.HeaderBar.Visible = true
-            isTransitioning = false
-        end)
-        task.delay(slideDur + 0.05, function() isTransitioning = false end)
+        oldWin.IsOpen = false
         LloydUI.CurrentActiveWin = newWin
+        exitTw.Completed:Connect(function()
+            if oldWin ~= LloydUI.CurrentActiveWin then
+                oldWin.IsOpen = false
+                oldWin.MainFrame.Visible = false
+                oldWin.ContentScroll.Position = UDim2.new(0, 0, 0, 0)
+                oldWin.ContentViewport.GroupTransparency = 0
+                oldWin.GlassFrame.BackgroundTransparency = Theme.GlassTransparency
+                if oldWin.FrostSubstrate then oldWin.FrostSubstrate.BackgroundTransparency = Theme.FrostSubstrateTrans end
+                oldWin.DeepShadow.ImageTransparency = Theme.ShadowTrans or 0.52
+                oldWin.HeaderBar.Visible = true
+            end
+            if transitionToken == myToken then
+                isTransitioning = false
+            end
+        end)
+        task.delay(slideDur + 0.06, function()
+            if transitionToken == myToken then isTransitioning = false end
+        end)
     end
     LloydUI.SwitchToPage = SwitchToPage
     local function ExpandDock()
@@ -5071,31 +6456,36 @@ function LloydUI:CreateDock(dockPages)
             if not isMobile then
                 isMouseOver = true
                 if idx ~= LloydUI.CurrentActiveIdx then
-                    Tween(icon, 0.15, { ImageTransparency = 0, ImageColor3 = Color3.fromRGB(255, 255, 255) })
-                    Tween(iconScale, 0.15, { Scale = 1.12 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Tween(icon, 0.16, { ImageTransparency = 0, ImageColor3 = Color3.fromRGB(255, 255, 255), Position = UDim2.new(0.5, 0, 0.5, -3) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    Tween(iconScale, 0.16, { Scale = 1.16 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
                 end
             end
         end)
         btn.MouseLeave:Connect(function()
             if not isMobile then
                 if idx ~= LloydUI.CurrentActiveIdx then
-                    Tween(icon, 0.15, { ImageTransparency = 0.20, ImageColor3 = Color3.fromRGB(160, 160, 168) })
-                    Tween(iconScale, 0.15, { Scale = 1.0 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                    Tween(icon, 0.16, { ImageTransparency = 0.20, ImageColor3 = Color3.fromRGB(160, 160, 168), Position = UDim2.new(0.5, 0, 0.5, -1) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Tween(iconScale, 0.16, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end
         end)
-        btn.MouseButton1Click:Connect(function()
-            PlaySound(Sounds.Click, 0.8)
-            Tween(iconScale, 0.08, { Scale = 0.88 }).Completed:Connect(function()
-                Tween(iconScale, 0.16, { Scale = 1.0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            btn.MouseButton1Click:Connect(function()
+                PlaySound(Sounds.Click, 0.8)
+                pcall(function()
+                    Motion.Burst(ExpandedView, btn.AbsolutePosition + (btn.AbsoluteSize * 0.5), Theme.AccentCyan, false)
+                end)
+                Tween(iconScale, 0.07, { Scale = 0.86 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out).Completed:Connect(function(st)
+                    if st == Enum.PlaybackState.Completed and iconScale and iconScale.Parent then
+                        Tween(iconScale, 0.16, { Scale = 1.08 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                    end
+                end)
+                SwitchToPage(idx)
+                if LloydUI.IsMusicActive and not LloydUI.IsMusicDetached then
+                    ScheduleCollapse(2.5)
+                else
+                    if isMobile then ScheduleCollapse(4.0) end
+                end
             end)
-            SwitchToPage(idx)
-            if LloydUI.IsMusicActive and not LloydUI.IsMusicDetached then
-                ScheduleCollapse(2.5)
-            else
-                if isMobile then ScheduleCollapse(4.0) end
-            end
-        end)
         if item.Window then
             item.Window.OnStateChanged = function(isOpen)
                 if isOpen then
@@ -5174,7 +6564,7 @@ function LloydUI:CreateNowPlayingWidget()
     local EXPANDED_SIZE = UDim2.fromOffset(EXPANDED_MUSIC_WIDTH, EXPANDED_MUSIC_HEIGHT)
     local function attachHoverExpand(btn, hoverScale, iconInst, bgFillTransHover, bgFillTransRest)
         if not btn then return end
-        hoverScale = hoverScale or 1.12
+        hoverScale = math.min(hoverScale or 1.08, 1.10)
         local sc = btn:FindFirstChildOfClass("UIScale")
         if not sc then
             sc = Instance.new("UIScale")
@@ -5182,34 +6572,58 @@ function LloydUI:CreateNowPlayingWidget()
             sc.Parent = btn
         end
         local baseTrans = iconInst and iconInst.ImageTransparency or 0
+        local isHovered = false
+        local activePress = nil
+        local endConn = nil
+        local function endPress()
+            if endConn then endConn:Disconnect(); endConn = nil end
+            activePress = nil
+            if sc and sc.Parent then
+                local restScale = (isHovered and not isMobile) and hoverScale or 1.0
+                Tween(sc, 0.15, { Scale = restScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end
+        end
         if not isMobile then
             btn.MouseEnter:Connect(function()
-                Tween(sc, 0.18, { Scale = hoverScale }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                isHovered = true
+                if not activePress then
+                    Tween(sc, 0.14, { Scale = hoverScale }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                end
                 if iconInst then
-                    Tween(iconInst, 0.15, { ImageTransparency = 0 })
+                    Tween(iconInst, 0.14, { ImageTransparency = 0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
                 if bgFillTransHover ~= nil then
-                    Tween(btn, 0.15, { BackgroundTransparency = bgFillTransHover })
+                    Tween(btn, 0.14, { BackgroundTransparency = bgFillTransHover }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end)
             btn.MouseLeave:Connect(function()
-                Tween(sc, 0.18, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                isHovered = false
+                if not activePress then
+                    Tween(sc, 0.14, { Scale = 1.0 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                end
                 if iconInst then
-                    Tween(iconInst, 0.15, { ImageTransparency = baseTrans })
+                    Tween(iconInst, 0.14, { ImageTransparency = baseTrans }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
                 if bgFillTransRest ~= nil then
-                    Tween(btn, 0.15, { BackgroundTransparency = bgFillTransRest })
+                    Tween(btn, 0.14, { BackgroundTransparency = bgFillTransRest }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
                 end
             end)
         end
         btn.InputBegan:Connect(function(inp)
             if inp.UserInputType == Enum.UserInputType.MouseButton1 or inp.UserInputType == Enum.UserInputType.Touch then
-                Tween(sc, 0.08, { Scale = 0.92 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                activePress = inp
+                Tween(sc, 0.08, { Scale = 0.94 }, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+                if endConn then endConn:Disconnect() end
+                endConn = UserInputService.InputEnded:Connect(function(endInp)
+                    if endInp == activePress or (activePress and activePress.UserInputType == Enum.UserInputType.MouseButton1 and endInp.UserInputType == Enum.UserInputType.MouseButton1) then
+                        endPress()
+                    end
+                end)
             end
         end)
         btn.InputEnded:Connect(function(inp)
-            if inp.UserInputType == Enum.UserInputType.MouseButton1 or inp.UserInputType == Enum.UserInputType.Touch then
-                Tween(sc, 0.18, { Scale = 1.0 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            if inp == activePress or (activePress and activePress.UserInputType == Enum.UserInputType.MouseButton1 and inp.UserInputType == Enum.UserInputType.MouseButton1) then
+                endPress()
             end
         end)
     end
@@ -5599,15 +7013,29 @@ function LloydUI:CreateNowPlayingWidget()
     DetachedGlass.ZIndex = 7500
     DetachedGlass.Parent = DetachedContainer
     do
+        local DetAmbientHalo = Instance.new("ImageLabel")
+        DetAmbientHalo.Name = "DetAmbientHalo3D"
+        DetAmbientHalo.Size = UDim2.new(1, 76, 1, 72)
+        DetAmbientHalo.Position = UDim2.new(0.5, 0, 0.5, 4)
+        DetAmbientHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+        DetAmbientHalo.BackgroundTransparency = 1
+        DetAmbientHalo.Image = "rbxassetid://8992230677"
+        DetAmbientHalo.ImageColor3 = Theme.AccentCyan
+        DetAmbientHalo.ImageTransparency = 0.72
+        DetAmbientHalo.ScaleType = Enum.ScaleType.Slice
+        DetAmbientHalo.SliceCenter = Rect.new(99, 99, 99, 99)
+        DetAmbientHalo.ZIndex = 7497
+        DetAmbientHalo.Parent = DetachedContainer
+        LloydUI:RegisterAccent(DetAmbientHalo, "ImageColor3")
         local DetCardShadow = Instance.new("ImageLabel")
         DetCardShadow.Name = "DetCardShadow"
-        DetCardShadow.Size = UDim2.new(1, 36, 1, 36)
-        DetCardShadow.Position = UDim2.new(0.5, 0, 0.5, 8)
+        DetCardShadow.Size = UDim2.new(1, 38, 1, 38)
+        DetCardShadow.Position = UDim2.new(0.5, 0, 0.5, 9)
         DetCardShadow.AnchorPoint = Vector2.new(0.5, 0.5)
         DetCardShadow.BackgroundTransparency = 1
         DetCardShadow.Image = "rbxassetid://8992230677"
         DetCardShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-        DetCardShadow.ImageTransparency = 0.32
+        DetCardShadow.ImageTransparency = 0.28
         DetCardShadow.ScaleType = Enum.ScaleType.Slice
         DetCardShadow.SliceCenter = Rect.new(99, 99, 99, 99)
         DetCardShadow.ZIndex = 7498
@@ -5625,13 +7053,34 @@ function LloydUI:CreateNowPlayingWidget()
         dgSurfaceGrad.Parent = DetachedGlass
         local dgStrokeDet = Instance.new("UIStroke")
         dgStrokeDet.Color = Theme.AccentCyan
-        dgStrokeDet.Transparency = 0.28
-        dgStrokeDet.Thickness = 1.25
+        dgStrokeDet.Transparency = 0.22
+        dgStrokeDet.Thickness = 1.4
         dgStrokeDet.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
         dgStrokeDet.Parent = DetachedGlass
         CreateRotatingStrokeGradient(dgStrokeDet, true)
         table.insert(LloydUI.RegisteredBorderStrokes, dgStrokeDet)
         LloydUI:RegisterAccent(dgStrokeDet, "Color")
+        if not isMobile then
+            DetachedGlass.InputChanged:Connect(function(inp)
+                if Motion.IsReduced() or not DetachedContainer.Visible then return end
+                if inp.UserInputType == Enum.UserInputType.MouseMovement then
+                    local ap = DetachedGlass.AbsolutePosition
+                    local as = DetachedGlass.AbsoluteSize
+                    if as.X > 10 and as.Y > 10 then
+                        local nx = math.clamp(((inp.Position.X - ap.X) / as.X) * 2 - 1, -1, 1)
+                        local ny = math.clamp(((inp.Position.Y - ap.Y) / as.Y) * 2 - 1, -1, 1)
+                        DetCardShadow.Position = UDim2.new(0.5, math.round(-nx * 9), 0.5, 9 + math.round(-ny * 6))
+                        DetAmbientHalo.Position = UDim2.new(0.5, math.round(nx * 6), 0.5, 4 + math.round(ny * 4))
+                        dgSurfaceGrad.Rotation = 115 + (nx * 22) + (ny * 8)
+                    end
+                end
+            end)
+            DetachedGlass.MouseLeave:Connect(function()
+                Tween(DetCardShadow, 0.26, { Position = UDim2.new(0.5, 0, 0.5, 9) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(DetAmbientHalo, 0.26, { Position = UDim2.new(0.5, 0, 0.5, 4) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(dgSurfaceGrad, 0.26, { Rotation = 115 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+        end
         local NPHalloweenWatermark = Instance.new("ImageLabel")
         NPHalloweenWatermark.Name = "NPHalloweenWatermark"
         NPHalloweenWatermark.AnchorPoint = Vector2.new(1, 1)
@@ -5688,18 +7137,31 @@ function LloydUI:CreateNowPlayingWidget()
                 Tween(DockPill, 0.20, { Size = UDim2.fromOffset(COMPACT_MUSIC_WIDTH, COMPACT_MUSIC_HEIGHT) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
             end
         end)
+        local CompactAlbumGlow = Instance.new("ImageLabel")
+        CompactAlbumGlow.Name = "CompactAlbumGlow3D"
+        CompactAlbumGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        CompactAlbumGlow.Position = UDim2.new(0, 19, 0.5, 0)
+        CompactAlbumGlow.Size = UDim2.fromOffset(42, 42)
+        CompactAlbumGlow.BackgroundTransparency = 1
+        CompactAlbumGlow.Image = "rbxassetid://8992230677"
+        CompactAlbumGlow.ImageColor3 = Color3.fromRGB(255, 75, 114)
+        CompactAlbumGlow.ImageTransparency = 0.58
+        CompactAlbumGlow.ZIndex = 8002
+        CompactAlbumGlow.Parent = CompactBar
         local CompactAlbumIcon = Instance.new("Frame")
         CompactAlbumIcon.Name = "CompactAlbumIcon"
-        CompactAlbumIcon.Size = UDim2.fromOffset(22, 22)
-        CompactAlbumIcon.AnchorPoint = Vector2.new(0, 0.5)
-        CompactAlbumIcon.Position = UDim2.new(0, 8, 0.5, 0)
+        CompactAlbumIcon.Size = UDim2.fromOffset(23, 23)
+        CompactAlbumIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+        CompactAlbumIcon.Position = UDim2.new(0, 19, 0.5, 0)
         CompactAlbumIcon.BackgroundColor3 = Color3.fromRGB(244, 63, 94)
         CompactAlbumIcon.BackgroundTransparency = 0
         CompactAlbumIcon.BorderSizePixel = 0
         CompactAlbumIcon.ZIndex = 8003
         CompactAlbumIcon.Parent = CompactBar
+        LloydUI._CompactAlbumIcon = CompactAlbumIcon
+        LloydUI._CompactAlbumGlow = CompactAlbumGlow
         local caiCorner = Instance.new("UICorner")
-        caiCorner.CornerRadius = UDim.new(0, 7)
+        caiCorner.CornerRadius = UDim.new(0, 8)
         caiCorner.Parent = CompactAlbumIcon
         local caiGrad = Instance.new("UIGradient")
         caiGrad.Rotation = 45
@@ -5711,9 +7173,18 @@ function LloydUI:CreateNowPlayingWidget()
         caiGrad.Parent = CompactAlbumIcon
         local caiStroke = Instance.new("UIStroke")
         caiStroke.Color = Color3.fromRGB(255, 255, 255)
-        caiStroke.Transparency = 0.65
-        caiStroke.Thickness = 0.8
+        caiStroke.Transparency = 0.48
+        caiStroke.Thickness = 0.9
         caiStroke.Parent = CompactAlbumIcon
+        local caiDome = Instance.new("Frame")
+        caiDome.Size = UDim2.new(1, -4, 0.45, 0)
+        caiDome.Position = UDim2.fromOffset(2, 1)
+        caiDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        caiDome.BackgroundTransparency = 0.72
+        caiDome.BorderSizePixel = 0
+        caiDome.ZIndex = 8004
+        caiDome.Parent = CompactAlbumIcon
+        Instance.new("UICorner", caiDome).CornerRadius = UDim.new(0, 6)
         createMusicNoteBadge(CompactAlbumIcon, 0.62)
         if LloydUI.CreateTrueDepthLens then
             LloydUI.CreateTrueDepthLens(CompactBar, UDim2.new(1, -78, 0.5, -5.5), 11)
@@ -5782,11 +7253,11 @@ function LloydUI:CreateNowPlayingWidget()
     do
         local TopSpecularBar = Instance.new("Frame")
         TopSpecularBar.Name = "TopSpecularBar"
-        TopSpecularBar.Size = UDim2.new(0.68, 0, 0, 1)
+        TopSpecularBar.Size = UDim2.new(0.76, 0, 0, 1.5)
         TopSpecularBar.AnchorPoint = Vector2.new(0.5, 0)
         TopSpecularBar.Position = UDim2.new(0.5, 0, 0, 1)
         TopSpecularBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        TopSpecularBar.BackgroundTransparency = 0.65
+        TopSpecularBar.BackgroundTransparency = 0.42
         TopSpecularBar.BorderSizePixel = 0
         TopSpecularBar.ZIndex = 8003
         TopSpecularBar.Parent = ExpandedCard
@@ -5797,24 +7268,55 @@ function LloydUI:CreateNowPlayingWidget()
             NumberSequenceKeypoint.new(1, 1)
         })
         tsbGrad.Parent = TopSpecularBar
-        local AmbientAura = Instance.new("Frame")
-        AmbientAura.Name = "AmbientAura"
-        AmbientAura.Size = UDim2.fromOffset(140, 90)
-        AmbientAura.Position = UDim2.new(0, -16, 0, -14)
-        AmbientAura.BackgroundColor3 = Theme.AccentCyan
-        AmbientAura.BackgroundTransparency = 0.93
-        AmbientAura.BorderSizePixel = 0
-        AmbientAura.ZIndex = 8002
-        AmbientAura.Parent = ExpandedCard
-        Instance.new("UICorner", AmbientAura).CornerRadius = UDim.new(1, 0)
-        LloydUI:RegisterAccent(AmbientAura, "BackgroundColor3")
+        local npDome = Instance.new("Frame")
+        npDome.Name = "ExpandedDome3D"
+        npDome.Size = UDim2.new(1, -8, 0.30, 0)
+        npDome.Position = UDim2.fromOffset(4, 2)
+        npDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        npDome.BackgroundTransparency = 0.93
+        npDome.BorderSizePixel = 0
+        npDome.ZIndex = 8002
+        npDome.Parent = ExpandedCard
+        Instance.new("UICorner", npDome).CornerRadius = UDim.new(0, 22)
+        local npDomeGrad = Instance.new("UIGradient")
+        npDomeGrad.Rotation = 90
+        npDomeGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.08),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        npDomeGrad.Parent = npDome
+        local AmbientAuraA = Instance.new("ImageLabel")
+        AmbientAuraA.Name = "AmbientAura3D_A"
+        AmbientAuraA.AnchorPoint = Vector2.new(0.5, 0.5)
+        AmbientAuraA.Size = UDim2.fromOffset(220, 220)
+        AmbientAuraA.Position = UDim2.new(0.18, 0, 0.22, 0)
+        AmbientAuraA.BackgroundTransparency = 1
+        AmbientAuraA.Image = "rbxassetid://8992230677"
+        AmbientAuraA.ImageColor3 = Theme.AccentCyan
+        AmbientAuraA.ImageTransparency = 0.78
+        AmbientAuraA.ZIndex = 8002
+        AmbientAuraA.Parent = ExpandedCard
+        LloydUI:RegisterAccent(AmbientAuraA, "ImageColor3")
+        local AmbientAuraB = Instance.new("ImageLabel")
+        AmbientAuraB.Name = "AmbientAura3D_B"
+        AmbientAuraB.AnchorPoint = Vector2.new(0.5, 0.5)
+        AmbientAuraB.Size = UDim2.fromOffset(210, 210)
+        AmbientAuraB.Position = UDim2.new(0.84, 0, 0.78, 0)
+        AmbientAuraB.BackgroundTransparency = 1
+        AmbientAuraB.Image = "rbxassetid://8992230677"
+        AmbientAuraB.ImageColor3 = Color3.fromRGB(236, 72, 153)
+        AmbientAuraB.ImageTransparency = 0.82
+        AmbientAuraB.ZIndex = 8002
+        AmbientAuraB.Parent = ExpandedCard
+        LloydUI._NPAuraA = AmbientAuraA
+        LloydUI._NPAuraB = AmbientAuraB
         if LloydUI.CreateTrueDepthLens then
             LloydUI.CreateTrueDepthLens(ExpandedCard, UDim2.new(0.50, -5.5, 0, 6), 11)
         end
         ExpandedCard.MouseEnter:Connect(function()
             if not isMobile and LloydUI.IslandMode == "MusicExpanded" and not isDetached and LloydUI.DockScale then
                 local base = AppState.NowPlayingScale or 1.0
-                Tween(LloydUI.DockScale, 0.24, { Scale = base * 1.015 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                Tween(LloydUI.DockScale, 0.24, { Scale = base * 1.02 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
             end
         end)
         ExpandedCard.MouseLeave:Connect(function()
@@ -5833,14 +7335,15 @@ function LloydUI:CreateNowPlayingWidget()
     TopRow.Parent = ExpandedCard
     local AlbumArt = Instance.new("Frame")
     AlbumArt.Name = "AlbumArt"
-    AlbumArt.Size = UDim2.fromOffset(46, 46)
-    AlbumArt.AnchorPoint = Vector2.new(0, 0.5)
-    AlbumArt.Position = UDim2.new(0, 0, 0.5, 0)
+    AlbumArt.Size = UDim2.fromOffset(48, 48)
+    AlbumArt.AnchorPoint = Vector2.new(0.5, 0.5)
+    AlbumArt.Position = UDim2.new(0, 24, 0.5, 0)
     AlbumArt.BackgroundColor3 = Color3.fromRGB(244, 63, 94)
     AlbumArt.BackgroundTransparency = 0
     AlbumArt.BorderSizePixel = 0
-    AlbumArt.ZIndex = 8004
+    AlbumArt.ZIndex = 8005
     AlbumArt.Parent = TopRow
+    LloydUI._NPAlbumArt = AlbumArt
     local TitleLbl = Instance.new("TextLabel")
     TitleLbl.Name = "TitleLbl"
     TitleLbl.Size = UDim2.new(1, -172, 0, 21)
@@ -5869,8 +7372,31 @@ function LloydUI:CreateNowPlayingWidget()
     SubLbl.Parent = TopRow
     local DockBackBtn, ExpandBtn, CloseBtn
     do
+        local albumHalo = Instance.new("ImageLabel")
+        albumHalo.Name = "AlbumHalo3D"
+        albumHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+        albumHalo.Position = UDim2.new(0, 24, 0.5, 2)
+        albumHalo.Size = UDim2.fromOffset(82, 82)
+        albumHalo.BackgroundTransparency = 1
+        albumHalo.Image = "rbxassetid://8992230677"
+        albumHalo.ImageColor3 = Color3.fromRGB(255, 76, 115)
+        albumHalo.ImageTransparency = 0.56
+        albumHalo.ZIndex = 8003
+        albumHalo.Parent = TopRow
+        LloydUI._NPAlbumHalo = albumHalo
+        local albumDepth = Instance.new("Frame")
+        albumDepth.Name = "AlbumDepth3D"
+        albumDepth.AnchorPoint = Vector2.new(0.5, 0.5)
+        albumDepth.Size = UDim2.fromOffset(48, 48)
+        albumDepth.Position = UDim2.new(0, 24, 0.5, 4)
+        albumDepth.BackgroundColor3 = Color3.fromRGB(80, 12, 42)
+        albumDepth.BackgroundTransparency = 0.30
+        albumDepth.BorderSizePixel = 0
+        albumDepth.ZIndex = 8004
+        albumDepth.Parent = TopRow
+        Instance.new("UICorner", albumDepth).CornerRadius = UDim.new(0, 13)
         local aaCorner = Instance.new("UICorner")
-        aaCorner.CornerRadius = UDim.new(0, 12)
+        aaCorner.CornerRadius = UDim.new(0, 13)
         aaCorner.Parent = AlbumArt
         local aaGrad = Instance.new("UIGradient")
         aaGrad.Rotation = 45
@@ -5882,12 +7408,40 @@ function LloydUI:CreateNowPlayingWidget()
         aaGrad.Parent = AlbumArt
         local aaStroke = Instance.new("UIStroke")
         aaStroke.Color = Color3.fromRGB(255, 255, 255)
-        aaStroke.Transparency = 0.62
-        aaStroke.Thickness = 1.0
+        aaStroke.Transparency = 0.44
+        aaStroke.Thickness = 1.15
         aaStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
         aaStroke.Parent = AlbumArt
-        createMusicNoteBadge(AlbumArt, 1.05)
-        attachHoverExpand(AlbumArt, 1.05)
+        local aaDome = Instance.new("Frame")
+        aaDome.Name = "AlbumDome3D"
+        aaDome.Size = UDim2.new(1, -4, 0.46, 0)
+        aaDome.Position = UDim2.fromOffset(2, 1)
+        aaDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        aaDome.BackgroundTransparency = 0.74
+        aaDome.BorderSizePixel = 0
+        aaDome.ZIndex = 8006
+        aaDome.Parent = AlbumArt
+        Instance.new("UICorner", aaDome).CornerRadius = UDim.new(0, 11)
+        local aaDomeGrad = Instance.new("UIGradient")
+        aaDomeGrad.Rotation = 90
+        aaDomeGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.08),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        aaDomeGrad.Parent = aaDome
+        createMusicNoteBadge(AlbumArt, 1.08)
+        attachHoverExpand(AlbumArt, 1.08)
+        if not isMobile then
+            AlbumArt.MouseEnter:Connect(function()
+                if Motion.IsReduced() then return end
+                Tween(AlbumArt, 0.20, { Rotation = -8, Position = UDim2.new(0, 24, 0.5, -2) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+                Tween(albumHalo, 0.20, { ImageTransparency = 0.36, Size = UDim2.fromOffset(96, 96) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+            AlbumArt.MouseLeave:Connect(function()
+                Tween(AlbumArt, 0.22, { Rotation = 0, Position = UDim2.new(0, 24, 0.5, 0) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                Tween(albumHalo, 0.22, { ImageTransparency = 0.56, Size = UDim2.fromOffset(82, 82) }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+            end)
+        end
         local SubDot = Instance.new("Frame")
         SubDot.Name = "LiveSubDot"
         SubDot.Size = UDim2.fromOffset(6, 6)
@@ -5948,22 +7502,71 @@ function LloydUI:CreateNowPlayingWidget()
     do
         local ExpandedWaveHolder = Instance.new("Frame")
         ExpandedWaveHolder.Name = "ExpandedWaveHolder"
-        ExpandedWaveHolder.Size = UDim2.new(1, -32, 0, 52)
-        ExpandedWaveHolder.Position = UDim2.new(0, 16, 0, 66)
-        ExpandedWaveHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ExpandedWaveHolder.BackgroundTransparency = 0.95
+        ExpandedWaveHolder.Size = UDim2.new(1, -32, 0, 54)
+        ExpandedWaveHolder.Position = UDim2.new(0, 16, 0, 65)
+        ExpandedWaveHolder.BackgroundColor3 = Color3.fromRGB(10, 12, 18)
+        ExpandedWaveHolder.BackgroundTransparency = 0.48
         ExpandedWaveHolder.BorderSizePixel = 0
+        ExpandedWaveHolder.ClipsDescendants = true
         ExpandedWaveHolder.ZIndex = 8004
         ExpandedWaveHolder.Parent = ExpandedCard
         local ewCorner = Instance.new("UICorner")
-        ewCorner.CornerRadius = UDim.new(0, 13)
+        ewCorner.CornerRadius = UDim.new(0, 14)
         ewCorner.Parent = ExpandedWaveHolder
         local ewStroke = Instance.new("UIStroke")
-        ewStroke.Color = Color3.fromRGB(255, 255, 255)
-        ewStroke.Transparency = 0.86
-        ewStroke.Thickness = 1.0
+        ewStroke.Color = Theme.AccentCyan
+        ewStroke.Transparency = 0.62
+        ewStroke.Thickness = 1.05
         ewStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
         ewStroke.Parent = ExpandedWaveHolder
+        LloydUI:RegisterAccent(ewStroke, "Color")
+        local waveGlow = Instance.new("ImageLabel")
+        waveGlow.Name = "WaveCenterGlow3D"
+        waveGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        waveGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+        waveGlow.Size = UDim2.new(0.85, 0, 1.8, 0)
+        waveGlow.BackgroundTransparency = 1
+        waveGlow.Image = "rbxassetid://8992230677"
+        waveGlow.ImageColor3 = Theme.AccentCyan
+        waveGlow.ImageTransparency = 0.78
+        waveGlow.ZIndex = 8004
+        waveGlow.Parent = ExpandedWaveHolder
+        LloydUI:RegisterAccent(waveGlow, "ImageColor3")
+        LloydUI._NPWaveGlow = waveGlow
+        local waveHorizon = Instance.new("Frame")
+        waveHorizon.Name = "WaveHorizonLine"
+        waveHorizon.AnchorPoint = Vector2.new(0.5, 0.5)
+        waveHorizon.Position = UDim2.new(0.5, 0, 0.5, 0)
+        waveHorizon.Size = UDim2.new(0.94, 0, 0, 1)
+        waveHorizon.BackgroundColor3 = Theme.AccentCyan
+        waveHorizon.BackgroundTransparency = 0.68
+        waveHorizon.BorderSizePixel = 0
+        waveHorizon.ZIndex = 8004
+        waveHorizon.Parent = ExpandedWaveHolder
+        LloydUI:RegisterAccent(waveHorizon, "BackgroundColor3")
+        local whGrad = Instance.new("UIGradient")
+        whGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1.0),
+            NumberSequenceKeypoint.new(0.5, 0.0),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        whGrad.Parent = waveHorizon
+        local waveDome = Instance.new("Frame")
+        waveDome.Size = UDim2.new(1, -4, 0.44, 0)
+        waveDome.Position = UDim2.fromOffset(2, 1)
+        waveDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        waveDome.BackgroundTransparency = 0.92
+        waveDome.BorderSizePixel = 0
+        waveDome.ZIndex = 8006
+        waveDome.Parent = ExpandedWaveHolder
+        Instance.new("UICorner", waveDome).CornerRadius = UDim.new(0, 12)
+        local wdGrad = Instance.new("UIGradient")
+        wdGrad.Rotation = 90
+        wdGrad.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.12),
+            NumberSequenceKeypoint.new(1, 1.0)
+        })
+        wdGrad.Parent = waveDome
         expandedEqBars = {}
         local totalWaveBars = #waveProfile
         for i = 1, totalWaveBars do
@@ -5974,12 +7577,20 @@ function LloydUI:CreateNowPlayingWidget()
             wBar.Position = UDim2.new(0.03 + (i - 0.5) / totalWaveBars * 0.94, 0, 0.5, 0)
             wBar.AnchorPoint = Vector2.new(0.5, 0.5)
             wBar.BackgroundColor3 = Theme.AccentCyan
-            wBar.BackgroundTransparency = math.clamp(distFromCenter * 0.34, 0, 0.34)
+            wBar.BackgroundTransparency = math.clamp(distFromCenter * 0.30, 0, 0.30)
             wBar.BorderSizePixel = 0
             wBar.ZIndex = 8005
             wBar.Parent = ExpandedWaveHolder
             LloydUI:RegisterAccent(wBar, "BackgroundColor3")
             Instance.new("UICorner", wBar).CornerRadius = UDim.new(1, 0)
+            local barGrad = Instance.new("UIGradient")
+            barGrad.Rotation = 90
+            barGrad.Color = ColorSequence.new({
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+                ColorSequenceKeypoint.new(0.5, Color3.fromRGB(215, 232, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+            })
+            barGrad.Parent = wBar
             table.insert(expandedEqBars, wBar)
         end
     end
@@ -6132,7 +7743,7 @@ function LloydUI:CreateNowPlayingWidget()
         Instance.new("UICorner", TimeFill).CornerRadius = UDim.new(1, 0)
         local TimeKnob = Instance.new("Frame")
         TimeKnob.Name = "TimeKnob"
-        TimeKnob.Size = UDim2.fromOffset(9, 9)
+        TimeKnob.Size = UDim2.fromOffset(10, 10)
         TimeKnob.AnchorPoint = Vector2.new(0.5, 0.5)
         TimeKnob.Position = UDim2.new(1, 0, 0.5, 0)
         TimeKnob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6140,6 +7751,17 @@ function LloydUI:CreateNowPlayingWidget()
         TimeKnob.ZIndex = 8006
         TimeKnob.Parent = TimeFill
         Instance.new("UICorner", TimeKnob).CornerRadius = UDim.new(1, 0)
+        local tkGlow = Instance.new("ImageLabel")
+        tkGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        tkGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+        tkGlow.Size = UDim2.fromOffset(24, 24)
+        tkGlow.BackgroundTransparency = 1
+        tkGlow.Image = "rbxassetid://8992230677"
+        tkGlow.ImageColor3 = Theme.AccentCyan
+        tkGlow.ImageTransparency = 0.48
+        tkGlow.ZIndex = 8005
+        tkGlow.Parent = TimeKnob
+        LloydUI:RegisterAccent(tkGlow, "ImageColor3")
         TimeTotalLbl = Instance.new("TextLabel")
         TimeTotalLbl.Name = "TimeTotalLbl"
         TimeTotalLbl.Size = UDim2.fromOffset(38, 14)
@@ -6201,7 +7823,7 @@ function LloydUI:CreateNowPlayingWidget()
         Instance.new("UICorner", VolFill).CornerRadius = UDim.new(1, 0)
         local VolKnob = Instance.new("Frame")
         VolKnob.Name = "VolKnob"
-        VolKnob.Size = UDim2.fromOffset(11, 11)
+        VolKnob.Size = UDim2.fromOffset(12, 12)
         VolKnob.AnchorPoint = Vector2.new(0.5, 0.5)
         VolKnob.Position = UDim2.new(1, 0, 0.5, 0)
         VolKnob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6209,6 +7831,17 @@ function LloydUI:CreateNowPlayingWidget()
         VolKnob.ZIndex = 8006
         VolKnob.Parent = VolFill
         Instance.new("UICorner", VolKnob).CornerRadius = UDim.new(1, 0)
+        local vkGlow = Instance.new("ImageLabel")
+        vkGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+        vkGlow.Position = UDim2.new(0.5, 0, 0.5, 0)
+        vkGlow.Size = UDim2.fromOffset(24, 24)
+        vkGlow.BackgroundTransparency = 1
+        vkGlow.Image = "rbxassetid://8992230677"
+        vkGlow.ImageColor3 = Theme.AccentCyan
+        vkGlow.ImageTransparency = 0.52
+        vkGlow.ZIndex = 8005
+        vkGlow.Parent = VolKnob
+        LloydUI:RegisterAccent(vkGlow, "ImageColor3")
         VolHitbox = Instance.new("TextButton")
         VolHitbox.Name = "VolHitbox"
         VolHitbox.Size = UDim2.new(1, 0, 0, 22)
@@ -6247,26 +7880,70 @@ function LloydUI:CreateNowPlayingWidget()
         Controls.ZIndex = 8003
         Controls.Parent = ExpandedCard
         local function createTransportControlBtn(name, posScaleX, hitSizePx, iconSizePx, iconId, initTrans, isHeroCenter)
+            if isHeroCenter then
+                local heroHalo = Instance.new("ImageLabel")
+                heroHalo.Name = "HeroPlayHalo3D"
+                heroHalo.AnchorPoint = Vector2.new(0.5, 0.5)
+                heroHalo.Position = UDim2.new(posScaleX, 0, 0.5, 1)
+                heroHalo.Size = UDim2.fromOffset(hitSizePx + 34, hitSizePx + 34)
+                heroHalo.BackgroundTransparency = 1
+                heroHalo.Image = "rbxassetid://8992230677"
+                heroHalo.ImageColor3 = Theme.AccentCyan
+                heroHalo.ImageTransparency = 0.54
+                heroHalo.ZIndex = 8002
+                heroHalo.Parent = Controls
+                LloydUI:RegisterAccent(heroHalo, "ImageColor3")
+                LloydUI._NPHeroHalo = heroHalo
+                local heroBase = Instance.new("Frame")
+                heroBase.Name = "HeroDepthBase3D"
+                heroBase.AnchorPoint = Vector2.new(0.5, 0.5)
+                heroBase.Size = UDim2.fromOffset(hitSizePx, hitSizePx)
+                heroBase.Position = UDim2.new(posScaleX, 0, 0.5, 3)
+                heroBase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                heroBase.BackgroundTransparency = 0.42
+                heroBase.BorderSizePixel = 0
+                heroBase.ZIndex = 8003
+                heroBase.Parent = Controls
+                Instance.new("UICorner", heroBase).CornerRadius = UDim.new(1, 0)
+            end
             local btn = Instance.new("ImageButton")
             btn.Name = name
             btn.Size = UDim2.fromOffset(hitSizePx, hitSizePx)
             btn.AnchorPoint = Vector2.new(0.5, 0.5)
             btn.Position = UDim2.new(posScaleX, 0, 0.5, 0)
-            btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            btn.BackgroundTransparency = isHeroCenter and 0.86 or 1.0
+            btn.BackgroundColor3 = isHeroCenter and Theme.AccentCyan or Color3.fromRGB(255, 255, 255)
+            btn.BackgroundTransparency = isHeroCenter and 0.72 or 0.94
             btn.AutoButtonColor = false
             btn.BorderSizePixel = 0
             btn.ZIndex = 8004
             btn.Parent = Controls
             Instance.new("UICorner", btn).CornerRadius = UDim.new(1, 0)
             if isHeroCenter then
+                LloydUI:RegisterAccent(btn, "BackgroundColor3")
                 local heroStroke = Instance.new("UIStroke")
                 heroStroke.Color = Theme.AccentCyan
-                heroStroke.Transparency = 0.45
-                heroStroke.Thickness = 1.25
+                heroStroke.Transparency = 0.22
+                heroStroke.Thickness = 1.4
                 heroStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
                 heroStroke.Parent = btn
                 LloydUI:RegisterAccent(heroStroke, "Color")
+                local heroDome = Instance.new("Frame")
+                heroDome.AnchorPoint = Vector2.new(0.5, 0)
+                heroDome.Position = UDim2.new(0.5, 0, 0, 2)
+                heroDome.Size = UDim2.new(0.76, 0, 0.40, 0)
+                heroDome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                heroDome.BackgroundTransparency = 0.68
+                heroDome.BorderSizePixel = 0
+                heroDome.ZIndex = 8004
+                heroDome.Parent = btn
+                Instance.new("UICorner", heroDome).CornerRadius = UDim.new(1, 0)
+            else
+                local subStroke = Instance.new("UIStroke")
+                subStroke.Color = Color3.fromRGB(255, 255, 255)
+                subStroke.Transparency = 0.86
+                subStroke.Thickness = 0.85
+                subStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                subStroke.Parent = btn
             end
             local icon = nil
             if iconId then
@@ -6282,7 +7959,12 @@ function LloydUI:CreateNowPlayingWidget()
                 icon.ZIndex = 8005
                 icon.Parent = btn
             end
-            attachHoverExpand(btn, isHeroCenter and 1.10 or 1.15, icon, isHeroCenter and 0.76 or 0.90, isHeroCenter and 0.86 or 1.0)
+            attachHoverExpand(btn, isHeroCenter and 1.12 or 1.16, icon, isHeroCenter and 0.58 or 0.82, isHeroCenter and 0.72 or 0.94)
+            btn.Activated:Connect(function()
+                pcall(function()
+                    Motion.Burst(Controls, btn.AbsolutePosition + (btn.AbsoluteSize * 0.5), Theme.AccentCyan, false)
+                end)
+            end)
             return btn, icon
         end
         DetachBtn = createTransportControlBtn("DetachBtn", 0.10, 32, 16, nil, 0.15, false)
@@ -6690,9 +8372,11 @@ function LloydUI:CreateNowPlayingWidget()
                 PlaySound(Sounds.Pop, 0.7)
                 if scaleBadgeFadeDebounce then task.cancel(scaleBadgeFadeDebounce) end
                 scaleBadgeFadeDebounce = task.delay(1.2, function()
-                    Tween(ScaleBadge, 0.35, { BackgroundTransparency = 1 })
-                    Tween(ScaleBadgeText, 0.35, { TextTransparency = 1 }).Completed:Connect(function()
-                        ScaleBadge.Visible = false
+                    Tween(ScaleBadge, 0.25, { BackgroundTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+                    Tween(ScaleBadgeText, 0.25, { TextTransparency = 1 }, Enum.EasingStyle.Quart, Enum.EasingDirection.Out).Completed:Connect(function(st)
+                        if st == Enum.PlaybackState.Completed and ScaleBadge and ScaleBadge.Parent then
+                            ScaleBadge.Visible = false
+                        end
                     end)
                 end)
             end
@@ -6743,9 +8427,18 @@ function LloydUI:CreateNowPlayingWidget()
         if (input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1) then
             if os.clock() - (LloydUI.LastIslandStateChange or 0) < 0.45 then return end
             local pos = input.Position
+            local insetY = 0
+            pcall(function()
+                local topLeft = Motion._GuiService:GetGuiInset()
+                if topLeft then insetY = topLeft.Y end
+            end)
+            local adjY = pos.Y - insetY
             local dPos = DockPill.AbsolutePosition
             local dSize = DockPill.AbsoluteSize
-            local inside = (pos.X >= dPos.X and pos.X <= dPos.X + dSize.X and pos.Y >= dPos.Y and pos.Y <= dPos.Y + dSize.Y)
+            local inside = (pos.X >= dPos.X and pos.X <= dPos.X + dSize.X and (
+                (pos.Y >= dPos.Y and pos.Y <= dPos.Y + dSize.Y)
+                or (adjY >= dPos.Y and adjY <= dPos.Y + dSize.Y)
+            ))
             if not inside then
                 if LloydUI.IslandMode == "MusicExpanded" and not isDetached then
                     SetIslandMode("MusicCompact")
@@ -7110,10 +8803,17 @@ function LloydUI:CreateNowPlayingWidget()
                 lastEqUpdate = now
                 if isActivelyPlaying then
                     lastIdleBarsSet = false
+                    local beatPulse = 0.5 + 0.5 * math.sin(now * 5.2)
                     if not showExpanded then
                         for idx, b in ipairs(miniEqBars) do
                             local waveH = 3.5 + math.abs(math.sin(now * (7.5 + idx * 1.1) + idx * 0.95)) * 11
-                            b.Size = UDim2.new(0, 2.3, 0, waveH)
+                            b.Size = UDim2.new(0, 2.4, 0, waveH)
+                        end
+                        if LloydUI._CompactAlbumGlow and LloydUI._CompactAlbumGlow.Parent then
+                            LloydUI._CompactAlbumGlow.ImageTransparency = 0.48 + (1 - beatPulse) * 0.24
+                        end
+                        if LloydUI._CompactAlbumIcon and LloydUI._CompactAlbumIcon.Parent and not Motion.IsReduced() then
+                            LloydUI._CompactAlbumIcon.Rotation = math.sin(now * 3.2) * 5
                         end
                     else
                         for idx, wb in ipairs(expandedEqBars) do
@@ -7123,6 +8823,25 @@ function LloydUI:CreateNowPlayingWidget()
                             local waveH = math.clamp(baseH * waveFactor + harmonic, 3.5, 50)
                             wb.Size = UDim2.new(0, 3.0, 0, waveH)
                         end
+                        if not Motion.IsReduced() then
+                            if LloydUI._NPAuraA and LloydUI._NPAuraA.Parent then
+                                LloydUI._NPAuraA.Position = UDim2.new(0.20 + math.sin(now * 0.85) * 0.14, 0, 0.24 + math.cos(now * 0.65) * 0.10, 0)
+                                LloydUI._NPAuraA.ImageTransparency = 0.72 + (1 - beatPulse) * 0.12
+                            end
+                            if LloydUI._NPAuraB and LloydUI._NPAuraB.Parent then
+                                LloydUI._NPAuraB.Position = UDim2.new(0.82 + math.cos(now * 0.75) * 0.12, 0, 0.76 + math.sin(now * 0.95) * 0.10, 0)
+                                LloydUI._NPAuraB.ImageTransparency = 0.76 + beatPulse * 0.12
+                            end
+                            if LloydUI._NPWaveGlow and LloydUI._NPWaveGlow.Parent then
+                                LloydUI._NPWaveGlow.ImageTransparency = 0.68 + (1 - beatPulse) * 0.18
+                            end
+                            if LloydUI._NPAlbumHalo and LloydUI._NPAlbumHalo.Parent then
+                                LloydUI._NPAlbumHalo.ImageTransparency = 0.44 + (1 - beatPulse) * 0.22
+                            end
+                            if LloydUI._NPHeroHalo and LloydUI._NPHeroHalo.Parent then
+                                LloydUI._NPHeroHalo.ImageTransparency = 0.44 + (1 - beatPulse) * 0.24
+                            end
+                        end
                     end
                 elseif not lastIdleBarsSet then
                     lastIdleBarsSet = true
@@ -7130,6 +8849,9 @@ function LloydUI:CreateNowPlayingWidget()
                     for idx, wb in ipairs(expandedEqBars) do
                         local baseH = waveProfile[idx] or 14
                         wb.Size = UDim2.new(0, 3.0, 0, baseH)
+                    end
+                    if LloydUI._CompactAlbumIcon and LloydUI._CompactAlbumIcon.Parent then
+                        LloydUI._CompactAlbumIcon.Rotation = 0
                     end
                 end
             end
@@ -15437,14 +17159,6 @@ musicBox:AddButton("btn_stop_music", function()
     stopMusic()
     LloydUI:Notify({ Title = AppState.LangMode == "en" and "Music" or "ระบบเครื่องเสียง", Content = AppState.LangMode == "en" and "Stopped all music playback" or "ยุติการเล่นเพลงทั้งหมดเรียบร้อยแล้ว", Icon = Icons.Check })
 end)
-musicBox:AddButton("btn_spawn_vehicle", function()
-    spawnVehicle(selectedRideable or "SkateBoard")
-    LloydUI:Notify({ Title = AppState.LangMode == "en" and "Vehicle" or "ยานพาหนะ", Content = (AppState.LangMode == "en" and "Spawned: " or "เรียกใช้งาน: ") .. (selectedRideable or "SkateBoard"), Icon = Icons.Check })
-end)
-musicBox:AddButton("btn_remove_vehicle", function()
-    removeVehicle()
-    LloydUI:Notify({ Title = AppState.LangMode == "en" and "Vehicle" or "ยานพาหนะ", Content = AppState.LangMode == "en" and "Removed vehicle cleanly" or "เก็บยานพาหนะออกจากตัวเรียบร้อยแล้ว", Icon = Icons.Check })
-end)
 local cachedActivePlayers = {}
 local selectedStealPlayerName = nil
 local updateStealerDetailCard
@@ -15567,7 +17281,8 @@ scLine3.Parent = stealerCard
 LloydUI:Bind(scLine3, "TextColor3", "TextSecondary")
 local scActionsRow = Instance.new("Frame")
 scActionsRow.Name = "ActionsRow"
-scActionsRow.Size = UDim2.new(1, 0, 0, 30)
+scActionsRow.Size = UDim2.new(1, 0, 0, 0)
+scActionsRow.AutomaticSize = Enum.AutomaticSize.Y
 scActionsRow.BackgroundTransparency = 1
 scActionsRow.LayoutOrder = 4
 scActionsRow.Parent = stealerCard
@@ -15575,6 +17290,7 @@ local scActionsLayout = Instance.new("UIListLayout")
 scActionsLayout.FillDirection = Enum.FillDirection.Horizontal
 scActionsLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
 scActionsLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+scActionsLayout.Wraps = true
 scActionsLayout.Padding = UDim.new(0, 6)
 scActionsLayout.Parent = scActionsRow
 local function createCardActionBtn(langKey, fallbackText, iconAsset, bgCol, onClick)
@@ -16230,13 +17946,15 @@ adBodyLayout.SortOrder = Enum.SortOrder.LayoutOrder
 adBodyLayout.Padding = UDim.new(0, 5)
 adBodyLayout.Parent = adBody
 local adTabRow = Instance.new("Frame")
-adTabRow.Size = UDim2.new(1, 0, 0, 24)
+adTabRow.Size = UDim2.new(1, 0, 0, 0)
+adTabRow.AutomaticSize = Enum.AutomaticSize.Y
 adTabRow.BackgroundTransparency = 1
 adTabRow.LayoutOrder = 1
 adTabRow.Parent = adBody
 local adTabLayout = Instance.new("UIListLayout")
 adTabLayout.FillDirection = Enum.FillDirection.Horizontal
 adTabLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+adTabLayout.Wraps = true
 adTabLayout.Padding = UDim.new(0, 5)
 adTabLayout.Parent = adTabRow
 local function createCleanTabBtn(parentFrame, textStr, onClick)
@@ -17162,7 +18880,8 @@ do
     LloydUI:Bind(vaultIdsPreview, "TextColor3", "TextSecondary")
     local vaultActionsRow = Instance.new("Frame")
     vaultActionsRow.Name = "VaultActionsRow"
-    vaultActionsRow.Size = UDim2.new(1, 0, 0, 30)
+    vaultActionsRow.Size = UDim2.new(1, 0, 0, 0)
+    vaultActionsRow.AutomaticSize = Enum.AutomaticSize.Y
     vaultActionsRow.BackgroundTransparency = 1
     vaultActionsRow.LayoutOrder = 2
     vaultActionsRow.Parent = summarySubCard
@@ -17170,6 +18889,7 @@ do
     vaLayout.FillDirection = Enum.FillDirection.Horizontal
     vaLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
     vaLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+    vaLayout.Wraps = true
     vaLayout.Padding = UDim.new(0, 6)
     vaLayout.Parent = vaultActionsRow
     local function createLiquidActionPill(parentFrame, langKey, fallbackText, iconAsset, tintCol, onClick)
@@ -17876,22 +19596,51 @@ rebuildFavoritesUI = function()
         modal.BackgroundColor3 = Theme.GlassBaseColor
         modal.BackgroundTransparency = Theme.GlassTransparency
         modal.BorderSizePixel = 0
+        modal.ClipsDescendants = true
         modal.ZIndex = 9001
         modal.Parent = overlay
         LloydUI:Bind(modal, "BackgroundColor3", "GlassBaseColor")
         LloydUI:Bind(modal, "BackgroundTransparency", "GlassTransparency")
         local mCorner = Instance.new("UICorner")
-        mCorner.CornerRadius = UDim.new(0, 16)
+        mCorner.CornerRadius = UDim.new(0, 20)
         mCorner.Parent = modal
         local mStroke = Instance.new("UIStroke")
-        mStroke.Color = Theme.GlassRimColor
-        mStroke.Transparency = Theme.GlassRimTrans
-        mStroke.Thickness = 1.2
+        mStroke.Color = Theme.AccentCyan
+        mStroke.Transparency = 0.36
+        mStroke.Thickness = 1.35
         mStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
         mStroke.Parent = modal
-        LloydUI:Bind(mStroke, "Color", "GlassRimColor")
-        LloydUI:Bind(mStroke, "Transparency", "GlassRimTrans")
-        CreateRotatingStrokeGradient(mStroke, false)
+        LloydUI:RegisterAccent(mStroke, "Color")
+        CreateRotatingStrokeGradient(mStroke, true)
+        do
+            local mAura = Instance.new("ImageLabel")
+            mAura.AnchorPoint = Vector2.new(0.5, 0.5)
+            mAura.Position = UDim2.new(0.22, 0, 0.18, 0)
+            mAura.Size = UDim2.fromOffset(220, 220)
+            mAura.BackgroundTransparency = 1
+            mAura.Image = "rbxassetid://8992230677"
+            mAura.ImageColor3 = Theme.AccentCyan
+            mAura.ImageTransparency = 0.80
+            mAura.ZIndex = 9001
+            mAura.Parent = modal
+            local mLip = Instance.new("Frame")
+            mLip.AnchorPoint = Vector2.new(0.5, 0)
+            mLip.Position = UDim2.new(0.5, 0, 0, 1)
+            mLip.Size = UDim2.new(0.75, 0, 0, 1.5)
+            mLip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            mLip.BackgroundTransparency = 0.42
+            mLip.BorderSizePixel = 0
+            mLip.ZIndex = 9002
+            mLip.Parent = modal
+            local mlGrad = Instance.new("UIGradient")
+            mlGrad.Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 1.0),
+                NumberSequenceKeypoint.new(0.5, 0.05),
+                NumberSequenceKeypoint.new(1, 1.0)
+            })
+            mlGrad.Parent = mLip
+            Motion.Pop(modal, 0.88, 1.0)
+        end
         local mTitle = Instance.new("TextLabel")
         mTitle.Size = UDim2.new(1, -28, 0, 22)
         mTitle.Position = UDim2.new(0, 16, 0, 14)
